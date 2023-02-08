@@ -1,0 +1,125 @@
+@mixin fontSetting($FONT-SIZE: $font-size, $WEIGHT: normal) {
+    font-size: $FONT-SIZE;
+    font-weight: $WEIGHT;
+    color: $color-word;
+}
+
+@mixin aSetting($COLOR: $aColor, $NOLINE: none) {
+    color: $COLOR;
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: $aHover;
+        cursor: pointer;
+    }
+}
+
+@mixin aSetting_nocolor($COLOR: $color-word, $NOLINE: none) {
+    color: $COLOR;
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: $aHover;
+        cursor: pointer;
+    }
+}
+
+body {
+    @include fontSetting(1em);
+    line-height: 1.5em;
+    font-family: $font-family;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    @include aSetting();
+    transition: 0.5s;
+}
+
+// kbd
+kbd {
+    background: #fff;
+    border-radius: 0.2em;
+    color: #555;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.1em 0.6em;
+    font-size: 0.938em;
+    font-family: sans-serif;
+    margin-right: 0.4em;
+    margin-bottom: 0.1em;
+    vertical-align: middle;
+    border-top: 1px solid #bbb;
+    border-bottom: 3px solid #bbb;
+    border-left: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    ~kbd {
+        margin-left: 0.4em;
+    }
+    kbd {
+        border: none;
+    }
+}
+
+// 字級
+.font_size {
+    display: flex;
+    flex: 0 1 12em;
+    padding: 0.5em 0.3em 0;
+    position: relative;
+    span {
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+    }
+    ul {
+        @include li-reset;
+        display: flex;
+        flex: 0 0 6em;
+        li {
+            font-size: 1em;
+            flex: 0 0 auto;
+            margin: 2px;
+            align-items: center;
+            a {
+                display: block;
+                text-align: center;
+                line-height: 38px;
+                border-radius: 50%;
+                width: 38px;
+                height: 38px;
+                background: $form-btn;
+                color: #ccc;
+                &:hover,
+                &:focus {
+                    background: #ddd;
+                    color: #000;
+                }
+                &.active {
+                    background: #ddd;
+                    color: #000;
+                    font-weight: bolder;
+                    &:hover,
+                    &:focus {
+                        background: #ddd;
+                        color: #000;
+                    }
+                }
+                &.small {
+                    font-size: 1em;
+                }
+                &.large {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    @include screen('mobile') {
+        display: none;
+    }
+}

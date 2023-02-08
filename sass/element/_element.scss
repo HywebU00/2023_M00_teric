@@ -1,0 +1,65 @@
+// scrollTop
+.scrollToTop {
+    width: 70px;
+    padding: 4em 0 0.5em;
+    border-radius: 50px;
+    background: url(../images/top_icon.png) no-repeat center 1.5em rgba(0, 0, 0, 0.6);
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 15em;
+    right: calc(50% - $container-max * 0.5 + 1em);
+    transition: 0.3s ease-out;
+    letter-spacing: 0.1em;
+    display: none;
+    @include screen('notebook') {
+        right: 1em;
+    }
+    @include screen('mobile') {
+        bottom: 10em;
+    }
+    &:hover,
+    &:focus {
+        background: url(../images/top_icon.png) no-repeat center 1em rgba(0, 0, 0, 0.8);
+        box-shadow: none;
+        color: #fff;
+    }
+}
+
+//元素對齊 align
+// .align-left{
+//   text-align: left;
+// }
+// .align-center{
+//   text-align: center;
+// }
+// .align-right{
+//   text-align: right;
+// }
+// .align-top{
+//   vertical-align: top;
+// }
+// .align-middle{
+//   vertical-align: middle;
+// }
+// .align-bottom{
+//   vertical-align: bottom;
+// }
+// .align-baseline{
+//   vertical-align: baseline;
+// }
+// $fileTypePic: doc, docx, odt, xls, xlsx, csv, ods, ppt, pptx, odp, zip, txt, mov, mp3, jpg, wmv, mp4, pdf, other ;
+// @each $fileTypePic in $fileTypePic {
+//   a.file_#{$fileTypePic} {
+//     background: url(../images/basic/icon_#{$fileTypePic}.png) no-repeat center center;
+//     width: 26px;
+//     height: 28px;
+//     font-size: 0;
+//     overflow: hidden;
+//     vertical-align: middle;
+//     background-size: contain;
+//   }
+// }

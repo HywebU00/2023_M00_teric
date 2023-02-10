@@ -90,8 +90,12 @@ body {
         background-repeat: repeat;
         background-position: 0 0;
         padding: 2em 4em;
+        @include screen('mobile') {
+            padding: 5em 2em 0em;
+        }
         h2 {
             position: relative;
+            margin-bottom: 1em;
             &.title {
                 line-height: 1.25em;
                 font-size: 1.625em;
@@ -105,6 +109,9 @@ body {
                 position: absolute;
                 left: 0;
                 top: 3px;
+            }
+            @media screen and (max-width: 400px) {
+                margin-bottom: 0.5em;
             }
         }
     }
@@ -149,4 +156,8 @@ body {
 
 .hidden {
     display: none;
+}
+
+.word_red {
+    color: $color-red;
 }

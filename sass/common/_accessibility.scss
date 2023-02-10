@@ -32,21 +32,22 @@ a.goCenter {
     padding: 0 0.5em;
     height: 2em;
     line-height: 2em;
-    background: $secondaryColor;
+    background: $primaryColor;
     color: #fff;
     text-decoration: none;
     z-index: 999999999999;
     opacity: 0;
     transition: 0.5s;
     border-radius: 0px 0px 4px 4px;
-    color: #fff;
     @include screen('mobile') {
         display: none;
     }
-    &:hover {
+    &:hover,
+    &:focus {
         outline: none;
         top: 0;
         opacity: 1;
+        color: #fff;
     }
 }
 

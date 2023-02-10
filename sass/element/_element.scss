@@ -1,6 +1,6 @@
 // scrollTop
 .scrollToTop {
-    width: 70px;
+    width: 60px;
     padding: 4em 0 0.5em;
     border-radius: 50px;
     background: url(../images/top_icon.png) no-repeat center 1.5em rgba(0, 0, 0, 0.6);
@@ -11,12 +11,12 @@
     text-decoration: none;
     position: fixed;
     bottom: 15em;
-    right: calc(50% - $container-max * 0.5 + 1em);
+    right: calc(50% - $container-max * 0.5 + 0.5em);
     transition: 0.3s ease-out;
     letter-spacing: 0.1em;
     display: none;
     @include screen('notebook') {
-        right: 1em;
+        right: 0.5em;
     }
     @include screen('mobile') {
         bottom: 10em;

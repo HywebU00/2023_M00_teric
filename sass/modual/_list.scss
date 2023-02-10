@@ -21,14 +21,15 @@
         }
     }
     .list {
-        &>ul, ol {
+        &>ul,
+        ol {
             list-style-type: none;
             padding: 0;
-            border-top: 2px solid $primaryColor;
+            border-top: 3px solid $color-dark;
+            border-bottom: 3px solid $color-dark;
             &>li {
                 padding: 1em 0;
-                border-bottom: 1px solid #DDD;
-                position: relative; // outline: 1px solid blue;
+                position: relative;
                 .tag {
                     margin-left: 2em;
                 }
@@ -38,6 +39,8 @@
                     position: relative;
                     line-height: 1.45em;
                     color: $color-word;
+                    font-weight: bolder;
+                    font-size: 1.125em;
                     &:hover {
                         color: $aHover;
                     }
@@ -48,22 +51,48 @@
                         top: 0;
                         left: 0;
                         &:after {
-                            content: ".";
+                            content: '.';
                             display: inline-block;
                         }
                     }
                 }
                 span.dept {
                     display: inline-block;
-                    font-size: .938em;
-                    @include screen("mobile") {
+                    font-size: 0.938em;
+                    @include screen('mobile') {
                         display: block;
                     }
                 }
-                time {
-                    display: block;
-                    color: #AAA;
-                    font-size: .938em;
+                .data_content {
+                    margin-top: 0.5em;
+                    margin-left: 2.3em;
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        li {
+                            margin: 0 0 0.4em;
+                            display: block;
+                            color: $color-hr;
+                        }
+                    }
+                }
+                ul {
+                    margin: 1em 0 0 2.3em;
+                    padding: 0;
+                    list-style-type: none;
+                    li {
+                        display: inline-block;
+                        font-weight: bold;
+                        font-size: 1em;
+                        margin-right: 3em;
+                        span {
+                            color: $color-hr;
+                            img {
+                                width: 30px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -93,7 +122,6 @@
 //                 flex:0 0 96%;
 //                 margin:0 3% 5%;
 //             }
-            
 //         }
 //     }
 // }

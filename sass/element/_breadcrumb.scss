@@ -1,18 +1,21 @@
 .breadcrumb {
-    border-bottom: 1px solid #EEE;
-    padding: .1em 0em .1em;
-    font-size: .813em;
-    margin: 0px auto 5px;
+    padding: 0em 0em 0em 1.5em;
+    font-size: 1em;
+    margin: 0px auto 2em;
+    background-image: url('../images/breadcrumb_icon01.png');
+    background-repeat: no-repeat;
+    background-position: left 5px;
     ul {
         @include li-reset;
         li {
             display: inline-block;
-            margin: 0px .1em .1em 0px;
+            margin: 0px 0.1em 0.1em 0px;
+            color: $primaryColor;
             &:before {
                 @extend %slash;
             }
             &:first-child:before {
-                content: "";
+                content: '';
                 display: inline-block;
                 color: #666;
                 margin-left: 0;
@@ -22,5 +25,9 @@
     }
     a {
         @include aSetting_nocolor;
+        color: $color-dark;
+        &:hover {
+            color: $primaryColor;
+        }
     }
 }

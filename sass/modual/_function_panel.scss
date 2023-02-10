@@ -119,6 +119,13 @@ div.function {
 
 // 放進function_panel樣式
 .function_panel {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5em;
+    @media screen and (max-width: 400px) {
+        margin: 0em 0 1em;
+        padding: 0;
+    }
     .font_size {
         padding: 0;
         flex: initial;

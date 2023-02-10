@@ -444,7 +444,7 @@ $(function() {
                 tabwidth = _tab.width(),
                 tabItemHeight = _tabItem.outerHeight(),
                 tabContentHeight = _tab.find('.active').next().innerHeight(),
-                tabGutter = parseInt('4px'), // 可設定 Gutter 寬度
+                tabGutter = parseInt('0'), // 可設定 Gutter 寬度
                 tabItemLength = _tabItem.length,
                 tabItemWidth,
                 marginLeft;

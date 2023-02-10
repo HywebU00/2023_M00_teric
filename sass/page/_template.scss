@@ -95,7 +95,7 @@ body {
         }
         h2 {
             position: relative;
-            margin-bottom: 1em;
+            margin-bottom: 0.4em;
             &.title {
                 line-height: 1.25em;
                 font-size: 1.625em;
@@ -160,4 +160,8 @@ body {
 
 .word_red {
     color: $color-red;
+}
+
+.lp {
+    position: relative;
 }

@@ -466,6 +466,7 @@ $(function() {
             }
             _tabItem.focus(tabs); //改button後，前面改_tabItem
             _tabItem.click(tabs); //改button後，前面改_tabItem
+
             function tabs(e) {
                 var _tabItemNow = $(this), //改button後，原來$(this).parent(),改$(this)
                     tvp = _tab.offset().top,

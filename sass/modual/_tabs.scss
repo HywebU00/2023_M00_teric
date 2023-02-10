@@ -57,12 +57,12 @@
     // &>.tabItem {
     //     &.active {
     //         background-color: $primaryColor;
-    //         color: #FFF;
+    //         color: #fff;
     //     }
     //     float: left;
     //     margin: 0;
     //     padding: 0;
-    //     font-size:1em;
+    //     font-size: 1em;
     //     line-height: 1;
     //     display: block;
     //     padding: 16px 0 14px;
@@ -73,7 +73,8 @@
     //     text-decoration: none;
     //     @include text-overflow;
     //     box-sizing: border-box;
-    //     &:hover, &:focus {
+    //     &:hover,
+    //     &:focus {
     //         background: $primaryColor;
     //     }
     //     @include screen('mobile') {
@@ -171,7 +172,7 @@
     right: 0;
     z-index: 1;
     clear: both;
-    padding: 2em 2em 3em 2em;
+    padding: 2em;
     display: none;
     border-radius: 0 0 10px 10px;
     @include screen('mobile') {
@@ -208,5 +209,8 @@
             padding: 0 0.3em;
             font-family: 'Amiko', sans-serif;
         }
+    }
+    .table_list {
+        margin-bottom: 2em;
     }
 }

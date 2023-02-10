@@ -7392,7 +7392,7 @@ table.table_sprite tr:nth-child(even) {
   right: 0;
   z-index: 1;
   clear: both;
-  padding: 2em 2em 3em 2em;
+  padding: 2em;
   display: none;
   border-radius: 0 0 10px 10px;
 }
@@ -7443,6 +7443,9 @@ table.table_sprite tr:nth-child(even) {
   color: #2f72ab;
   padding: 0 0.3em;
   font-family: "Amiko", sans-serif;
+}
+.tabContent .table_list {
+  margin-bottom: 2em;
 }
 
 .thumbnail {
@@ -10572,6 +10575,16 @@ h2.title {
   margin-right: 1em;
   vertical-align: middle;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.innerpage.small_size {
+  font-size: 0.938em;
+}
+.innerpage.large_size {
+  font-size: 1.125em;
+}
+.innerpage.large_size .category a {
+  padding: 0.3em 1.5em;
 }
 
 @media print {

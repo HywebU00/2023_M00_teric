@@ -66,3 +66,18 @@
         }
     }
 }
+
+// font大小字
+.innerpage {
+    &.small_size {
+        font-size: 0.938em;
+    }
+    &.large_size {
+        font-size: 1.125em;
+        .category {
+            a {
+                padding: 0.3em 1.5em;
+            }
+        }
+    }
+}

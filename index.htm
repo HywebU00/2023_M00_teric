@@ -18,14 +18,14 @@
         body {
             background: #00468d;
         }
-        
+
         .demo_wrap {
             max-width: 1000px;
             margin: 0em auto 1em;
             padding: 15px 15px 3em;
             clear: both;
         }
-        
+
         .demo_wrap h1 {
             display: block;
             margin: 0px auto;
@@ -33,7 +33,7 @@
             float: left;
             margin-right: 1em;
         }
-        
+
         @media screen and (max-width: 545px) {
             .demo_wrap h1 {
                 max-width: 100%;
@@ -41,24 +41,24 @@
                 text-align: center;
             }
         }
-        
+
         .demo_wrap h1 img {
             width: 300px;
         }
-        
+
         .num {
             width: 12%;
         }
-        
+
         body {
             counter-reset: num;
         }
-        
+
         table {
             margin-bottom: 1em;
             background-color: #fff;
         }
-        
+
         table caption {
             text-align: left;
             font-weight: bold;
@@ -66,26 +66,26 @@
             padding: 0.5em 0;
             color: #ff5050;
         }
-        
+
         tbody tr td {
             padding: 0.8em .5em;
         }
-        
+
         tbody tr td:first-child:before {
             counter-increment: num;
             display: block;
             text-align: center;
             content: counters(num, '.') ' ';
         }
-        
+
         tbody tr td:nth-child(2) {
             width: 35%;
         }
-        
+
         .btn_grp {
             text-align: right;
         }
-        
+
         @media screen and (max-width: 545px) {
             .btn_grp {
                 text-align: center;
@@ -98,7 +98,7 @@
     <div class="demo_wrap">
         <h1><img src="images/logo.png" alt="" /></h1>
         <div class="btn_grp">
-            <a href="https://github.com/HywebU00/hyui_flex" class="btn">切版檔案請按此下載</a>
+            <a href="https://github.com/HywebU00/2023_M00_teric_c" class="btn">切版檔案請按此下載</a>
         </div>
         <hr />
         <div class="table_wrapper">
@@ -339,10 +339,10 @@
     <script src="js/hyui.js"></script>
     <script src="js/customize.js"></script>
     <script>
-        $(function() {
+        $(function () {
             $('tbody')
                 .find('a')
-                .each(function(index, el) {
+                .each(function (index, el) {
                     var Link = $(this).attr('href');
                     $(this).text(Link);
                 });

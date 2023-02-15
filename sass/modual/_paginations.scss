@@ -1,209 +1,212 @@
 .pagination {
-    margin: 0.5em auto;
+  margin: 0.5em auto;
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  @extend %clearfix; // outline: 1px solid red;
+  .form_inline {
+    // justify-content: center;
+  }
+  span {
+    color: $primaryColor;
+    margin: 0px 0.5em;
+  }
+  .page {
+    margin: 10px auto;
     padding: 0;
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    @extend %clearfix; // outline: 1px solid red;
-    .form_inline {
-        // justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include screen('xs_mobile') {
+      margin: 0px auto;
     }
-    span {
-        color: $primaryColor;
-        margin: 0px 0.5em;
-    }
-    .page {
-        margin: 10px auto;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        @include screen('xs_mobile') {
-            margin: 0px auto;
+    li {
+      min-width: 40px;
+      height: 40px;
+      margin: 2px;
+      list-style: none;
+      flex: 0 0 40px;
+      box-sizing: border-box;
+      @include screen('mobile') {
+        height: auto;
+      }
+      a {
+        border-radius: 5px;
+        padding: 6px 10px;
+        font-weight: 700;
+        display: block;
+        white-space: nowrap;
+        font-size: 1em;
+        color: $color-word;
+        background: rgb(234, 231, 231);
+        background: linear-gradient(0deg, rgba(234, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
+        border: rgb(234, 231, 231) solid 1px;
+        &:hover,
+        &:focus {
+          background: $secondaryColor;
+          color: #fff !important;
+          border: $secondaryColor solid 1px;
         }
-        li {
-            min-width: 40px;
-            height: 40px;
-            margin: 2px;
-            list-style: none;
-            flex: 0 0 40px;
-            box-sizing: border-box;
-            @include screen('mobile') {
-                height: auto;
-            }
-            a {
-                border-radius: 5px;
-                padding: 6px 10px;
-                font-weight: 700;
-                display: block;
-                white-space: nowrap;
-                font-size: 1em;
-                color: $color-word;
-                background: rgb(234, 231, 231);
-                background: linear-gradient(0deg, rgba(234, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
-                border: rgb(234, 231, 231) solid 1px;
-                &:hover,
-                &:focus {
-                    background: $secondaryColor;
-                    color: #fff !important;
-                    border: $secondaryColor solid 1px;
-                }
-            }
-            &.active {
-                a {
-                    color: #fff !important;
-                    background: $form-focus;
-                    border: darken($form-focus, 5) solid 1px;
-                }
-            }
-            %arrow {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 6px;
-                height: 6px;
-                margin-top: -4px;
-                border: 2px solid $secondaryColor;
-                border-left: none;
-                border-bottom: none;
-            }
-            &.first,
-            &.prev,
-            &.next,
-            &.last {
-                a {
-                    text-indent: -9999px;
-                    position: relative;
-                    &:hover,
-                    &:focus {
-                        &:before,
-                        &:after {
-                            border: 2px solid #fff;
-                            border-left: none;
-                            border-bottom: none;
-                        }
-                    }
-                }
-                @include screen('mobile') {
-                    display: none;
-                }
-            }
-            &.first {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -6px;
-                    transform: rotate(-135deg);
-                }
-                a:after {
-                    @extend %arrow;
-                    margin-left: 0px;
-                    transform: rotate(-135deg);
-                }
-            }
-            &.prev {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -2px;
-                    transform: rotate(-135deg);
-                }
-            }
-            &.next {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -6px;
-                    transform: rotate(45deg);
-                }
-            }
-            &.last {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -3px;
-                    transform: rotate(45deg);
-                }
-                a:after {
-                    @extend %arrow;
-                    margin-left: -9px;
-                    transform: rotate(45deg);
-                }
-            }
-            &.pagecontent {
-                width: auto;
-                min-width: initial;
-                flex: 0 0 auto;
-                @include screen('xs_mobile') {
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .total {
-        padding: 0em 0 0 0.5em;
-        vertical-align: middle;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        @include screen('xs_mobile') {
-            flex-wrap: wrap;
-            width: 100%;
-            padding: 0;
-            .btn-submit,
-            .jump_page,
-            .page_shows {
-                width: auto;
-                margin-bottom: 0.5em;
-            }
-        }
-        select {
-            margin: 0px 0.1em;
-            padding: 0.4em 2.5em 0.4em 1.2em;
-            position: relative;
-            background-image: url('../images/icon/icon_select_arrow2.png');
-            background-size: 26px 16px;
-            border-radius: 50px;
-            @media screen and (max-width: 400px) {
-                margin: 0px;
-            }
-        }
-        .btn {
-            min-width: auto;
-            padding: 0.4em 1em !important;
-        }
-        input {
-            margin: 0;
-        }
-        input[type='text'] {
-            border-radius: 50px;
-            width: 3.5em;
-            text-align: center;
-            margin: 0 0.3em;
-            padding: 0.4em;
-        }
-        .btn-submit {
-            background: rgb(234, 231, 231);
-            background: linear-gradient(0deg, rgba(234, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
-            border: rgb(234, 231, 231) solid 1px;
-            color: $btn-word;
-            &:hover {
-                background: #ccc;
-                border: 1px solid #ccc;
-            }
-        }
-    }
-    .items {
-        display: inline-block;
-        vertical-align: middle;
+      }
+      &.active {
         a {
-            padding: 0 5px;
-            color: $primaryColor;
-            text-decoration: none;
+          color: #fff !important;
+          background: $form-focus;
+          border: darken($form-focus, 5) solid 1px;
         }
+      }
+      %arrow {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        margin-top: -4px;
+        border: 2px solid $secondaryColor;
+        border-left: none;
+        border-bottom: none;
+      }
+      &.first,
+      &.prev,
+      &.next,
+      &.last {
+        a {
+          text-indent: -9999px;
+          position: relative;
+          &:hover,
+          &:focus {
+            &:before,
+            &:after {
+              border: 2px solid #fff;
+              border-left: none;
+              border-bottom: none;
+            }
+          }
+        }
+        @include screen('mobile') {
+          display: none;
+        }
+      }
+      &.first {
+        a:before {
+          @extend %arrow;
+          margin-left: -6px;
+          transform: rotate(-135deg);
+        }
+        a:after {
+          @extend %arrow;
+          margin-left: 0px;
+          transform: rotate(-135deg);
+        }
+      }
+      &.prev {
+        a:before {
+          @extend %arrow;
+          margin-left: -2px;
+          transform: rotate(-135deg);
+        }
+      }
+      &.next {
+        a:before {
+          @extend %arrow;
+          margin-left: -6px;
+          transform: rotate(45deg);
+        }
+      }
+      &.last {
+        a:before {
+          @extend %arrow;
+          margin-left: -3px;
+          transform: rotate(45deg);
+        }
+        a:after {
+          @extend %arrow;
+          margin-left: -9px;
+          transform: rotate(45deg);
+        }
+      }
+      &.pagecontent {
+        width: auto;
+        min-width: initial;
+        flex: 0 0 auto;
+        @include screen('xs_mobile') {
+          width: 100%;
+        }
+      }
     }
+  }
+  .total {
+    padding: 0em 0 0 0.5em;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include screen('xs_mobile') {
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0;
+      .btn-submit,
+      .jump_page,
+      .page_shows {
+        width: auto;
+        margin-bottom: 0.5em;
+      }
+    }
+    select {
+      margin: 0px 0.1em;
+      padding: 0.4em 2.5em 0.4em 1.2em;
+      position: relative;
+      background-image: url('../images/icon/icon_select_arrow2.png');
+      background-size: 26px 16px;
+      border-radius: 50px;
+      @media screen and (max-width: 400px) {
+        margin: 0px;
+      }
+    }
+    .btn {
+      min-width: auto;
+      padding: 0.4em 1em !important;
+    }
+    input {
+      margin: 0;
+    }
+    input[type='text'] {
+      border-radius: 50px;
+      width: 3.5em;
+      text-align: center;
+      margin: 0 0.3em;
+      padding: 0.4em;
+    }
+    .btn-submit {
+      background: rgb(234, 231, 231);
+      background: linear-gradient(0deg, rgba(234, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
+      border: rgb(234, 231, 231) solid 1px;
+      color: $btn-word;
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+      &:hover {
+        background: #ccc;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+  .items {
+    display: inline-block;
+    vertical-align: middle;
+    a {
+      padding: 0 5px;
+      color: $primaryColor;
+      text-decoration: none;
+    }
+  }
 }
 
 @include screen('mobile') {
-    .pagination .total select.form-control {
-        margin: 0px 0px;
-        text-align: center;
-    }
+  .pagination .total select.form-control {
+    margin: 0px 0px;
+    text-align: center;
+  }
 }

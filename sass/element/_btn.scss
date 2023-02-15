@@ -2,7 +2,7 @@
 $btn-font-color: $btn-word;
 $btn-border: darken($btn-font-color, 5);
 $btn-padding: 0.5em 1.25em;
-$btn-radius: 0.2em;
+$btn-radius: 50px;
 // 按鈕外框
 .btn_grp {
     text-align: center;
@@ -79,6 +79,11 @@ $btn-radius: 0.2em;
 .btn-green {
     // @extend %btn;
     @include btn_setting($color-green, #fff);
+}
+
+.btn-black {
+    // @extend %btn;
+    @include btn_setting(#545454, #fff);
 }
 
 .btn-blue {

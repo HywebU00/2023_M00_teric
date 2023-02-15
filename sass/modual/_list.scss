@@ -1,102 +1,102 @@
 .lp {
-    table {
-        td {
-            a {
-                @include aSetting_nocolor;
-            }
-            &.date {
-                text-align: center;
-                color: #666;
-                @include screen('mobile') {
-                    text-align: left;
-                }
-            }
-            &.num {
-                text-align: center;
-                color: #666;
-                @include screen('mobile') {
-                    text-align: left;
-                }
-            }
+  table {
+    td {
+      a {
+        @include aSetting_nocolor;
+      }
+      &.date {
+        text-align: center;
+        color: #666;
+        @include screen('mobile') {
+          text-align: left;
         }
+      }
+      &.num {
+        text-align: center;
+        color: #666;
+        @include screen('mobile') {
+          text-align: left;
+        }
+      }
     }
-    .list {
-        &>ul,
-        ol {
-            list-style-type: none;
+  }
+  .list {
+    & > ul,
+    ol {
+      list-style-type: none;
+      padding: 0;
+      border-top: 3px solid $color-dark;
+      border-bottom: 3px solid $color-dark;
+      & > li {
+        padding: 1em 0;
+        position: relative;
+        .tag {
+          margin-left: 2em;
+        }
+        & > a {
+          display: block;
+          padding-left: 2em;
+          position: relative;
+          line-height: 1.45em;
+          color: $color-word;
+          font-weight: bolder;
+          font-size: 1.125em;
+          &:hover {
+            color: $aHover;
+          }
+          .num {
+            width: 1.5em;
+            text-align: right;
+            position: absolute;
+            top: 0;
+            left: 0;
+            &:after {
+              content: '.';
+              display: inline-block;
+            }
+          }
+        }
+        span.dept {
+          display: inline-block;
+          font-size: 0.938em;
+          @include screen('mobile') {
+            display: block;
+          }
+        }
+        .data_content {
+          margin-top: 0.5em;
+          margin-left: 2.3em;
+          ul {
+            margin: 0;
             padding: 0;
-            border-top: 3px solid $color-dark;
-            border-bottom: 3px solid $color-dark;
-            &>li {
-                padding: 1em 0;
-                position: relative;
-                .tag {
-                    margin-left: 2em;
-                }
-                &>a {
-                    display: block;
-                    padding-left: 2em;
-                    position: relative;
-                    line-height: 1.45em;
-                    color: $color-word;
-                    font-weight: bolder;
-                    font-size: 1.125em;
-                    &:hover {
-                        color: $aHover;
-                    }
-                    .num {
-                        width: 1.5em;
-                        text-align: right;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        &:after {
-                            content: '.';
-                            display: inline-block;
-                        }
-                    }
-                }
-                span.dept {
-                    display: inline-block;
-                    font-size: 0.938em;
-                    @include screen('mobile') {
-                        display: block;
-                    }
-                }
-                .data_content {
-                    margin-top: 0.5em;
-                    margin-left: 2.3em;
-                    ul {
-                        margin: 0;
-                        padding: 0;
-                        li {
-                            margin: 0 0 0.4em;
-                            display: block;
-                            color: $color-hr;
-                        }
-                    }
-                }
-                ul {
-                    margin: 1em 0 0 2.3em;
-                    padding: 0;
-                    list-style-type: none;
-                    li {
-                        display: inline-block;
-                        font-weight: bold;
-                        font-size: 1em;
-                        margin-right: 3em;
-                        span {
-                            color: $color-hr;
-                            img {
-                                width: 30px;
-                                vertical-align: middle;
-                            }
-                        }
-                    }
-                }
+            li {
+              margin: 0 0 0.4em;
+              display: block;
+              color: $color-hr;
             }
+          }
         }
+        ul {
+          margin: 1em 0 0 2.3em;
+          padding: 0;
+          list-style-type: none;
+          li {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1em;
+            margin-right: 3em;
+            span {
+              color: $color-hr;
+              img {
+                width: 30px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 // .album {

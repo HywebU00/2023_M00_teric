@@ -1,167 +1,168 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    color: $color-dark;
-    &.noscroll {
-        position: static !important;
-        width: 100%;
-        height: 100%;
-        overflow: hidden !important;
-        overflow-y: hidden !important;
-        margin: 0;
-        padding: 0;
-    }
+  color: $color-dark;
+  &.noscroll {
+    position: static !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // 最外圍預設為100%
 .wrapper {
-    width: 100%;
-    margin: 0px auto;
-    background-image: url('../images/wrapper_bg.jpg');
+  width: 100%;
+  margin: 0px auto;
+  background-image: url('../images/wrapper_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #dedede;
+  @include screen('mobile') {
+    background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .header {
+    min-height: 147px;
+    padding-bottom: 0.5em;
+    @include screen('mobile') {
+      height: auto;
+      min-height: initial;
+      padding-bottom: 0em;
+    }
+  }
+  &.wrapper_mp {
+    background-image: url('../images/wrapper_mpbg.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-color: #dedede;
-    @include screen('mobile') {
-        background: #fff;
-        overflow: hidden;
-        overflow-y: auto;
+    @include screen('tablet') {
+      background-color: #18566d;
     }
-    .header {
-        min-height: 147px;
-        padding-bottom: 0.5em;
-        @include screen('mobile') {
-            height: auto;
-            min-height: initial;
-            padding-bottom: 0em;
-        }
-    }
-    &.wrapper_mp {
-        background-image: url('../images/wrapper_mpbg.jpg');
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-color: #dedede;
-        @include screen('tablet') {
-            background-color: #18566d;
-        }
-    }
+  }
 }
 
 // 整體共用container樣式，請注意首頁切版頁面的整齊
 .container {
-    padding: 0;
-    margin: 0 auto;
-    max-width: $container-max; //請看_variable.scss
+  padding: 0;
+  margin: 0 auto;
+  max-width: $container-max; //請看_variable.scss
 }
 
 .main {
-    position: relative;
-    margin: 0 auto;
-    // 可先設定一個中央區塊最大寬，限制accesskey對齊
-    h2 {
-        line-height: 1.25em;
+  position: relative;
+  margin: 0 auto;
+  // 可先設定一個中央區塊最大寬，限制accesskey對齊
+  h2 {
+    line-height: 1.25em;
+  }
+  .accesskey {
+    color: #dedede;
+    &:focus {
+      color: #222;
     }
-    .accesskey {
-        color: #dedede;
-        &:focus {
-            color: #222;
-        }
-        @media screen and (max-width: 1230px) {
-            color: #215f8f;
-            &:focus {
-                color: #fff;
-            }
-        }
+    @media screen and (max-width: 1230px) {
+      color: #215f8f;
+      &:focus {
+        color: #fff;
+      }
     }
+  }
 }
 
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-    >.container {
-        @include gutter(); //gutter 代表左右要留白
-        display: flex;
-        background-image: url('../images/content_bg01.gif');
-        background-repeat: repeat;
-        background-position: 0 0;
-        padding: 2em 4em;
-        @include screen('mobile') {
-            padding: 5em 2em 0em;
-        }
-        h2 {
-            position: relative;
-            margin-bottom: 0.4em;
-            &.title {
-                line-height: 1.25em;
-                font-size: 1.625em;
-                padding-left: 1em;
-            }
-            &:before {
-                content: '';
-                width: 5px;
-                height: 26px;
-                background-color: #333;
-                position: absolute;
-                left: 0;
-                top: 3px;
-            }
-            @media screen and (max-width: 400px) {
-                margin-bottom: 0.5em;
-            }
-        }
+  > .container {
+    @include gutter(); //gutter 代表左右要留白
+    display: flex;
+    background-image: url('../images/content_bg01.gif');
+    background-repeat: repeat;
+    background-position: 0 0;
+    padding: 2em 4em;
+    @include screen('mobile') {
+      padding: 5em 2em 2em;
     }
-    .center_block {
+    h2 {
+      position: relative;
+      margin-bottom: 0.4em;
+      &.title {
+        line-height: 1.25em;
+        font-size: 1.625em;
+        padding-left: 1em;
+      }
+      &:before {
+        content: '';
+        width: 5px;
+        height: 26px;
+        background-color: #333;
+        position: absolute;
+        left: 0;
+        top: 3px;
+      }
+      @media screen and (max-width: 400px) {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+  .center_block {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .left_block {
+    flex: none;
+    flex-basis: 260px;
+    max-width: 260px;
+    margin-right: 40px;
+    &.hidden {
+      + .center_block {
         flex: none;
         flex-basis: 100%;
         max-width: 100%;
+      }
     }
-    .left_block {
+    + .center_block {
+      flex: auto;
+      flex-basis: calc(100% - 300px);
+      max-width: calc(100% - 300px);
+    }
+    @include screen('tablet') {
+      display: none;
+      + .center_block {
         flex: none;
-        flex-basis: 260px;
-        max-width: 260px;
-        margin-right: 40px;
-        &.hidden {
-            +.center_block {
-                flex: none;
-                flex-basis: 100%;
-                max-width: 100%;
-            }
-        }
-        +.center_block {
-            flex: auto;
-            flex-basis: calc(100% - 300px);
-            max-width: calc(100% - 300px);
-        }
-        @include screen('tablet') {
-            display: none;
-            +.center_block {
-                flex: none;
-                flex-basis: 100%;
-                max-width: 100%;
-            }
-        }
+        flex-basis: 100%;
+        max-width: 100%;
+      }
     }
-    &.small_size {
-        font-size: 0.938em;
-    }
-    &.large_size {
-        font-size: 1.125em;
-    }
+  }
+  &.small_size {
+    font-size: 0.938em;
+  }
+  &.large_size {
+    font-size: 1.125em;
+  }
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .word_red {
-    color: $color-red;
+  color: $color-red;
+  padding: 0 0.1em;
 }
 
 .lp {
-    position: relative;
+  position: relative;
 }

@@ -9,7 +9,7 @@ $linkColor: #21eaf4; //連結
 $importantColor: #eb0202; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
 $color-blue: #2f72ab;
-$color-green: #298729;
+$color-green: #067776;
 $color-orange: #d04500;
 $color-red: #eb0202;
 $color-yellow: #fec003;
@@ -28,13 +28,7 @@ $form-focus: $color-blue; //表單
 $form-btn: #0e172e; //表單
 //------------------------------------------------------字型--------//
 // 字型設定
-$font-family: Lato,
-'PingFang TC',
-'Helvetica Neue',
-Helvetica,
-微軟正黑體,
-Arial,
-sans-serif;
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
 $font-size: 1em;
 //------------------------------------------------------格線系統-----//
 // 格線系統

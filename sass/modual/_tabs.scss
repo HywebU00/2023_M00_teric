@@ -1,170 +1,219 @@
 .tabSet {
-    max-width: 100%;
-    margin: 1em auto;
-    overflow: hidden;
-    @extend %clearfix;
-    @include screen('mobile') {
-        width: auto;
-        height: auto !important;
-    }
+  max-width: 100%;
+  margin: 1em auto;
+  overflow: hidden;
+  @extend %clearfix;
+  @include screen('mobile') {
+    width: auto;
+    height: auto !important;
+  }
 }
 
 .member_tabs_block {
-    margin-top: 2em;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px;
-    border-radius: 10px;
+  margin-top: 2em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px;
+  border-radius: 10px;
 }
 
 .tabs {
-    position: relative;
-    // 原來h3
-    &>.tabItem {
-        &.active>a {
-            background-color: $primaryColor;
-            color: #fff;
-        }
-        float: left;
-        margin: 0;
-        padding: 0;
-        font-size: 1em;
-        line-height: 1;
-        @include screen('mobile') {
-            float: none;
-            &>a {
-                width: 100% !important;
-                border-bottom: 1px solid #888;
-            }
-            &.active>a {
-                border-color: #bbb;
-            }
-        }
-        &>a {
-            display: block;
-            padding: 16px 0 14px;
-            text-align: center;
-            background-color: #aaa;
-            color: #fff;
-            font-weight: bold;
-            text-decoration: none;
-            @include text-overflow;
-            box-sizing: border-box;
-            &:hover {
-                background: $primaryColor;
-            }
-        }
-    }
-    // 改button
-    // &>.tabItem {
-    //     &.active {
-    //         background-color: $primaryColor;
-    //         color: #fff;
-    //     }
-    //     float: left;
-    //     margin: 0;
-    //     padding: 0;
-    //     font-size: 1em;
-    //     line-height: 1;
-    //     display: block;
-    //     padding: 16px 0 14px;
-    //     text-align: center;
-    //     background-color: #aaa;
-    //     color: #fff;
-    //     font-weight: bold;
-    //     text-decoration: none;
-    //     @include text-overflow;
-    //     box-sizing: border-box;
-    //     &:hover,
-    //     &:focus {
-    //         background: $primaryColor;
-    //     }
-    //     @include screen('mobile') {
-    //         float: none;
-    //         width: 100% !important;
-    //         border-bottom: 1px solid #888;
-    //         &.active {
-    //             border-color: #bbb;
-    //         }
-    //     }
-    // }
+  position: relative;
+  // 原來h3
+  //   & > .tabItem {
+  //     &.active > a {
+  //       background-color: $primaryColor;
+  //       color: #fff;
+  //     }
+  //     float: left;
+  //     margin: 0;
+  //     padding: 0;
+  //     font-size: 1em;
+  //     line-height: 1;
+  //     @include screen('mobile') {
+  //       float: none;
+  //       & > a {
+  //         width: 100% !important;
+  //         border-bottom: 1px solid #888;
+  //       }
+  //       &.active > a {
+  //         border-color: #bbb;
+  //       }
+  //     }
+  //     & > a {
+  //       display: block;
+  //       padding: 16px 0 14px;
+  //       text-align: center;
+  //       background-color: #aaa;
+  //       color: #fff;
+  //       font-weight: bold;
+  //       text-decoration: none;
+  //       @include text-overflow;
+  //       box-sizing: border-box;
+  //       &:hover {
+  //         background: $primaryColor;
+  //       }
+  //     }
+  //   }
+  // 改button
+  //   & > .tabItem {
+  //     &.active {
+  //       background-color: $primaryColor;
+  //       color: #fff;
+  //     }
+  //     float: left;
+  //     margin: 0;
+  //     padding: 0;
+  //     font-size: 1em;
+  //     line-height: 1;
+  //     display: block;
+  //     padding: 16px 0 14px;
+  //     text-align: center;
+  //     background-color: #aaa;
+  //     color: #fff;
+  //     font-weight: bold;
+  //     text-decoration: none;
+  //     @include text-overflow;
+  //     box-sizing: border-box;
+  //     &:hover,
+  //     &:focus {
+  //       background: $primaryColor;
+  //     }
+  //     @include screen('mobile') {
+  //       float: none;
+  //       width: 100% !important;
+  //       border-bottom: 1px solid #888;
+  //       &.active {
+  //         border-color: #bbb;
+  //       }
+  //     }
+  //   }
 }
 
 //多組 可設定差異
 .member_tabs {
-    &>.tabItem {
-        &.active>a {
-            background-color: #ffffff;
-            border-radius: 10px 10px 0 0 !important;
-            border-top: 12px solid $primaryColor;
-            margin-top: 0;
-            color: $color-dark;
-        }
-        float: left;
-        margin: 0;
-        padding: 0;
-        font-size: 1em;
-        line-height: 1;
-        @include screen('mobile') {
-            float: none;
-            &>a {
-                width: 100% !important;
-                border-bottom: 1px solid #888;
-            }
-            &.active>a {
-                border-color: #bbb;
-            }
-        }
-        &>a {
-            display: block;
-            padding: 2.5em 0;
-            text-align: center;
-            background-color: #ececec;
-            color: $color-dark;
-            font-weight: bold;
-            text-decoration: none;
-            @include text-overflow;
-            box-sizing: border-box;
-            font-size: 1.25em;
-            margin-top: 12px;
-            // outline: 1px solid red;
-            height: 210px;
-            span {
-                font-size: 3.5em;
-                font-family: 'Amiko', sans-serif;
-                text-align: right;
-                display: block;
-                text-align: center;
-                margin: 0.3em 0 0;
-                color: $primaryColor;
-            }
-            &:hover {
-                background-color: #ccc;
-            }
-            &:focus {
-                background-color: #ffffff;
-                border-radius: 10px 10px 0 0 !important;
-                border-top: 12px solid $primaryColor;
-                margin-top: 0;
-            }
-        }
-        &:first-of-type {
-            &>a {
-                border-radius: 10px 0 0 0;
-            }
-        }
-        &:last-of-type {
-            &>a {
-                border-radius: 0 10px 0 0;
-            }
-        }
+  & > .tabItem {
+    &.active > a {
+      background-color: #ffffff;
+      border-radius: 10px 10px 0 0 !important;
+      border-top: 12px solid $primaryColor;
+      margin-top: 0;
+      color: $color-dark;
     }
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1;
+    @include screen('mobile') {
+      float: none;
+      & > a {
+        width: 100% !important;
+        border-bottom: 1px solid #888;
+      }
+      &.active > a {
+        border-color: #bbb;
+      }
+    }
+    & > a {
+      display: block;
+      padding: 2.5em 0;
+      text-align: center;
+      background-color: #ececec;
+      color: $color-dark;
+      font-weight: bold;
+      text-decoration: none;
+      @include text-overflow;
+      box-sizing: border-box;
+      font-size: 1.25em;
+      margin-top: 12px;
+      // outline: 1px solid red;
+      height: 210px;
+      span {
+        font-size: 3.5em;
+        font-family: 'Amiko', sans-serif;
+        text-align: right;
+        display: block;
+        text-align: center;
+        margin: 0.3em 0 0;
+        color: $primaryColor;
+      }
+      &:hover {
+        background-color: #ccc;
+      }
+      &:focus {
+        background-color: #ffffff;
+        border-radius: 10px 10px 0 0 !important;
+        border-top: 12px solid $primaryColor;
+        margin-top: 0;
+      }
+    }
+    &:first-of-type {
+      & > a {
+        border-radius: 10px 0 0 0;
+      }
+    }
+    &:last-of-type {
+      & > a {
+        border-radius: 0 10px 0 0;
+      }
+    }
+  }
+}
+
+// 後分類
+.classification_tabs {
+  & > .tabItem {
+    &.active {
+      color: $secondaryColor;
+      border-top: 3px solid $secondaryColor;
+      border-bottom: 3px solid $secondaryColor;
+      &:before {
+        content: '';
+        border: 8px solid $secondaryColor;
+        border-color: $secondaryColor transparent transparent transparent;
+        position: absolute;
+        bottom: -1.1em;
+        left: 45%;
+      }
+    }
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.2em;
+    display: block;
+    padding: 0.7em 0;
+    text-align: center;
+    background-color: transparent;
+    color: $color-word;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    &:hover,
+    &:focus {
+      color: $secondaryColor;
+      box-shadow: none;
+    }
+    // @include screen('mobile') {
+    //   float: none;
+    //   width: 100% !important;
+    //   border-bottom: 1px solid #888;
+    //   &.active {
+    //     border-color: #bbb;
+    //   }
+    // }
+  }
 }
 
 // 顯示content
-.active+.tabContent {
-    display: block;
+.active + .tabContent {
+  display: block;
 }
 
-.tabContent {
+.member_tabs {
+  .tabContent {
     background-color: #fff;
     position: absolute;
     top: auto;
@@ -176,41 +225,115 @@
     display: none;
     border-radius: 0 0 10px 10px;
     @include screen('mobile') {
-        position: static;
+      position: static;
     }
     ul {
-        @include li-reset;
+      @include li-reset;
     }
     li {
-        margin: 0 0 1.3em 0;
-        padding: 0;
-        line-height: 1.6;
-        border-bottom: 1px #ccc dashed;
-        @include screen('mobile') {
-            @include text-overflow();
-        }
-        a {
-            @include aSetting_nocolor;
-        }
-        time {
-            display: inline-block;
-            margin: 0 0 0 1em;
-            font-size: 0.813em;
-            color: #666;
-        }
+      margin: 0 0 1.3em 0;
+      padding: 0;
+      line-height: 1.6;
+      border-bottom: 1px #ccc dashed;
+      @include screen('mobile') {
+        @include text-overflow();
+      }
+      a {
+        @include aSetting_nocolor;
+      }
+      time {
+        display: inline-block;
+        margin: 0 0 0 1em;
+        font-size: 0.813em;
+        color: #666;
+      }
     }
     .list_page {
-        margin-bottom: 1em;
-        color: $color-dark;
-        font-weight: bolder;
-        em {
-            font-style: normal;
-            color: $color-blue;
-            padding: 0 0.3em;
-            font-family: 'Amiko', sans-serif;
-        }
+      margin-bottom: 1em;
+      color: $color-dark;
+      font-weight: bolder;
+      em {
+        font-style: normal;
+        color: $color-blue;
+        padding: 0 0.3em;
+        font-family: 'Amiko', sans-serif;
+      }
     }
     .table_list {
-        margin-bottom: 2em;
+      margin-bottom: 2em;
     }
+  }
+}
+
+.classification_tabs {
+  .tabContent {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 30px 0px;
+    display: none;
+    @include screen('mobile') {
+      position: static;
+    }
+    .classification_list {
+      border-bottom: 1px solid #999;
+      margin-bottom: 0.8em;
+      background-color: #eeeeee;
+      h3 {
+        margin: 0 0 0.5em;
+        padding: 0;
+        color: $secondaryColor;
+        position: relative;
+        &:after {
+          content: '';
+          border: 2px solid #bbb;
+          width: 12px;
+          height: 12px;
+          border-bottom: none;
+          border-left: none;
+          position: absolute;
+          right: 10px;
+          top: 8px;
+          transform: rotate(-45deg);
+          transition: 0.5s;
+        }
+        &.close {
+          &:after {
+            content: '';
+            transform: rotate(135deg);
+            top: 1px;
+          }
+        }
+        a {
+          display: block;
+          position: relative;
+          color: $secondaryColor;
+        }
+      }
+      ul {
+        @include li-reset;
+        margin-bottom: 0.8em;
+      }
+      li {
+        margin: 0 0 0 0;
+        padding: 0;
+        a {
+          display: flex;
+          padding: 0.3em 0;
+          color: $color-dark;
+          justify-content: space-between;
+          span {
+            color: $color-hr;
+            padding: 0 5px;
+            text-align: center;
+          }
+          &:hover {
+            color: $aHover;
+          }
+        }
+      }
+    }
+  }
 }

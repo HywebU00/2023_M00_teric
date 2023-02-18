@@ -88,46 +88,39 @@
   //   }
 }
 
-//多組 可設定差異
+// 會員
 .member_tabs {
   & > .tabItem {
-    &.active > a {
-      background-color: #ffffff;
+    &.active {
+      background-color: #fff;
       border-radius: 10px 10px 0 0 !important;
       border-top: 12px solid $primaryColor;
       margin-top: 0;
       color: $color-dark;
+      &:hover,
+      &:focus {
+        background-color: #fff;
+      }
     }
     float: left;
     margin: 0;
-    padding: 0;
-    font-size: 1em;
     line-height: 1;
-    @include screen('mobile') {
-      float: none;
-      & > a {
-        width: 100% !important;
-        border-bottom: 1px solid #888;
-      }
-      &.active > a {
-        border-color: #bbb;
-      }
-    }
-    & > a {
-      display: block;
-      padding: 2.5em 0;
-      text-align: center;
-      background-color: #ececec;
-      color: $color-dark;
-      font-weight: bold;
-      text-decoration: none;
-      @include text-overflow;
-      box-sizing: border-box;
-      font-size: 1.25em;
-      margin-top: 12px;
-      // outline: 1px solid red;
-      height: 210px;
-      span {
+    display: block;
+    padding: 2.5em 0;
+    text-align: center;
+    background-color: #ececec;
+    font-weight: bold;
+    text-decoration: none;
+    @include text-overflow;
+    box-sizing: border-box;
+    color: $color-dark;
+    font-size: 1.25em;
+    margin-top: 12px;
+    height: 210px;
+    border: none;
+    border-radius: 0;
+    span {
+      &.number {
         font-size: 3.5em;
         font-family: 'Amiko', sans-serif;
         text-align: right;
@@ -136,25 +129,25 @@
         margin: 0.3em 0 0;
         color: $primaryColor;
       }
-      &:hover {
-        background-color: #ccc;
-      }
-      &:focus {
-        background-color: #ffffff;
-        border-radius: 10px 10px 0 0 !important;
-        border-top: 12px solid $primaryColor;
-        margin-top: 0;
+    }
+    &:hover,
+    &:focus {
+      background-color: #ccc;
+    }
+    @include screen('mobile') {
+      float: none;
+      width: 100% !important;
+      border-bottom: 1px solid #888;
+      margin-top: 0;
+      &.active {
+        border-color: #bbb;
       }
     }
     &:first-of-type {
-      & > a {
-        border-radius: 10px 0 0 0;
-      }
+      border-radius: 10px 0 0 0;
     }
     &:last-of-type {
-      & > a {
-        border-radius: 0 10px 0 0;
-      }
+      border-radius: 0 10px 0 0;
     }
   }
 }

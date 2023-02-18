@@ -7316,46 +7316,35 @@ table.table_sprite tr:nth-child(even) {
 .member_tabs > .tabItem {
   float: left;
   margin: 0;
-  padding: 0;
-  font-size: 1em;
   line-height: 1;
-}
-.member_tabs > .tabItem.active > a {
-  background-color: #ffffff;
-  border-radius: 10px 10px 0 0 !important;
-  border-top: 12px solid #00468d;
-  margin-top: 0;
-  color: #262626;
-}
-@media screen and (max-width: 767px) {
-  .member_tabs > .tabItem {
-    float: none;
-  }
-  .member_tabs > .tabItem > a {
-    width: 100% !important;
-    border-bottom: 1px solid #888;
-  }
-  .member_tabs > .tabItem.active > a {
-    border-color: #bbb;
-  }
-}
-.member_tabs > .tabItem > a {
   display: block;
   padding: 2.5em 0;
   text-align: center;
   background-color: #ececec;
-  color: #262626;
   font-weight: bold;
   text-decoration: none;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   box-sizing: border-box;
+  color: #262626;
   font-size: 1.25em;
   margin-top: 12px;
   height: 210px;
+  border: none;
+  border-radius: 0;
 }
-.member_tabs > .tabItem > a span {
+.member_tabs > .tabItem.active {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0 !important;
+  border-top: 12px solid #00468d;
+  margin-top: 0;
+  color: #262626;
+}
+.member_tabs > .tabItem.active:hover, .member_tabs > .tabItem.active:focus {
+  background-color: #fff;
+}
+.member_tabs > .tabItem span.number {
   font-size: 3.5em;
   font-family: "Amiko", sans-serif;
   text-align: right;
@@ -7364,19 +7353,24 @@ table.table_sprite tr:nth-child(even) {
   margin: 0.3em 0 0;
   color: #00468d;
 }
-.member_tabs > .tabItem > a:hover {
+.member_tabs > .tabItem:hover, .member_tabs > .tabItem:focus {
   background-color: #ccc;
 }
-.member_tabs > .tabItem > a:focus {
-  background-color: #ffffff;
-  border-radius: 10px 10px 0 0 !important;
-  border-top: 12px solid #00468d;
-  margin-top: 0;
+@media screen and (max-width: 767px) {
+  .member_tabs > .tabItem {
+    float: none;
+    width: 100% !important;
+    border-bottom: 1px solid #888;
+    margin-top: 0;
+  }
+  .member_tabs > .tabItem.active {
+    border-color: #bbb;
+  }
 }
-.member_tabs > .tabItem:first-of-type > a {
+.member_tabs > .tabItem:first-of-type {
   border-radius: 10px 0 0 0;
 }
-.member_tabs > .tabItem:last-of-type > a {
+.member_tabs > .tabItem:last-of-type {
   border-radius: 0 10px 0 0;
 }
 

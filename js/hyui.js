@@ -434,6 +434,7 @@ $(function () {
       ww = _window.outerWidth();
       tabSet();
       tabSet2();
+      tabSet3();
     }, 50);
   });
 
@@ -532,10 +533,55 @@ $(function () {
       }
     });
   }
+
+  function tabSet3() {
+    $('.cp_data_tabs').each(function () {
+      var _tab = $(this),
+        _tabItem = _tab.find('.tabItem'),
+        _tabContent = _tab.find('.tabContent'),
+        tabwidth = _tab.width(),
+        tabItemHeight = _tabItem.outerHeight(),
+        tabContentHeight = _tab.find('.active').next().innerHeight(),
+        tabGutter = parseInt('3px'), // 可設定 Gutter 寬度
+        tabItemLength = _tabItem.length,
+        tabItemWidth,
+        marginLeft;
+      _tab.find('.active').next('.tabContent').show();
+
+      _tabContent.css('top', tabItemHeight);
+      _tab.height(tabContentHeight + tabItemHeight);
+
+      tabItemWidth = tabwidth / tabItemLength - tabGutter;
+      marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
+
+      _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
+      _tabItem.first().css('margin-left', 0);
+      _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+
+      _tabItem.focus(tabs); //改button後，前面改_tabItem
+      _tabItem.click(tabs); //改button後，前面改_tabItem
+      function tabs(e) {
+        var _tabItemNow = $(this), //改button後，原來$(this).parent(),改$(this)
+          tvp = _tab.offset().top,
+          tabIndex = _tabItemNow.index() / 2,
+          scollDistance = tvp + tabItemHeight * tabIndex - tab_headerHeight;
+        _tabItem.removeClass('active');
+        _tabItemNow.addClass('active');
+
+        _tabItem.not('.active').next().slideUp();
+        _tabItemNow.next().slideDown();
+        $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
+
+        e.preventDefault();
+      }
+    });
+  }
   $('.tabs>.tabItem:first-child>a').trigger('click');
   tabSet();
   $('.classification_tabs>.tabItem:first-child>a').trigger('click');
   tabSet2();
+  $('.cp_data_tabs>.tabItem:first-child>a').trigger('click');
+  tabSet3();
   /*-----------------------------------*/
   ///////////////置頂go to top////////////
   /*-----------------------------------*/
@@ -616,28 +662,28 @@ $(function () {
   /*------------------------------------*/
   //////////分享按鈕 share dropdwon////////
   /*------------------------------------*/
-  $('.function_panel .share').children('ul').hide();
-  $('.function_panel .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
-  var _shareButton = $('.shareButton');
-  _shareButton.off().click(function (e) {
-    $(this).siblings('ul').stop(true, true).slideToggle();
-    e.preventDefault();
-  });
-  _shareButton.keyup(function (event) {
-    $(this).siblings('ul').stop(true, true).slideDown();
-  });
-  $('.function_panel .share')
-    .find('li:last>a')
-    .focusout(function (event) {
-      $(this).parent().parent('ul').hide();
-    });
-  // 點外面關閉share
-  $(document).on('touchend click', function (e) {
-    var container = $('.function_panel .share');
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      $('.function_panel .share ul').hide();
-    }
-  });
+  //   $('.function_panel .share').children('ul').hide();
+  //   $('.function_panel .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
+  //   var _shareButton = $('.shareButton');
+  //   _shareButton.off().click(function (e) {
+  //     $(this).siblings('ul').stop(true, true).slideToggle();
+  //     e.preventDefault();
+  //   });
+  //   _shareButton.keyup(function (event) {
+  //     $(this).siblings('ul').stop(true, true).slideDown();
+  //   });
+  //   $('.function_panel .share')
+  //     .find('li:last>a')
+  //     .focusout(function (event) {
+  //       $(this).parent().parent('ul').hide();
+  //     });
+  //   // 點外面關閉share
+  //   $(document).on('touchend click', function (e) {
+  //     var container = $('.function_panel .share');
+  //     if (!container.is(e.target) && container.has(e.target).length === 0) {
+  //       $('.function_panel .share ul').hide();
+  //     }
+  //   });
   /*------------------------------------*/
   /////////////字型大小 font-size//////////
   /*------------------------------------*/
@@ -645,7 +691,7 @@ $(function () {
     .find('.small')
     .click(function (e) {
       $(this).parent('li').siblings('li').find('a').removeClass('active');
-      $('.innerpage').removeClass('large_size').addClass('small_size');
+      $('.main').removeClass('large_size').addClass('small_size');
       $(this).blur().addClass('active');
       e.preventDefault();
       createCookie('FontSize', 'small', 356);
@@ -654,7 +700,7 @@ $(function () {
     .find('.medium')
     .click(function (e) {
       $(this).parent('li').siblings('li').find('a').removeClass('active');
-      $('.innerpage').removeClass('large_size small_size');
+      $('.main').removeClass('large_size small_size');
       $(this).blur().addClass('active');
       e.preventDefault();
       createCookie('FontSize', 'medium', 356);
@@ -663,7 +709,7 @@ $(function () {
     .find('.large')
     .click(function (e) {
       $(this).parent('li').siblings('li').find('a').removeClass('active');
-      $('.innerpage').removeClass('small_size').addClass('large_size');
+      $('.main').removeClass('small_size').addClass('large_size');
       $(this).blur().addClass('active');
       e.preventDefault();
       createCookie('FontSize', 'large', 356);
@@ -694,21 +740,21 @@ $(function () {
     if (cookie == 'small') {
       //$('.font_size').find('.small').click();
       $('.font_size').find('.small').parent('li').siblings('li').find('a').removeClass('active');
-      $('.innerpage').removeClass('large_size medium_size').addClass('small_size');
+      $('.main').removeClass('large_size medium_size').addClass('small_size');
       $('.font_size').find('.small').addClass('active');
       e.preventDefault();
     } else {
       if (cookie == 'large') {
         //$('.font_size').find('.large').click();
         $('.font_size').find('.large').parent('li').siblings('li').find('a').removeClass('active');
-        $('.innerpage').removeClass('small_size medium_size').addClass('large_size');
+        $('.main').removeClass('small_size medium_size').addClass('large_size');
         $('.font_size').find('.large').addClass('active');
         e.preventDefault();
       } else {
         //這裡是預設宣告
         //$('.font_size').find('.medium').click();
         $('.font_size').find('.medium').parent('li').siblings('li').find('a').removeClass('active');
-        $('.innerpage').removeClass('large_size small_size');
+        $('.main').removeClass('large_size small_size');
         $('.font_size').find('.medium').addClass('active');
         e.preventDefault();
       }
@@ -816,7 +862,7 @@ $(function () {
   // /*------------------------------------*/
   $('table').each(function (index, el) {
     //判斷沒有table_list
-    if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0) {
+    if ($(this).parents('.table_list').length == 0 && $(this).parents('.fix_th_table').length == 0 && $(this).parent('form').length == 0 && $(this).parents('.table_list_cp').length == 0) {
       $(this).scroltable();
     }
   });

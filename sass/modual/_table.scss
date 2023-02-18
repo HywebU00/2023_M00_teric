@@ -122,6 +122,17 @@ table {
   }
 }
 
+.table_list_cp {
+  @include screen('xs_mobile') {
+    th,
+    td,
+    tr {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
 // fix_th_table
 .fix_th_table {
   margin: 1em 0;

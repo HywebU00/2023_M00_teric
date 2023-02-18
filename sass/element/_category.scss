@@ -1,50 +1,50 @@
 .category {
-    @extend %clearfix;
-    text-align: left;
-    margin: 1em auto;
-    ul {
-        @include li-reset;
-        display: flex;
-        flex-wrap: wrap;
-        li {
-            margin: 0 0.5em 0.5em 0;
-            flex: 0 0 auto;
-            font-size: 1.125em;
-            font-weight: bolder;
-        }
+  @extend %clearfix;
+  text-align: left;
+  margin: 1em auto;
+  ul {
+    @include li-reset;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin: 0 0.5em 0.5em 0;
+      flex: 0 0 auto;
+      font-size: 1.125em;
+      font-weight: bolder;
     }
-    a {
-        padding: 0.3em 2em;
-        display: block;
-        color: #333;
-        box-sizing: border-box;
-        border-radius: 50px;
-        // background-color: #ddd;
-        // border: 1px solid #ddd;
-        text-align: center;
-        &:hover,
-        &:focus {
-            color: #fff;
-            background-color: $secondaryColor;
-            border: $secondaryColor;
-            // border: 1px solid $secondaryColor;
-            box-shadow: none;
-        }
-        &.active {
-            color: #fff;
-            background-color: $secondaryColor;
-            // border: 1px solid $secondaryColor;
-        }
-        span {
-            font-size: 0.813em;
-            &:before {
-                content: '(';
-                display: inline-block;
-            }
-            &:after {
-                content: ')';
-                display: inline-block;
-            }
-        }
+  }
+  a {
+    padding: 0.3em 2em;
+    display: block;
+    color: #333;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    text-align: center;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $secondaryColor;
+      border: $secondaryColor;
+      border: 1px solid $secondaryColor;
+      box-shadow: none;
     }
+    &.active {
+      color: #fff;
+      background-color: $secondaryColor;
+      border: 1px solid $secondaryColor;
+    }
+    span {
+      font-size: 0.813em;
+      &:before {
+        content: '(';
+        display: inline-block;
+      }
+      &:after {
+        content: ')';
+        display: inline-block;
+      }
+    }
+  }
 }

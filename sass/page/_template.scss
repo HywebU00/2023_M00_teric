@@ -50,6 +50,15 @@ body {
       background-color: #18566d;
     }
   }
+  &.wrapper_Advanced {
+    background-image: url('../images/wrapper_mpbg2.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #dedede;
+    @include screen('tablet') {
+      background-color: #174d65;
+    }
+  }
 }
 
 // 整體共用container樣式，請注意首頁切版頁面的整齊
@@ -77,6 +86,12 @@ body {
         color: #fff;
       }
     }
+  }
+  &.small_size {
+    font-size: 0.938em;
+  }
+  &.large_size {
+    font-size: 1.125em;
   }
 }
 
@@ -110,9 +125,6 @@ body {
         left: 0;
         top: 3px;
       }
-      @media screen and (max-width: 400px) {
-        margin-bottom: 0.5em;
-      }
     }
   }
   .center_block {
@@ -145,12 +157,6 @@ body {
         max-width: 100%;
       }
     }
-  }
-  &.small_size {
-    font-size: 0.938em;
-  }
-  &.large_size {
-    font-size: 1.125em;
   }
 }
 

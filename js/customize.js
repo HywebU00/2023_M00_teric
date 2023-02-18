@@ -6,7 +6,7 @@ $(function () {
     .click(function () {
       $(this).toggleClass('active');
     });
-  // 後分類
+  // 後分類 h3收合
   var _classificationlist = $('.classification_tabs .tabContent .classification_list h3');
   _classificationlist.click(function () {
     $(this).next('ul').slideToggle();
@@ -14,9 +14,24 @@ $(function () {
     // $(this).parent().siblings().children('ul').stop().slideDown();
     // $(this).parent().siblings().children('h3').removeClass('close');
   });
+  //  後分類整個 左右收合
   $('.classification_menu_btn>a').click(function () {
     $('.classification_groupleft').stop().toggleClass('open');
     $(this).stop().toggleClass('open');
+  });
+  //  詳目資訊整個 左右收合
+  $('.cp_data_btn>a').click(function () {
+    $('.cp_data_left').stop().toggleClass('open');
+    $(this).stop().toggleClass('open');
+  });
+  //   cp頁左欄
+  $('.pic_block').slick({
+    dots: true,
+    infinite: false,
+    autoplay: false,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
   });
   //sticky sidebar
   if ($('.stickySidebar').length > 0) {
@@ -28,6 +43,21 @@ $(function () {
       resizeSensor: true,
     });
   }
+
+  // 會員登入
+  $('.login_lightbox').hide();
+  $('.member_login_btn button').click(function () {
+    $('.login_lightbox').fadeIn();
+    $('body').addClass('fixed');
+  });
+  $('.login_lightbox .close a').click(function () {
+    $('.login_lightbox').fadeOut();
+    $('body').removeClass('fixed');
+  });
+  $('.login_lightbox .overlay').click(function () {
+    $('.login_lightbox').fadeOut();
+    $('body').removeClass('fixed');
+  });
   // 首頁輪播
   $('.mpSlider').slick({
     mobileFirst: true,

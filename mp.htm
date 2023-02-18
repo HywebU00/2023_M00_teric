@@ -113,6 +113,51 @@
                 <div class="member_login_btn">
                     <button type="button" class="btn">登入 / 註冊</button>
                 </div>
+                <!-- login 燈箱start -->
+                <div class="login_lightbox">
+                    <div class="overlay"></div>
+                    <div class="lightbox_content">
+                        <div class="close"><a href="#">關閉</a></div>
+                        <div class="title">會員登入<span>Member Login</span></div>
+                        <div class="flex-form">
+                            <div class="form_grp">
+                                <label for="username" class="form_title">帳號<span>Account</span></label>
+                                <div class="form_content">
+                                    <input type="text" id="username" placeholder="請輸入帳號" value="" class="account">
+                                </div>
+                            </div>
+                            <div class="form_grp">
+                                <label for="password" class="form_title">密碼<span>Password</span></label>
+                                <div class="form_content">
+                                    <div class="labelEffect password_toggle">
+                                        <input name="password" type="password" placeholder="請輸入密碼" value="1234" class="password" title="請輸入密碼" id="">
+                                        <button type="button" class="btn btn-icon" value="觀看密碼" aria-label="觀看密碼"><i class="i_hide"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="verify_box"><img src="images/verify_box.png" alt=""></div>
+                            <div class="btn_grp form_inline">
+                                <button class="btn loginbtn" value="登入 Login">登入 Login</button>
+                            </div>
+                            <div class="orword"><span>or log in with</span></div>
+                            <div class="community">
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="images/community_icon01.png" alt="Facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/community_icon02.png" alt="google"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="images/community_icon03.png" alt="line"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="forgotkword"><a href="#">忘記密碼 Forgot password?</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- login 燈箱end -->
                 <!-- 會員登入 end -->
             </div>
         </header>
@@ -128,30 +173,33 @@
                             <h2>簡易查詢<span>Search</span></h2>
                             <div class="search_content">
                                 <form action="">
-                                    <div class="form_grp">
-                                        <div class="form_content" id="fake-legend">
-                                            <div class="check_grp form_inline">
-                                                <label> <input type="checkbox" name="" value="" checked="" />全部</label>
-                                                <label> <input type="checkbox" name="" value="" />展覽</label>
-                                                <label> <input type="checkbox" name="" value="" />表演與節慶</label>
-                                                <label> <input type="checkbox" name="" value="" />演講／講座／研討會</label>
-                                                <label> <input type="checkbox" name="" value="" />綜合</label>
+                                    <div class="flex-form form_grid">
+                                        <div class="form_grp">
+                                            <div class="form_content searchsimple">
+                                                <div class="check_grp form_inline">
+                                                    <label> <input type="checkbox" name="" value="" checked="" />題名</label>
+                                                    <label> <input type="checkbox" name="" value="" />摘要</label>
+                                                    <label> <input type="checkbox" name="" value="" />關鍵詞</label>
+                                                    <label> <input type="checkbox" name="" value="" />作者</label>
+                                                    <label> <input type="checkbox" name="" value="" />出版者</label>
+                                                    <label> <input type="checkbox" name="" value="" />書刊名/會議名稱</label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form_grp">
-                                        <div class="form_content searchsimple">
-                                            <label for="mustSameAsId" class="title">搜尋</label>
-                                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S" title="請輸入關鍵字" aria-label="搜尋網站內容" class="" />
-                                            <input name="" type="submit" value="查詢" class="btn btn-search" /><a href="#" class="advanced_btn">進階查詢<span> Advanced Search</span></a>
-                                            <!--<input name="" type="submit" value="進階查詢<br> Advanced Search" class="btn advanced_btn" /> -->
-                                            <div class="keywordHot">
-                                                <ul>
-                                                    <li><a href="#">翻轉教室</a></li>
-                                                    <li><a href="#">媒體素養教育</a></li>
-                                                    <li><a href="#">學校營運</a></li>
-                                                    <li><a href="#">課程教學</a></li>
-                                                </ul>
+                                        <div class="form_grp">
+                                            <div class="form_content searchsimple">
+                                                <label for="mustSameAsId" class="title">搜尋</label>
+                                                <input name="username" id="mustSameAsId" type="text" placeholder="請輸入關鍵字" accesskey="S" title="請輸入關鍵字" aria-label="搜尋網站內容" class="" />
+                                                <input name="" type="submit" value="查詢" class="btn btn-search" /><a href="#" class="advanced_btn">進階查詢<span> Advanced Search</span></a>
+                                                <!--<input name="" type="submit" value="進階查詢<br> Advanced Search" class="btn advanced_btn" /> -->
+                                                <div class="keywordHot">
+                                                    <ul>
+                                                        <li><a href="#">翻轉教室</a></li>
+                                                        <li><a href="#">媒體素養教育</a></li>
+                                                        <li><a href="#">學校營運</a></li>
+                                                        <li><a href="#">課程教學</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

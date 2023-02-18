@@ -196,14 +196,46 @@
       color: $secondaryColor;
       box-shadow: none;
     }
-    // @include screen('mobile') {
-    //   float: none;
-    //   width: 100% !important;
-    //   border-bottom: 1px solid #888;
-    //   &.active {
-    //     border-color: #bbb;
-    //   }
-    // }
+  }
+}
+
+// cp頁面左欄資料
+.cp_data_tabs {
+  & > .tabItem {
+    &.active {
+      color: $secondaryColor;
+      border-top: 3px solid $secondaryColor;
+      border-bottom: 3px solid $secondaryColor;
+      &:before {
+        content: '';
+        border: 8px solid $secondaryColor;
+        border-color: $secondaryColor transparent transparent transparent;
+        position: absolute;
+        bottom: -1.1em;
+        left: 45%;
+      }
+    }
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.2em;
+    display: block;
+    padding: 0.7em 0;
+    text-align: center;
+    background-color: transparent;
+    color: $color-word;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    box-sizing: border-box;
+    position: relative;
+    &:hover,
+    &:focus {
+      color: $secondaryColor;
+      box-shadow: none;
+    }
   }
 }
 
@@ -212,6 +244,7 @@
   display: block;
 }
 
+//
 .member_tabs {
   .tabContent {
     background-color: #fff;
@@ -265,6 +298,7 @@
   }
 }
 
+// 後分類
 .classification_tabs {
   .tabContent {
     position: absolute;
@@ -334,6 +368,22 @@
           }
         }
       }
+    }
+  }
+}
+
+//cp頁面左欄
+.cp_data_tabs {
+  .tabContent {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 30px 0px;
+    display: none;
+    @include screen('mobile') {
+      position: static;
     }
   }
 }

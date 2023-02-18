@@ -527,7 +527,7 @@ $(function () {
 
         _tabItem.not('.active').next().slideUp();
         _tabItemNow.next().slideDown();
-        $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
+        // $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
 
         e.preventDefault();
       }
@@ -570,7 +570,7 @@ $(function () {
 
         _tabItem.not('.active').next().slideUp();
         _tabItemNow.next().slideDown();
-        $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
+        // $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
 
         e.preventDefault();
       }

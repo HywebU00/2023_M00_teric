@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
     <!-- 燈箱facybox -->
     <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" />
+    <!-- WOW動畫-->
+    <link href="css/animate.css" rel="stylesheet">
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/hyui.css" />
     <!-- favicon -->
@@ -166,12 +168,12 @@
         <div id="center" class="main">
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
             <!-- 簡易查詢 start-->
-            <section class="Search_block col-12">
+            <section class="Search_block col-12 ">
                 <div class="container">
                     <div class="col">
                         <div class="search_group">
                             <h2>簡易查詢<span>Search</span></h2>
-                            <div class="search_content">
+                            <div class="search_content  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
                                 <form action="">
                                     <div class="flex-form form_grid">
                                         <div class="form_grp">
@@ -229,7 +231,7 @@
                                     </a>
                                 </div>
                                 <!-- 2 -->
-                                <div class="data_type_list">
+                                <div class="data_type_list wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                                     <a href="#">
                                         <div class="image"><img src="images/data_type_icon02.png" alt="" /></div>
                                         <div class="content">
@@ -240,7 +242,7 @@
                                     </a>
                                 </div>
                                 <!-- 3 -->
-                                <div class="data_type_list">
+                                <div class="data_type_list wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
                                     <a href="#">
                                         <div class="image"><img src="images/data_type_icon03.png" alt="" /></div>
                                         <div class="content">
@@ -251,7 +253,7 @@
                                     </a>
                                 </div>
                                 <!-- 4 -->
-                                <div class="data_type_list">
+                                <div class="data_type_list wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">
                                     <a href="#">
                                         <div class="image"><img src="images/data_type_icon04.png" alt="" /></div>
                                         <div class="content">
@@ -418,6 +420,11 @@
     <script src="vendor/sticky-sidebar/ResizeSensor.js"></script>
     <!-- fancy -->
     <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <!-- hyUI -->
     <script src="js/hyui.js"></script>
     <!-- 客製js -->

@@ -568,8 +568,8 @@ $(function () {
         _tabItem.removeClass('active');
         _tabItemNow.addClass('active');
 
-        _tabItem.not('.active').next().slideUp();
-        _tabItemNow.next().slideDown();
+        _tabItem.not('.active').next().removeClass('active').css('display', 'none');
+        _tabItemNow.next().addClass('active').css('display', 'block');
         // $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
 
         e.preventDefault();

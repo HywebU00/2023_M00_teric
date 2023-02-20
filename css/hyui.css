@@ -9012,7 +9012,7 @@ div.function ul li.icon_forward a:before {
   }
 }
 .pagination .total {
-  padding: 0em 0 0 0.5em;
+  padding: 0;
   vertical-align: middle;
   display: flex;
   align-items: center;
@@ -9031,6 +9031,14 @@ div.function ul li.icon_forward a:before {
     margin-bottom: 0.5em;
   }
 }
+.pagination .total .jump_page label {
+  display: inline;
+  margin: 0;
+}
+.pagination .total .page_shows label {
+  display: inline;
+  margin: 0;
+}
 .pagination .total select {
   margin: 0px 0.1em;
   padding: 0.4em 2.5em 0.4em 1.2em;
@@ -9046,7 +9054,7 @@ div.function ul li.icon_forward a:before {
 }
 .pagination .total .btn {
   min-width: auto;
-  padding: 0.4em 1em !important;
+  padding: 0.4em 0.6em !important;
 }
 .pagination .total input {
   margin: 0;
@@ -9066,7 +9074,7 @@ div.function ul li.icon_forward a:before {
 }
 @media screen and (max-width: 500px) {
   .pagination .total .btn-submit {
-    width: 100%;
+    width: 95%;
   }
 }
 .pagination .total .btn-submit:hover {

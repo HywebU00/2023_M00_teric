@@ -1,125 +1,126 @@
 .fatfooter {
-    @extend %clearfix;
+  @extend %clearfix;
+  overflow: hidden;
+  padding-bottom: 0;
+  margin: 0 auto;
+  @include screen('mobile') {
+    display: none;
+  }
+  .container {
     overflow: hidden;
-    padding-bottom: 0;
+    box-sizing: border-box;
+    @include gutter;
+    // background: $fatfooterBgColor;
+    background-image: url('../images/content_bg01.gif');
+    background-repeat: repeat;
+    background-position: 0 0;
+  }
+  // 按鈕
+  .btn-fatfooter {
+    font-size: 0.813em;
+    display: block;
+    min-width: 6em;
+    color: #fff;
+    border: none;
+    background: $aHover;
+    position: absolute;
+    right: 50%;
+    margin-right: -3em;
+    z-index: 90;
+    text-indent: -9999px;
+    border-radius: 4px;
+    // display: none;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #fff;
+      border-left: none;
+      border-bottom: none;
+      transform: rotate(-45deg);
+      left: 50%;
+      top: 12px;
+      margin-left: -6px;
+      transition: 0.3s ease-out;
+    }
+    &:hover,
+    &:focus {
+      background: darken($aHover, 10);
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    &.close {
+      &:before {
+        transform: rotate(135deg) !important;
+        top: 5px;
+      }
+    }
+  }
+  nav {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding: 3em 0;
+    box-sizing: border-box;
+    width: 70%;
     margin: 0 auto;
-    @include screen('mobile') {
-        display: none;
-    }
-    .container {
-        overflow: hidden;
+    ul {
+      display: flex;
+      justify-content: center;
+      @include li-reset;
+      li {
+        flex: 1 1 23%;
+        flex-basis: 23%;
         box-sizing: border-box;
-        @include gutter;
-        // background: $fatfooterBgColor;
-        background-image: url('../images/content_bg01.gif');
-        background-repeat: repeat;
-        background-position: 0 0;
-    }
-    // 按鈕
-    .btn-fatfooter {
-        font-size: 0.813em;
-        display: block;
-        min-width: 6em;
-        color: #fff;
-        border: none;
-        background: $aHover;
-        position: absolute;
-        right: 1%;
-        z-index: 90;
-        text-indent: -9999px;
-        border-radius: 4px;
-        display: none;
-        &:before {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            border: 2px solid #fff;
-            border-left: none;
-            border-bottom: none;
-            transform: rotate(-45deg);
-            left: 50%;
-            top: 12px;
-            margin-left: -6px;
-            transition: 0.3s ease-out;
-        }
-        &:hover,
-        &:focus {
-            background: darken($aHover, 10);
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-            border: none;
+        > a {
+          line-height: 1.5;
+          display: block;
+          font-weight: bold;
+          padding: 0.5em 0px;
+          box-sizing: border-box;
+          color: $color-dark;
+          font-size: 1.125em;
+          &:hover {
             box-shadow: none;
-            outline: none;
-            border: none;
-            cursor: pointer;
+          }
         }
-        &.close {
-            &:before {
-                transform: rotate(135deg) !important;
-                top: 5px;
-            }
-        }
-    }
-    nav {
-        overflow: hidden;
-        display: block;
-        position: relative;
-        padding: 3em 0;
-        box-sizing: border-box;
-        width: 70%;
-        margin: 0 auto;
         ul {
-            display: flex;
-            justify-content: center;
-            @include li-reset;
-            li {
-                flex: 1 1 23%;
-                flex-basis: 23%;
-                box-sizing: border-box;
-                >a {
-                    line-height: 1.5;
-                    display: block;
-                    font-weight: bold;
-                    padding: 0.5em 0px;
-                    box-sizing: border-box;
-                    color: $color-dark;
-                    font-size: 1.125em;
-                    &:hover {
-                        box-shadow: none;
-                    }
-                }
-                ul {
-                    // display: flex;
-                    // flex-direction:column;
-                    // flex-wrap:wrap;
-                    display: block;
-                    margin: 0;
-                    padding: 0 1em 0 0;
-                    @include screen('mobile') {
-                        width: auto;
-                    }
-                    li {
-                        // flex: 0 0 100%;
-                        a {
-                            display: block;
-                            @include aSetting_nocolor;
-                            font-weight: normal;
-                            text-align: left;
-                            font-size: 1em;
-                            line-height: 1.5em;
-                            padding: 0.3em 0;
-                            background: none;
-                            color: #666;
-                        }
-                    }
-                    //第三層關閉
-                    ul {
-                        display: none;
-                    }
-                }
+          // display: flex;
+          // flex-direction:column;
+          // flex-wrap:wrap;
+          display: block;
+          margin: 0;
+          padding: 0 1em 0 0;
+          @include screen('mobile') {
+            width: auto;
+          }
+          li {
+            // flex: 0 0 100%;
+            a {
+              display: block;
+              @include aSetting_nocolor;
+              font-weight: normal;
+              text-align: left;
+              font-size: 1em;
+              line-height: 1.5em;
+              padding: 0.3em 0;
+              background: none;
+              color: #666;
             }
+          }
+          //第三層關閉
+          ul {
+            display: none;
+          }
         }
+      }
     }
+  }
 }

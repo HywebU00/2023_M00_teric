@@ -4761,11 +4761,11 @@ footer .footer_icon img {
   border: none;
   background: #2f72ab;
   position: absolute;
-  right: 1%;
+  right: 50%;
+  margin-right: -3em;
   z-index: 90;
   text-indent: -9999px;
   border-radius: 4px;
-  display: none;
 }
 .fatfooter .btn-fatfooter:before {
   content: "";
@@ -9404,7 +9404,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 }
 
 .Search_block {
-  padding: 3.5em 0 7.8em;
+  padding: 3.5em 0 7em;
 }
 @media screen and (max-width: 767px) {
   .Search_block {

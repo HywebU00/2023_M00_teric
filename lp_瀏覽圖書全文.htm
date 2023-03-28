@@ -2,521 +2,786 @@
 <html lang="zh-Hant" class="no-js">
 
 <head>
-    <meta name="robots" content="noindex" />
-    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>臺灣教育研究資訊網</title>
-    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>臺灣教育研究資訊網</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <!-- slick css-->
-    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
-    <!-- 燈箱facybox -->
-    <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" />
-    <!-- hyUI css -->
-    <link rel="stylesheet" href="css/hyui.css" />
-    <!-- favicon -->
-    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@700&display=swap" rel="stylesheet" />
+  <!-- slick css-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <!-- 燈箱facybox -->
+  <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" />
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/hyui.css" />
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- 直接跳主內容區 -->
-    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
-    <!-- wrapper Start -->
-    <div class="wrapper">
-        <!-- header Start -->
-        <header class="header">
-            <div class="container">
-                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
-                <!-- navigation Start -->
-                <nav class="navigation" role="navigation" aria-label="上方導覽列">
-                    <!-- 新增div navlist -->
-                    <div class="navlist">
-                        <ul>
-                            <!-- <li><a href="#">回首頁</a></li> -->
-                            <li><a href="#">網站導覽</a></li>
-                            <li><a href="#">常見問答</a></li>
-                        </ul>
-                    </div>
-                    <!-- font_size -->
-                    <div class="font_size" aria-label="文字大小">
-                        <span>文字大小：</span>
-                        <!-- 英文用<span>font-size：</span> -->
-                        <ul>
-                            <li><a href="#" role="button" class="small">小</a></li>
-                            <li><a href="#" role="button" class="medium">中</a></li>
-                            <li><a href="#" role="button" class="large">大</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- navigation End -->
-                <h1>
-                    <a href="index.htm"><img src="images/logo.png" alt="臺灣教育研究資訊網" /></a>
-                </h1>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <!-- navigation Start -->
+        <nav class="navigation" role="navigation" aria-label="上方導覽列">
+          <!-- 新增div navlist -->
+          <div class="navlist">
+            <ul>
+              <!-- <li><a href="#">回首頁</a></li> -->
+              <li><a href="#">網站導覽</a></li>
+              <li><a href="#">常見問答</a></li>
+            </ul>
+          </div>
+          <!-- font_size -->
+          <div class="font_size" aria-label="文字大小">
+            <span>文字大小：</span>
+            <!-- 英文用<span>font-size：</span> -->
+            <ul>
+              <li><a href="#" role="button" class="small">小</a></li>
+              <li><a href="#" role="button" class="medium">中</a></li>
+              <li><a href="#" role="button" class="large">大</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navigation End -->
+        <h1>
+          <a href="index.htm"><img src="images/logo.png" alt="臺灣教育研究資訊網" /></a>
+        </h1>
 
-                <!-- noscript -->
-                <noscript>
-                    您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
-                    <a href="#">網站導覽</a>
-                </noscript>
-                <!-- menu Start -->
-                <nav class="menu" role="navigation" aria-label="主選單">
-                    <ul>
-                        <li>
-                            <a href="#">瀏覽服務</a>
-                            <ul>
-                                <li><a href="#">期刊論文</a></li>
-                                <li><a href="#">圖書全文</a></li>
-                                <li><a href="#">教育訊息</a></li>
-                                <li><a href="#">研究計畫及報告</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">查詢服務</a>
-                            <ul>
-                                <li><a href="#">簡易查詢</a></li>
-                                <li><a href="#">進階查詢</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">關於本站</a>
-                            <ul>
-                                <li><a href="http://www.google.com">最新消息</a></li>
-                                <li><a href="#">操作說明</a></li>
-                                <li><a href="#">常見問題</a></li>
-                                <li><a href="#">問題通報</a></li>
-                                <li><a href="#">相關連結</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">會員專區</a>
-                            <ul>
-                                <li><a href="#">個人收藏</a></li>
-                                <li><a href="#">主題訂閱</a></li>
-                                <li><a href="#">歷史查詢</a></li>
-                                <li><a href="#">偏好設定</a></li>
-                                <li><a href="#">個人資料維護</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- menu End -->
-                <!-- 會員登入 start -->
-                <div class="member_login_btn">
-                    <button type="button" class="btn">登入 / 註冊</button>
-                </div>
-                <!-- login 燈箱start -->
-                <div class="login_lightbox">
-                    <div class="overlay"></div>
-                    <div class="lightbox_content">
-                        <div class="close"><a href="#">關閉</a></div>
-                        <div class="title">會員登入<span>Member Login</span></div>
-                        <div class="flex-form">
-                            <div class="form_grp">
-                                <label for="username" class="form_title">帳號<span>Account</span></label>
-                                <div class="form_content">
-                                    <input type="text" id="username" placeholder="請輸入帳號" value="" class="account">
-                                </div>
-                            </div>
-                            <div class="form_grp">
-                                <label for="password" class="form_title">密碼<span>Password</span></label>
-                                <div class="form_content">
-                                    <div class="labelEffect password_toggle">
-                                        <input name="password" type="password" placeholder="請輸入密碼" value="1234" class="password" title="請輸入密碼" id="">
-                                        <button type="button" class="btn btn-icon" value="觀看密碼" aria-label="觀看密碼"><i class="i_hide"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="verify_box"><img src="images/verify_box.png" alt=""></div>
-                            <div class="btn_grp form_inline">
-                                <button class="btn loginbtn" value="登入 Login">登入 Login</button>
-                            </div>
-                            <div class="orword"><span>or log in with</span></div>
-                            <div class="community">
-                                <ul>
-                                    <li>
-                                        <a href="#"><img src="images/community_icon01.png" alt="Facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="images/community_icon02.png" alt="google"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="images/community_icon03.png" alt="line"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="forgotkword"><a href="#">忘記密碼 Forgot password?</a></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- login 燈箱end -->
-                <!-- 會員登入 end -->
-            </div>
-        </header>
-        <!-- header End -->
-        <!-- main Start -->
-        <div id="center" class="main innerpage">
-            <!-- 內頁新增一個classname-->
-            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-            <div class="container">
-                <!-- 主要內容區 -->
-                <div class="center_block">
-                    <!-- breadcrumb路徑 -->
-                    <nav aria-label="現在位置" class="breadcrumb">
-                        <ul>
-                            <li><a href="#">首頁</a></li>
-                            <li aria-current="page">瀏覽圖書全文</li>
-                        </ul>
-                    </nav>
-                    <!-- h2節點 -->
-                    <h2 class="title">瀏覽圖書全文</h2>
-                    <!-- function_panel -->
-                    <div class="function_panel">
-                        <div class="function">
-                            <ul>
-                                <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
-                                <!-- <li class="print"><a href="#">友善列印</a></li>
-                                <li class="forward"><a href="#">轉寄友人</a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- LP Start -->
-                    <section class="lp">
-                        <!-- 選項 start-->
-                        <div class="select_block">
-                            <label for="selectSample">請選擇帶入的查詢欄位：</label>
-                            <select id="selectSample" name="">
-                                <option value="">出版日期</option>
-                                <option value="">題名</option>
-                                <option value="">作者</option>
-                                <option value="">書名</option>
-                                <option value="">出版者</option>
-                            </select>
-                            <input type="button" value="確定" class="btn btn-submit" />
-                        </div>
-                        <!-- 選項 end-->
-                        <div class="innerpage_content">
-                            <div class="pagination">
-                                <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
-                                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆 </div>
-                                <ul class="page">
-                                    <li class="first"><a href="#" title="第一頁">第一頁</a></li>
-                                    <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li class="xs_hidden"><a href="#">2</a></li>
-                                    <li class="xs_hidden"><a href="#">3</a></li>
-                                    <li class="xs_hidden"><a href="#">4</a></li>
-                                    <li class="xs_hidden"><a href="#">5</a></li>
-                                    <li class="next"><a href="#" title="下一頁">下一頁</a></li>
-                                    <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
-                                </ul>
-                            </div>
-                            <!-- 文字列表 -->
-                            <div class="list">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">1</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">2</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">3</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">4</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">5</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">6</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">7</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">8</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">9</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="num">10</span>課程研究與<span class="word_red">教育改革</span>實踐——紀念陳伯璋教授論文集
-                                        </a>
-                                        <div class="data_content">
-                                            <ul>
-                                                <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
-                                                <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
-                                                <li>出版日期：2022/01</li>
-                                            </ul>
-                                        </div>
-                                        <ul>
-                                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
-                                            <li>資料類型：<span>圖書全文</span></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- LP End -->
-                </div>
-            </div>
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="Header的導航列">
+          <ul>
+            <li>
+              <a href="#">瀏覽服務</a>
+              <ul>
+                <li><a href="#">本院出版品</a></li>
+                <li><a href="#">專案研究報告</a></li>
+                <li><a href="#">期刊論文</a></li>
+                <li><a href="#">研討會論文</a></li>
+                <li><a href="#">圖書全文</a></li>
+                <li><a href="#">國際教育訊息</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">查詢服務</a>
+              <ul>
+                <li><a href="#">簡易查詢</a></li>
+                <li>
+                  <a href="#">進階查詢</a>
+                  <ul>
+                    <li><a href="#">共通查詢</a></li>
+                    <li><a href="#">本院出版品</a></li>
+                    <li><a href="#">專案研究報告</a></li>
+                    <li><a href="#">期刊論文</a></li>
+                    <li><a href="#">研討會論文</a></li>
+                    <li><a href="#">圖書全文</a></li>
+                    <li><a href="#">國際教育訊息</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">最新資料</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li>
+              <a href="#">會員專區</a>
+              <ul>
+                <li><a href="#">修改個人資料</a></li>
+                <li><a href="#">瀏覽偏好設定</a></li>
+                <li><a href="#">歷史查詢</a></li>
+                <li><a href="#">新知訂閱</a></li>
+                <li><a href="#">我的最愛
+                <li><a href="#">主題書目專題選粹</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+        <!-- 會員登入 start -->
+        <div class="member_login_btn">
+          <button type="button" class="btn">登入 / 註冊</button>
         </div>
-        <!-- fatfooter Start -->
-        <section class="fatfooter hidden">
-            <div class="container">
-                <!-- <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button> -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">關於本局</a>
-                            <ul>
-                                <li><a href="#">本局沿革</a></li>
-                                <li><a href="#">本局願景</a></li>
-                                <li><a href="#">組織介紹</a></li>
-                                <li><a href="#">本局願景</a></li>
-                                <li><a href="#">局處執掌</a></li>
-                                <li><a href="#">重大政策</a></li>
-                                <li><a href="#">施政重點</a></li>
-                                <li><a href="#">本局位置</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">訊息公告</a>
-                            <ul>
-                                <li><a href="#">本局公告</a></li>
-                                <li><a href="#">環保署公告</a></li>
-                                <li><a href="#">環境用藥公告</a></li>
-                                <li><a href="#">環保專案成果報告</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">業務專區</a>
-                            <ul>
-                                <li><a href="#">化學物質</a></li>
-                                <li><a href="#">毒性化學物質</a></li>
-                                <li><a href="#">危害性化學物質災害防救</a></li>
-                                <li><a href="#">環境用藥</a></li>
-                                <li><a href="#">石綿危害資訊</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">便民服務</a>
-                            <ul>
-                                <li><a href="#">線上服務</a></li>
-                                <li><a href="#">教育宣導</a></li>
-                                <li><a href="#">影音專區</a></li>
-                                <li><a href="#">下載專區</a></li>
-                                <li><a href="#">常見問答</a></li>
-                                <li><a href="#">相關連結</a></li>
-                                <li><a href="#">訂閱電子報</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">政府資訊公開</a>
-                            <ul>
-                                <li><a href="#">行政院環境保護署資訊公開要點</a></li>
-                                <li><a href="#">預算及會計月報</a></li>
-                                <li><a href="#">性別平等專區</a></li>
-                                <li><a href="#">人權專區</a></li>
-                                <li><a href="#">環境統計資料庫</a></li>
-                                <li><a href="#">業務標準作業流程</a></li>
-                                <li><a href="#">行政院環保署Open Data資料集</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">法規專區</a>
-                            <ul>
-                                <li><a href="#">主管法規查詢系統</a></li>
-                                <li><a href="#">全國法規資料庫</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <!-- fatfooter End -->
-        <!-- footer Start-->
-        <footer>
-            <div class="container">
-                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-                <div class="footer_logo">
-                    <div class="logo_img"><img src="images/footer_logo.png" alt="國家教育研究院logo" /></div>
-                    <span class="update">更新日期：<em>111/09/01</em></span>
-                    <span class="counter">累計瀏覽人次：<em>46,476,653</em></span>
+        <!-- login 燈箱start -->
+        <div class="login_lightbox">
+          <div class="overlay"></div>
+          <div class="lightbox_content">
+            <div class="close"><a href="#">關閉</a></div>
+            <div class="title">會員登入<span>Member Login</span></div>
+            <div class="flex-form">
+              <div class="form_grp">
+                <label for="username" class="form_title">帳號<span>Account</span></label>
+                <div class="form_content">
+                  <input type="text" id="username" placeholder="請輸入帳號" value="" class="account">
                 </div>
-                <div class="footer_info">
-                    <ul class="footer_link">
-                        <li><a href="javascript:;">個資法及隱私權聲明</a></li>
-                        <li><a href="javascript:;">資訊安全政策</a></li>
-                        <li><a href="javascript:;">網站資料開放宣告</a></li>
-                        <li><a href="javascript:;">聯絡信箱</a></li>
-                    </ul>
-                    <p>
-                        地址：106011 臺北市大安區和平東路一段179號<br /> 電話：02-7740-7877 傳真：02-7740-7886
-                    </p>
-                    <p class="Copyright">國家教育研究院 版權所有</p>
-                    <div class="footer_icon">
-                        <a target="_blank" href="javascript:;">
-                            <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
-                        </a>
-                        <!-- <a target="_blank" href="javascript:;">
+              </div>
+              <div class="form_grp">
+                <label for="password" class="form_title">密碼<span>Password</span></label>
+                <div class="form_content">
+                  <div class="labelEffect password_toggle">
+                    <input name="password" type="password" placeholder="請輸入密碼" value="1234" class="password" title="請輸入密碼" id="">
+                    <button type="button" class="btn btn-icon" value="觀看密碼" aria-label="觀看密碼"><i class="i_hide"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="verify_box"><img src="images/verify_box.png" alt=""></div>
+              <div class="btn_grp form_inline">
+                <button class="btn loginbtn" value="登入 Login">登入 Login</button>
+              </div>
+              <div class="orword"><span>or log in with</span></div>
+              <div class="community">
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/community_icon01.png" alt="Facebook"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/community_icon02.png" alt="google"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/community_icon03.png" alt="line"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="forgotkword"><a href="#">忘記密碼 Forgot password?</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- login 燈箱end -->
+        <!-- 會員登入 end -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="center" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <nav aria-label="現在位置" class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li aria-current="page">瀏覽圖書全文</li>
+            </ul>
+          </nav>
+          <!-- h2節點 -->
+          <h2 class="title">瀏覽圖書全文</h2>
+          <!-- function_panel -->
+          <div class="function_panel">
+            <div class="function">
+              <ul>
+                <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                <!-- <li class="print"><a href="#">友善列印</a></li>
+                                <li class="forward"><a href="#">轉寄友人</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- LP Start -->
+          <section class="lp">
+            <div class="search_data">
+              <!-- 範圍查詢 start-->
+              <div class="within_search">
+                <form action="">
+                  <div class="form_grid flex-form">
+                    <div class="form_grp">
+                      <div class="form_title">在搜尋的結果範圍內查詢：</div>
+                      <div class="form_content form_inline">
+                        <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
+                        <label for="selectSample" class="label_hide">分類</label>
+                        <select id="selectSample" name="">
+                          <option value="">題名</option>
+                          <option value="">設計</option>
+                          <option value="">古典與傳統音樂</option>
+                          <option value="">流行音樂</option>
+                          <option value="">戲劇</option>
+                          <option value="">舞蹈</option>
+                        </select>
+                        <button type="button" class="btn btn-black tactics_btn">加入查詢策略</button>
+                        <button type="button" class="btn btn-black addition">增加</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- 範圍查詢 end-->
+            </div>
+            <div class="innerpage_content">
+              <!-- 限縮依據 start -->
+              <div class="constriction_block">
+                <div class="title">限縮依據：</div>
+                <div class="constriction_list">
+                  <ul>
+                    <li><a href="#">Citation Topics Meso:6.24 Psychiatry & or 9.92 Staisitcal Methors</a>
+                      <div class="close"><a href="#">關閉</a></div>
+                    </li>
+                    <li><a href="#">文獻類型：Article</a>
+                      <div class="close"><a href="#">關閉</a></div>
+                    </li>
+                    <li><a href="#">Citation Topics Meso:6.24 Psychiatry </a>
+                      <div class="close"><a href="#">關閉</a></div>
+                    </li>
+                    <li><a href="#">Citation Topics Meso: 6.24 Psychiatry & or 9.92 Staisitcal Methors 6.24 Psychiatry & or 9.92 Staisitcal Methors</a>
+                      <div class="close"><a href="#">關閉</a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- 限縮依據 end -->
+              <!-- 選項 start-->
+              <div class="select_block">
+                <div class="interval_group">
+                  <label for="selectSample">請選擇帶入的查詢欄位：</label>
+                  <select id="selectSample" name="">
+                    <option value="">公告日期 升冪</option>
+                    <option value="">公告日期 降冪</option>
+                    <option value="">資料類型</option>
+                    <option value="">作者</option>
+                    <option value="">書名</option>
+                    <option value="">出版者</option>
+                  </select>
+                  <input type="button" value="確定" class="btn btn-submit" />
+                </div>
+              </div>
+              <!-- 選項 end-->
+              <div class="pagination">
+                <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
+                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆 </div>
+                <ul class="page">
+                  <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li class="xs_hidden"><a href="#">2</a></li>
+                  <li class="xs_hidden"><a href="#">3</a></li>
+                  <li class="xs_hidden"><a href="#">4</a></li>
+                  <li class="xs_hidden"><a href="#">5</a></li>
+                  <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                </ul>
+              </div>
+              <!--後分類區塊 start-->
+              <div class="classification_block">
+                <!-- 手機版時的分類選單按鈕 -->
+                <div class="classification_menu_btn"><a href="javascript:;">分類選單</a></div>
+                <!-- 左 -->
+                <div class="classification_groupleft">
+                  <div class="tabSet">
+                    <section class="tabs classification_tabs">
+                      <button type="button" class="tabItem active">查詢結果分類</button>
+                      <div class="tabContent">
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">資料類型</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">期刊論文
+                              </label>
+                              <div class="quantity">5</div>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">圖書全文
+                              </label>
+                              <div class="quantity">331</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">教育訊息
+                              </label>
+                              <div class="quantity">6</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">研究計畫及報告
+                              </label>
+                              <div class="quantity">93</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">出版年</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2022年
+                              </label>
+                              <div class="quantity">25</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2021年
+                              </label>
+                              <div class="quantity">31</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2020年
+                              </label>
+                              <div class="quantity">29</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2019年
+                              </label>
+                              <div class="quantity">27</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2018年
+                              </label>
+                              <div class="quantity">20</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">出版者</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">國家教育研究院
+                              </label>
+                              <div class="quantity">333</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">國家圖書館
+                              </label>
+                              <div class="quantity">19</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">國立臺北教育大學
+                              </label>
+                              <div class="quantity">18</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">教育部體育署
+                              </label>
+                              <div class="quantity">16</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">國立屏東大學
+                              </label>
+                              <div class="quantity">9</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">書刊名</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">國家教育研究院電子報
+                              </label>
+                              <div class="quantity">10</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">會議名稱</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">校務經營個案研究實務
+                              </label>
+                              <div class="quantity">106</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">研討會成果集
+                              </label>
+                              <div class="quantity">11</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button type="button" class="tabItem">聚類分析</button>
+                      <div class="tabContent">
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">學科領域</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2022年
+                              </label>
+                              <div class="quantity">25</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2021年
+                              </label>
+                              <div class="quantity">31</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2020年
+                              </label>
+                              <div class="quantity">29</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2019年
+                              </label>
+                              <div class="quantity">27</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">2018年
+                              </label>
+                              <div class="quantity">20</div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="classification_list">
+                          <h3><a href="javascript:;">國際教育訊息類別</a></h3>
+                          <ul>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">期刊論文
+                              </label>
+                              <div class="quantity">5</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">圖書全文
+                              </label>
+                              <div class="quantity">331</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">教育訊息
+                              </label>
+                              <div class="quantity">6</div>
+                            </li>
+                            <li>
+                              <label>
+                                <input type="checkbox" name="" value="">研究計畫及報告
+                              </label>
+                              <div class="quantity">93</div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <!-- 右 -->
+                <div class="classification_groupright">
+                  <div class="classification_data">
+                    <!-- 文字列表 -->
+                    <div class="list">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <span class="num">1</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">2</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">3</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">4</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">5</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">6</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">7</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">8</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">9</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="num">10</span>課程研究與<span class="keywords_bg">教育改革</span>實踐——紀念陳伯璋教授論文集
+                          </a>
+                          <div class="data_content">
+                            <ul>
+                              <li>書刊名/會議名稱：課程研究與教育改革實踐——紀念陳伯璋教授論文集</li>
+                              <li>作者：鍾鴻銘; 蔡明學; 林惠珠; 孫台育; 黃秀雯; 張盈堃; 蔡清田; 黃漢昌; 陳淑敏;</li>
+                              <li>出版日期：2022/01</li>
+                            </ul>
+                          </div>
+                          <ul>
+                            <li>線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔"></span></li>
+                            <li>資料類型：<span>圖書全文</span></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--後分類區塊 end-->
+              <div class="pagination">
+                <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
+                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆 </div>
+                <ul class="page">
+                  <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li class="xs_hidden"><a href="#">2</a></li>
+                  <li class="xs_hidden"><a href="#">3</a></li>
+                  <li class="xs_hidden"><a href="#">4</a></li>
+                  <li class="xs_hidden"><a href="#">5</a></li>
+                  <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- LP End -->
+        </div>
+      </div>
+    </div>
+    <!-- fatfooter Start -->
+    <section class="fatfooter hidden">
+      <div class="container">
+        <!-- <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button> -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#">瀏覽服務</a>
+              <ul>
+                <li><a href="#">本院出版品</a></li>
+                <li><a href="#">專案研究報告</a></li>
+                <li><a href="#">期刊論文</a></li>
+                <li><a href="#">研討會論文</a></li>
+                <li><a href="#">圖書全文</a></li>
+                <li><a href="#">國際教育訊息</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">查詢服務</a>
+              <ul>
+                <li><a href="#">簡易查詢</a></li>
+                <li>
+                  <a href="#">進階查詢</a>
+                  <ul>
+                    <li><a href="#">共通查詢</a></li>
+                    <li><a href="#">本院出版品</a></li>
+                    <li><a href="#">專案研究報告</a></li>
+                    <li><a href="#">期刊論文</a></li>
+                    <li><a href="#">研討會論文</a></li>
+                    <li><a href="#">圖書全文</a></li>
+                    <li><a href="#">國際教育訊息</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">最新資料</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li>
+              <a href="#">會員專區</a>
+              <ul>
+                <li><a href="#">修改個人資料</a></li>
+                <li><a href="#">瀏覽偏好設定</a></li>
+                <li><a href="#">歷史查詢</a></li>
+                <li><a href="#">新知訂閱</a></li>
+                <li><a href="#">我的最愛
+                <li><a href="#">主題書目專題選粹</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_logo">
+          <div class="logo_img"><img src="images/footer_logo.png" alt="國家教育研究院logo" /></div>
+          <span class="update">更新日期：<em>111/09/01</em></span>
+          <span class="counter">累計瀏覽人次：<em>46,476,653</em></span>
+        </div>
+        <div class="footer_info">
+          <ul class="footer_link">
+            <li><a href="javascript:;">個資法及隱私權聲明</a></li>
+            <li><a href="javascript:;">資訊安全政策</a></li>
+            <li><a href="javascript:;">網站資料開放宣告</a></li>
+            <li><a href="javascript:;">聯絡信箱</a></li>
+          </ul>
+          <p>
+            地址：106011 臺北市大安區和平東路一段179號<br /> 電話：02-7740-7877 傳真：02-7740-7886
+          </p>
+          <p class="Copyright">國家教育研究院 版權所有</p>
+          <div class="footer_icon">
+            <a target="_blank" href="javascript:;">
+              <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+            </a>
+            <!-- <a target="_blank" href="javascript:;">
                                 <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
                             </a> -->
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer End -->
-    </div>
-    <a href="javascript:;" class="scrollToTop">TOP</a>
-    <!-- JQ -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- 外掛 plugin js -->
-    <script src="vendor/jquery.easing.min.js"></script>
-    <!-- ease -->
-    <script src="vendor/slick/slick.min.js "></script>
-    <!-- slick -->
-    <script src="vendor/slick/slick-lightbox.js "></script>
-    <!-- slick lightbox -->
-    <script src="vendor/lazyload/lazyload.js"></script>
-    <!-- lazyload -->
-    <script src="vendor/picturefill/picturefill.min.js" async></script>
-    <!-- picturefill -->
-    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
-    <!-- scrolltable -->
-    <!-- hyUI -->
-    <script src="js/hyui.js"></script>
-    <!-- 客製js -->
-    <script src="js/customize.js"></script>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">TOP</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- 外掛 plugin js -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- slick -->
+  <script src="vendor/slick/slick-lightbox.js "></script>
+  <!-- slick lightbox -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- lazyload -->
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <!-- picturefill -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- scrolltable -->
+  <!-- hyUI -->
+  <script src="js/hyui.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
 </body>
 
 </html>

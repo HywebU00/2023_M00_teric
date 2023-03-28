@@ -1,10 +1,10 @@
 .pagination {
-  margin: 0.5em auto;
+  margin: 1em auto;
   padding: 0;
   display: block;
   text-align: center;
   font-size: 1em;
-  @extend %clearfix; // outline: 1px solid red;
+  @extend %clearfix;
   .form_inline {
     justify-content: center;
   }

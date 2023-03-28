@@ -9,16 +9,23 @@
   }
 }
 
-.select_block,
-.select_block2 {
-  margin: 0 0 1.5em;
+//
+.select_block {
+  margin: 0 0 1em;
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   // max-width: 200px;
   @media screen and (max-width: 400px) {
     position: relative;
     top: 0em;
+  }
+  .interval_group {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
   }
   label {
     font-size: 0;
@@ -42,6 +49,10 @@
     flex: 0 0 auto;
     flex-basis: 150px;
   }
+  input[type='text'] {
+    height: 3em;
+    margin: 0.3em 0.3em 0.3em 0;
+  }
   .btn-submit {
     border-radius: 50px;
     padding: 0 1em;
@@ -57,14 +68,46 @@
   }
 }
 
+//
 .select_block2 {
-  text-align: left;
+  margin: 0 0 1em;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 400px) {
+    position: relative;
+    top: 0em;
+  }
+
   label {
-    font-size: 1em;
-    height: 2.5em;
-    line-height: 2.5em;
+    flex: 0 0 auto;
+    @media screen and (max-width: 1200px) {
+      flex-basis: 100%;
+      margin-bottom: 0.5em;
+      text-align: left;
+    }
+    @include screen('mobile') {
+      flex-basis: auto;
+      margin-bottom: 0;
+    }
+    @include screen('xs_mobile') {
+      flex-basis: 100%;
+      margin-bottom: 0.5em;
+    }
   }
   select {
+    background-color: $secondaryColor;
+    border-radius: 50px;
+    padding: 0em 1em 0em 0;
+    margin: 0 0.3em 0 0;
+    min-width: 9em;
+    display: block;
+    text-align: center;
+    flex: 0 0 auto;
+    flex-basis: 150px;
     background-color: #fff;
     background-image: url('../images/icon/icon_select_arrow2.png');
     background-size: 26px 16px;
@@ -72,29 +115,96 @@
     border: 1px solid #cfcfcf;
     height: 2.5em;
   }
+  input[type='text'] {
+    height: 3em;
+    margin: 0.3em 0.3em 0.3em 0;
+  }
   .btn-submit {
+    border-radius: 50px;
+    padding: 0 1em;
     height: 2.5em;
-  }
-  @include screen('notebook') {
-    flex-wrap: wrap;
-    label {
-      flex: 0 0 auto;
-      flex-basis: 100%;
-    }
-  }
-  @include screen('mobile') {
-    label {
-      flex-basis: initial;
-    }
-  }
-  @include screen('xs_mobile') {
-    label {
-      flex: 0 0 auto;
-      flex-basis: 100%;
+    margin: 0;
+    min-width: 5em;
+    background: $color-hr;
+    border: 1px solid $color-hr;
+    &:hover {
+      background: $color-dark;
+      border: 1px solid $color-dark;
     }
   }
 }
 
+// 限縮依據
+.constriction_block {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+  @include screen('mobile') {
+    flex-wrap: wrap;
+  }
+  .title {
+    font-size: 1.125em;
+    color: #333;
+    flex: 0 0 auto;
+    padding: 0.3em;
+    @include screen('mobile') {
+      flex: 1 1 auto;
+      flex-basis: 100%;
+      margin-bottom: 0.5em;
+    }
+  }
+  .constriction_list {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        position: relative;
+
+        a {
+          display: block;
+          padding: 0.3em 3em 0.3em 1.5em;
+          border: 1px solid #ccc;
+          border-radius: 50px;
+          color: #333;
+          font-size: 0.938em;
+          position: relative;
+          z-index: 1;
+          &:hover {
+            color: $aHover;
+          }
+          @include screen('mobile') {
+            border-radius: 5px;
+            padding: 0.3em 3em 0.3em 1em;
+          }
+        }
+        .close {
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          right: 0.8em;
+          margin-top: -9px;
+          a {
+            display: block;
+            font-size: 0;
+            background-image: url('../images/icon/icon_close.svg');
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 18px;
+            height: 18px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
 //會員區
 .member_pic {
   font-size: 1.125em;
@@ -304,8 +414,8 @@
     flex: 1 1 auto;
     .classification_data {
       margin-left: 1.5em;
-      border-top: 3px solid $color-dark;
-      border-bottom: 3px solid $color-dark;
+      // border-top: 3px solid $color-dark;
+      // border-bottom: 3px solid $color-dark;
       @include screen('tablet') {
         margin-left: 1em;
       }

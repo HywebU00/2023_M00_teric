@@ -55,8 +55,62 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-color: #dedede;
+
     @include screen('tablet') {
       background-color: #174d65;
+    }
+    .innerpage {
+      > .container {
+        @include gutter(0); //gutter 代表左右要留白
+        display: block;
+        background-image: none;
+
+        padding: 0 4em;
+        @include screen('mobile') {
+          padding: 5em 2em 0;
+        }
+        .breadcrumb {
+          padding: 0em 0em 0em 1.5em;
+          font-size: 1em;
+          margin: 1em auto 0;
+          background-image: url('../images/breadcrumb_icon02.png');
+          background-repeat: no-repeat;
+          background-position: left 5px;
+          color: #fff;
+
+          ul {
+            @include li-reset;
+            li {
+              display: inline-block;
+              margin: 0px 0.1em 0.1em 0px;
+              color: #fff;
+              &:before {
+                @extend %slash;
+                color: #fff;
+              }
+              &:first-child:before {
+                content: '';
+                display: inline-block;
+                color: #fff;
+                margin-left: 0;
+                padding: 0;
+              }
+            }
+          }
+          a {
+            @include aSetting_nocolor;
+            color: #eee;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+        h2 {
+          &:before {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
@@ -168,7 +222,10 @@ body {
   color: $color-red;
   padding: 0 0.1em;
 }
-
+.keywords_bg {
+  background-color: lighten($color: $color-yellow, $amount: 30);
+  padding: 0 0.1em;
+}
 .lp {
   position: relative;
 }

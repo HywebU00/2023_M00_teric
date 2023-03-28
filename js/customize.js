@@ -24,6 +24,10 @@ $(function () {
     $('.cp_data_left').stop().toggleClass('open');
     $(this).stop().toggleClass('open');
   });
+  // 限縮依據
+  $('.constriction_list ul li .close').click(function () {
+    $(this).parent('li').remove();
+  });
   //   cp頁左欄
   $('.pic_block').slick({
     dots: true,

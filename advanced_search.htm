@@ -73,37 +73,43 @@
             <li>
               <a href="#">瀏覽服務</a>
               <ul>
+                <li><a href="#">本院出版品</a></li>
+                <li><a href="#">專案研究報告</a></li>
                 <li><a href="#">期刊論文</a></li>
+                <li><a href="#">研討會論文</a></li>
                 <li><a href="#">圖書全文</a></li>
-                <li><a href="#">教育訊息</a></li>
-                <li><a href="#">研究計畫及報告</a></li>
+                <li><a href="#">國際教育訊息</a></li>
               </ul>
             </li>
             <li>
               <a href="#">查詢服務</a>
               <ul>
                 <li><a href="#">簡易查詢</a></li>
-                <li><a href="#">進階查詢</a></li>
+                <li>
+                  <a href="#">進階查詢</a>
+                  <ul>
+                    <li><a href="#">共通查詢</a></li>
+                    <li><a href="#">本院出版品</a></li>
+                    <li><a href="#">專案研究報告</a></li>
+                    <li><a href="#">期刊論文</a></li>
+                    <li><a href="#">研討會論文</a></li>
+                    <li><a href="#">圖書全文</a></li>
+                    <li><a href="#">國際教育訊息</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
-            <li>
-              <a href="#">關於本站</a>
-              <ul>
-                <li><a href="http://www.google.com">最新消息</a></li>
-                <li><a href="#">操作說明</a></li>
-                <li><a href="#">常見問題</a></li>
-                <li><a href="#">問題通報</a></li>
-                <li><a href="#">相關連結</a></li>
-              </ul>
-            </li>
+            <li><a href="#">最新資料</a></li>
+            <li><a href="#">最新消息</a></li>
             <li>
               <a href="#">會員專區</a>
               <ul>
-                <li><a href="#">個人收藏</a></li>
-                <li><a href="#">主題訂閱</a></li>
+                <li><a href="#">修改個人資料</a></li>
+                <li><a href="#">瀏覽偏好設定</a></li>
                 <li><a href="#">歷史查詢</a></li>
-                <li><a href="#">偏好設定</a></li>
-                <li><a href="#">個人資料維護</a></li>
+                <li><a href="#">新知訂閱</a></li>
+                <li><a href="#">我的最愛
+                <li><a href="#">主題書目專題選粹</a></li>
               </ul>
             </li>
           </ul>
@@ -123,19 +129,19 @@
               <div class="form_grp">
                 <label for="username" class="form_title">帳號<span>Account</span></label>
                 <div class="form_content">
-                  <input type="text" id="username" placeholder="請輸入帳號" value="" class="account">
+                  <input type="text" id="username" placeholder="請輸入帳號" value="" class="account" />
                 </div>
               </div>
               <div class="form_grp">
                 <label for="password" class="form_title">密碼<span>Password</span></label>
                 <div class="form_content">
                   <div class="labelEffect password_toggle">
-                    <input name="password" type="password" placeholder="請輸入密碼" value="1234" class="password" title="請輸入密碼" id="">
+                    <input name="password" type="password" placeholder="請輸入密碼" value="1234" class="password" title="請輸入密碼" id="" />
                     <button type="button" class="btn btn-icon" value="觀看密碼" aria-label="觀看密碼"><i class="i_hide"></i></button>
                   </div>
                 </div>
               </div>
-              <div class="verify_box"><img src="images/verify_box.png" alt=""></div>
+              <div class="verify_box"><img src="images/verify_box.png" alt="" /></div>
               <div class="btn_grp form_inline">
                 <button class="btn loginbtn" value="登入 Login">登入 Login</button>
               </div>
@@ -143,13 +149,13 @@
               <div class="community">
                 <ul>
                   <li>
-                    <a href="#"><img src="images/community_icon01.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/community_icon01.png" alt="Facebook" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="images/community_icon02.png" alt="google"></a>
+                    <a href="#"><img src="images/community_icon02.png" alt="google" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="images/community_icon03.png" alt="line"></a>
+                    <a href="#"><img src="images/community_icon03.png" alt="line" /></a>
                   </li>
                 </ul>
               </div>
@@ -163,175 +169,203 @@
     </header>
     <!-- header End -->
     <!-- main Start -->
-    <div id="center" class="main">
+    <div id="center" class="main innerpage">
       <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-      <!--進階查詢 start-->
-      <section class="Search_block col-12">
-        <div class="container">
-          <div class="col">
-            <div class="search_group Advanced_group">
-              <h2>進階查詢<span>Advanced Search</span></h2>
-              <div class="Advanced_search_content">
-                <form action="">
-                  <div class="flex-form form_grid ">
-                    <div class="form_grp advancedform">
-                      <div class="form_content form_inline advancedgroup">
-                        <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
-                        <label for="selectSample" class="label_hide">分類</label>
-                        <select id="selectSample" name="">
-                          <option value="">題名</option>
-                          <option value="">設計</option>
-                          <option value="">古典與傳統音樂</option>
-                          <option value="">流行音樂</option>
-                          <option value="">戲劇</option>
-                          <option value="">舞蹈</option>
-                        </select>
-                      </div>
-                      <div class="form_content form_inline ">
-                        <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />AND</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />OR</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />NOT</label>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <nav aria-label="現在位置" class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li aria-current="page">進階查詢</li>
+            </ul>
+          </nav>
+          <!--進階查詢 start-->
+          <section class="Search_block col-12 Advanced_block">
+            <div class="container">
+              <div class="col">
+                <div class="search_group Advanced_group">
+                  <h2>進階查詢<span>Advanced Search</span></h2>
+                  <div class="Advanced_search_content">
+                    <form action="">
+                      <div class="flex-form form_grid">
+                        <div class="form_grp advancedform">
+                          <div class="form_content form_inline advancedgroup">
+                            <label for="selectSample" class="label_hide">分類</label>
+                            <select id="selectSample" name="">
+                              <option value="">題名</option>
+                              <option value="">設計</option>
+                              <option value="">古典與傳統音樂</option>
+                              <option value="">流行音樂</option>
+                              <option value="">戲劇</option>
+                              <option value="">舞蹈</option>
+                            </select>
+                            <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
+                          </div>
+                          <div class="form_content form_inline">
+                            <div class="radio_grp form_inline">
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />AND</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />OR</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />NOT</label>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="form_grp advancedform">
-                      <div class="form_content form_inline advancedgroup">
-                        <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
-                        <label for="selectSample" class="label_hide">分類</label>
-                        <select id="selectSample" name="">
-                          <option value="">題名</option>
-                          <option value="">設計</option>
-                          <option value="">古典與傳統音樂</option>
-                          <option value="">流行音樂</option>
-                          <option value="">戲劇</option>
-                          <option value="">舞蹈</option>
-                        </select>
-                      </div>
-                      <div class="form_content form_inline ">
-                        <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />AND</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />OR</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />NOT</label>
+                        <div class="form_grp advancedform">
+                          <div class="form_content form_inline advancedgroup">
+                            <label for="selectSample" class="label_hide">分類</label>
+                            <select id="selectSample" name="">
+                              <option value="">題名</option>
+                              <option value="">設計</option>
+                              <option value="">古典與傳統音樂</option>
+                              <option value="">流行音樂</option>
+                              <option value="">戲劇</option>
+                              <option value="">舞蹈</option>
+                            </select>
+                            <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
+                          </div>
+                          <div class="form_content form_inline">
+                            <div class="radio_grp form_inline">
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />AND</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />OR</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />NOT</label>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="form_grp advancedform">
-                      <div class="form_content form_inline advancedgroup">
-                        <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
-                        <label for="selectSample" class="label_hide">分類</label>
-                        <select id="selectSample" name="">
-                          <option value="">題名</option>
-                          <option value="">設計</option>
-                          <option value="">古典與傳統音樂</option>
-                          <option value="">流行音樂</option>
-                          <option value="">戲劇</option>
-                          <option value="">舞蹈</option>
-                        </select>
-                        <button type="button" class="btn btn-black addition">增加</button>
-                      </div>
-                      <div class="form_content form_inline ">
-                        <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />AND</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />OR</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />NOT</label>
+                        <div class="form_grp advancedform">
+                          <div class="form_content form_inline advancedgroup">
+                            <label for="selectSample" class="label_hide">分類</label>
+                            <select id="selectSample" name="">
+                              <option value="">題名</option>
+                              <option value="">設計</option>
+                              <option value="">古典與傳統音樂</option>
+                              <option value="">流行音樂</option>
+                              <option value="">戲劇</option>
+                              <option value="">舞蹈</option>
+                            </select>
+                            <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
+                            <button type="button" class="btn btn-black addition">增加</button>
+                          </div>
+                          <div class="form_content form_inline">
+                            <div class="radio_grp form_inline">
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />AND</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />OR</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />NOT</label>
+                            </div>
+                          </div>
+                          <div class="form_content form_inline">
+                            <div class="keywordHot">
+                              <ul>
+                                <li><a href="#">翻轉教室</a></li>
+                                <li><a href="#">媒體素養教育</a></li>
+                                <li><a href="#">學校營運</a></li>
+                                <li><a href="#">課程教學</a></li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="form_content form_inline ">
-                        <div class="keywordHot">
-                          <ul>
-                            <li><a href="#">翻轉教室</a></li>
-                            <li><a href="#">媒體素養教育</a></li>
-                            <li><a href="#">學校營運</a></li>
-                            <li><a href="#">課程教學</a></li>
-                          </ul>
+                        <hr />
+                        <h3>縮小查詢範圍</h3>
+                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                          <label class="form_title">資料類型</label>
+                          <div class="form_content" id="fake-legend">
+                            <div class="check_grp form_inline">
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" checked="" />全部</label>
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />期刊論文</label>
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />圖書全文</label>
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />教育訊息</label>
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />研究計畫及報告</label>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <hr>
-                    <h3>縮小查詢範圍</h3>
-                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                      <label class="form_title">資料類型</label>
-                      <div class="form_content" id="fake-legend">
-                        <div class="check_grp form_inline">
-                          <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" checked="" />全部</label>
-                          <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />期刊論文</label>
-                          <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />圖書全文</label>
-                          <label for="sampleCheckbox"> <input type="checkbox id=" sampleCheckbox"" name="" value="" />教育訊息</label>
-                          <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />研究計畫及報告</label>
+                        <div class="form_grp">
+                          <div class="form_content advancedform2">
+                            <div class="form_grp">
+                              <label for="selectSample" class="form_title">語言</label>
+                              <div class="form_content form_inline">
+                                <select id="selectSample" name="">
+                                  <option value="">請選擇</option>
+                                  <option value="">中文</option>
+                                  <option value="">英文</option>
+                                  <option value="">日文</option>
+                                  <option value="">法文</option>
+                                  <option value="">德文</option>
+                                  <option value="">韓文</option>
+                                  <option value="">西班牙文</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form_grp">
+                              <label for="selectSample" class="form_title">年份</label>
+                              <div class="form_content form_inline">
+                                <select id="selectSample" name="">
+                                  <option value="">請選擇</option>
+                                  <option value="">2020</option>
+                                  <option value="">2021</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="form_grp">
-                      <label for="selectSample" class="form_title">選單</label>
-                      <div class="form_content form_inline">
-                        <select id="selectSample" name="">
-                          <option value="">請選擇</option>
-                          <option value="">視覺藝術（藝術品與美術）</option>
-                          <option value="">工藝（不含古物、古董）</option>
-                          <option value="">設計</option>
-                          <option value="">古典與傳統音樂</option>
-                          <option value="">流行音樂</option>
-                          <option value="">戲劇</option>
-                          <option value="">舞蹈</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                      <label class="form_title">其他條件</label>
-                      <div class="form_content" id="fake-legend">
-                        <div class="check_grp form_inline">
-                          <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />已授權</label>
-                          <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />有全文</label>
+                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                          <label class="form_title">其他條件</label>
+                          <div class="form_content" id="fake-legend">
+                            <div class="check_grp form_inline">
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />已授權</label>
+                              <label for="sampleCheckbox"> <input type="checkbox" id="sampleCheckbox" name="" value="" />有全文</label>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <hr>
-                    <h3>其他設定</h3>
-                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                      <div for="fake-legend" class="form_title">查詢模式</div>
-                      <div class="form_content" id="fake-legend">
-                        <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />精確查詢</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />模糊查詢</label>
+                        <hr />
+                        <h3>其他設定</h3>
+                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                          <div for="fake-legend" class="form_title">查詢模式</div>
+                          <div class="form_content" id="fake-legend">
+                            <div class="radio_grp form_inline">
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />精確查詢</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />模糊查詢</label>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                      <div for="fake-legend" class="form_title">查詢結果顯示模式</div>
-                      <div class="form_content" id="fake-legend">
-                        <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />條列式</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />簡目式</label>
+                        <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                          <div for="fake-legend" class="form_title">查詢結果顯示模式</div>
+                          <div class="form_content" id="fake-legend">
+                            <div class="radio_grp form_inline">
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />條列式</label>
+                              <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />簡目式</label>
+                            </div>
+                          </div>
                         </div>
+                        <div class="form_grp">
+                          <label for="selectSample" class="form_title">查詢結果每頁筆數</label>
+                          <div class="form_content form_inline">
+                            <select id="selectSample" name="">
+                              <option value="">10</option>
+                              <option value="">20</option>
+                              <option value="">30</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="btn_grp form_inline">
+                          <button class="btn btn-submit">查詢</button>
+                          <button class="btn btn-reset">重填</button>
+                        </div>
+                        <div class="back_search"><a href="#">回簡易查詢</a></div>
                       </div>
-                    </div>
-                    <div class="form_grp">
-                      <label for="selectSample" class="form_title">查詢結果每頁筆數</label>
-                      <div class="form_content form_inline">
-                        <select id="selectSample" name="">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="btn_grp form_inline">
-                      <button class="btn btn-submit">查詢</button>
-                      <button class="btn btn-reset">重填</button>
-                    </div>
-                    <div class="back_search"><a href="#">回簡易查詢</a></div>
+                    </form>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+          <!-- 進階查詢 end-->
         </div>
-      </section>
-      <!-- 進階查詢 end-->
+      </div>
     </div>
     <!-- fatfooter Start -->
-    <section class="fatfooter ">
+    <section class="fatfooter">
       <div class="container">
         <!-- <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button> -->
         <nav aria-label="fatfooter的導航列">
@@ -339,37 +373,43 @@
             <li>
               <a href="#">瀏覽服務</a>
               <ul>
+                <li><a href="#">本院出版品</a></li>
+                <li><a href="#">專案研究報告</a></li>
                 <li><a href="#">期刊論文</a></li>
+                <li><a href="#">研討會論文</a></li>
                 <li><a href="#">圖書全文</a></li>
-                <li><a href="#">教育訊息</a></li>
-                <li><a href="#">研究計畫及報告</a></li>
+                <li><a href="#">國際教育訊息</a></li>
               </ul>
             </li>
             <li>
               <a href="#">查詢服務</a>
               <ul>
                 <li><a href="#">簡易查詢</a></li>
-                <li><a href="#">進階查詢</a></li>
+                <li>
+                  <a href="#">進階查詢</a>
+                  <ul>
+                    <li><a href="#">共通查詢</a></li>
+                    <li><a href="#">本院出版品</a></li>
+                    <li><a href="#">專案研究報告</a></li>
+                    <li><a href="#">期刊論文</a></li>
+                    <li><a href="#">研討會論文</a></li>
+                    <li><a href="#">圖書全文</a></li>
+                    <li><a href="#">國際教育訊息</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
-            <li>
-              <a href="#">關於本站</a>
-              <ul>
-                <li><a href="http://www.google.com">最新消息</a></li>
-                <li><a href="#">操作說明</a></li>
-                <li><a href="#">常見問題</a></li>
-                <li><a href="#">問題通報</a></li>
-                <li><a href="#">相關連結</a></li>
-              </ul>
-            </li>
+            <li><a href="#">最新資料</a></li>
+            <li><a href="#">最新消息</a></li>
             <li>
               <a href="#">會員專區</a>
               <ul>
-                <li><a href="#">個人收藏</a></li>
-                <li><a href="#">主題訂閱</a></li>
+                <li><a href="#">修改個人資料</a></li>
+                <li><a href="#">瀏覽偏好設定</a></li>
                 <li><a href="#">歷史查詢</a></li>
-                <li><a href="#">偏好設定</a></li>
-                <li><a href="#">個人資料維護</a></li>
+                <li><a href="#">新知訂閱</a></li>
+                <li><a href="#">我的最愛
+                <li><a href="#">主題書目專題選粹</a></li>
               </ul>
             </li>
           </ul>
@@ -394,7 +434,8 @@
             <li><a href="javascript:;">聯絡信箱</a></li>
           </ul>
           <p>
-            地址：106011 臺北市大安區和平東路一段179號<br /> 電話：02-7740-7877 傳真：02-7740-7886
+            地址：106011 臺北市大安區和平東路一段179號<br />
+            電話：02-7740-7877 傳真：02-7740-7886
           </p>
           <p class="Copyright">國家教育研究院 版權所有</p>
           <div class="footer_icon">

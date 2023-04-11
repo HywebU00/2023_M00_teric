@@ -7714,6 +7714,7 @@ table.table_sprite tr:nth-child(even) {
   clear: both;
   padding: 30px 0px;
   display: none;
+  height: 300px;
 }
 @media screen and (max-width: 767px) {
   .cp_data_tabs .tabContent {
@@ -10607,6 +10608,9 @@ h2.title {
   padding: 0.5em;
   border-radius: 50px;
   cursor: pointer;
+}
+.cp_data_block .cp_data_left .data_btn_list ul li a:hover {
+  background-color: #044646;
 }
 .cp_data_block .cp_data_right {
   flex: 1 1 auto;

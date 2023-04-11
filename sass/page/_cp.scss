@@ -183,6 +183,9 @@ h2.title {
             padding: 0.5em;
             border-radius: 50px;
             cursor: pointer;
+            &:hover {
+              background-color: darken($color: $secondaryColor, $amount: 10);
+            }
           }
         }
       }

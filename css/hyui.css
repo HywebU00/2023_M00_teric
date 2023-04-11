@@ -10606,6 +10606,7 @@ h2.title {
   text-align: center;
   padding: 0.5em;
   border-radius: 50px;
+  cursor: pointer;
 }
 .cp_data_block .cp_data_right {
   flex: 1 1 auto;

@@ -3049,7 +3049,7 @@ em[tooltip]:hover, em[tooltip]:focus {
   font-weight: bolder;
 }
 .category a {
-  padding: 0.3em 2em;
+  padding: 0.4em 2em;
   display: block;
   color: #333;
   box-sizing: border-box;
@@ -3060,26 +3060,20 @@ em[tooltip]:hover, em[tooltip]:focus {
 }
 .category a:hover, .category a:focus {
   color: #fff;
-  background-color: #067776;
-  border: #067776;
-  border: 1px solid #067776;
+  background-color: #666;
+  border: #666;
+  border: 1px solid #666;
   box-shadow: none;
 }
 .category a.active {
   color: #fff;
-  background-color: #067776;
-  border: 1px solid #067776;
+  background-color: #666;
+  border: 1px solid #666;
 }
-.category a span {
-  font-size: 0.813em;
-}
-.category a span:before {
-  content: "(";
-  display: inline-block;
-}
-.category a span:after {
-  content: ")";
-  display: inline-block;
+.category a em {
+  font-size: 0.938em;
+  font-style: normal;
+  margin-left: 0.5em;
 }
 
 div.tag {
@@ -11853,12 +11847,24 @@ h2.title {
   font-weight: bold;
   font-size: 1em;
   margin-right: 3em;
-  margin-bottom: 0.5em;
+}
+.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li img {
+  width: 36px;
+  vertical-align: middle;
+  margin: 0 2px;
 }
 .classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span {
   color: #666;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span img {
+.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 3px;
+}
+.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a img {
   width: 30px;
   vertical-align: middle;
 }

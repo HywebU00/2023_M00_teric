@@ -14,7 +14,7 @@
     }
   }
   a {
-    padding: 0.3em 2em;
+    padding: 0.4em 2em;
     display: block;
     color: #333;
     box-sizing: border-box;
@@ -25,26 +25,28 @@
     &:hover,
     &:focus {
       color: #fff;
-      background-color: $secondaryColor;
-      border: $secondaryColor;
-      border: 1px solid $secondaryColor;
+      background-color: $color-hr;
+      border: $color-hr;
+      border: 1px solid$color-hr;
       box-shadow: none;
     }
     &.active {
       color: #fff;
-      background-color: $secondaryColor;
-      border: 1px solid $secondaryColor;
+      background-color: $color-hr;
+      border: 1px solid$color-hr;
     }
-    span {
-      font-size: 0.813em;
-      &:before {
-        content: '(';
-        display: inline-block;
-      }
-      &:after {
-        content: ')';
-        display: inline-block;
-      }
+    em {
+      font-size: 0.938em;
+      font-style: normal;
+      margin-left: 0.5em;
+      // &:before {
+      //   content: '(';
+      //   display: inline-block;
+      // }
+      // &:after {
+      //   content: ')';
+      //   display: inline-block;
+      // }
     }
   }
 }

@@ -3044,7 +3044,7 @@ em[tooltip]:hover, em[tooltip]:focus {
 }
 .category ul li {
   margin: 0 0.5em 0.5em 0;
-  flex: 0 0 auto;
+  flex: 1 1 auto;
   font-size: 1.125em;
   font-weight: bolder;
 }

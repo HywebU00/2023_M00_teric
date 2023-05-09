@@ -131,8 +131,8 @@ a.more {
         width: 364px;
         height: 346px;
         position: absolute;
-        bottom: -180px;
-        left: -188px;
+        bottom: -156px;
+        left: -257px;
         background-image: url('../images/search_bg01.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -436,9 +436,9 @@ a.more {
         max-width: 100% !important;
         .form_grp {
           flex: 0 0 auto;
-          flex-basis: 70%;
+          flex-basis: 50%;
           &:nth-of-type(2) {
-            flex-basis: 30%;
+            flex-basis: 50%;
           }
           @media screen and (max-width: 992px) {
             flex-basis: 100%;
@@ -859,6 +859,10 @@ a.more {
             @media screen and (max-width: 380px) {
               flex: 0 0 100%;
               max-width: 100%;
+            }
+            img {
+              width: 80px;
+              height: 74px;
             }
           }
           .content {

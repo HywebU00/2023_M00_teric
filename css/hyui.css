@@ -7159,7 +7159,7 @@ table.table_sprite tr:nth-child(even) {
   }
 }
 .lp .list {
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 .lp .list > ul,
 .lp .list ol {
@@ -7295,6 +7295,10 @@ table.table_sprite tr:nth-child(even) {
   display: block;
   color: #666;
 }
+.lp .list > ul > li .data_content ul li img,
+.lp .list ol > li .data_content ul li img {
+  vertical-align: middle;
+}
 .lp .list > ul > li ul,
 .lp .list ol > li ul {
   margin: 1em 0 0 4em;
@@ -7314,12 +7318,28 @@ table.table_sprite tr:nth-child(even) {
   font-size: 1em;
   margin-right: 3em;
 }
+.lp .list > ul > li ul li img,
+.lp .list ol > li ul li img {
+  width: 36px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
 .lp .list > ul > li ul li span,
 .lp .list ol > li ul li span {
   color: #666;
 }
-.lp .list > ul > li ul li span img,
-.lp .list ol > li ul li span img {
+.lp .list > ul > li ul li span a,
+.lp .list ol > li ul li span a {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 3px;
+}
+.lp .list > ul > li ul li span a:hover,
+.lp .list ol > li ul li span a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.lp .list > ul > li ul li span a img,
+.lp .list ol > li ul li span a img {
   width: 30px;
   vertical-align: middle;
 }
@@ -9014,6 +9034,7 @@ div.function ul li.icon_forward a:before {
 }
 
 .pagination {
+  flex: 1 1 auto;
   margin: 1em auto;
   padding: 0;
   display: block;
@@ -9039,7 +9060,7 @@ div.function ul li.icon_forward a:before {
   height: 40px;
   margin: 2px;
   list-style: none;
-  flex: 0 0 40px;
+  flex: 0 0 auto;
   box-sizing: border-box;
 }
 .pagination .page li a {
@@ -9637,8 +9658,8 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   width: 364px;
   height: 346px;
   position: absolute;
-  bottom: -180px;
-  left: -188px;
+  bottom: -156px;
+  left: -257px;
   background-image: url("../images/search_bg01.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -9963,10 +9984,10 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 }
 .Search_block .search_group .Advanced_search_content .advancedform2 .form_grp {
   flex: 0 0 auto;
-  flex-basis: 70%;
+  flex-basis: 50%;
 }
 .Search_block .search_group .Advanced_search_content .advancedform2 .form_grp:nth-of-type(2) {
-  flex-basis: 30%;
+  flex-basis: 50%;
 }
 @media screen and (max-width: 992px) {
   .Search_block .search_group .Advanced_search_content .advancedform2 .form_grp {
@@ -10177,6 +10198,10 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+.Detatype_block .data_type_group .data_type_content .data_type_list a .image img {
+  width: 80px;
+  height: 74px;
 }
 .Detatype_block .data_type_group .data_type_content .data_type_list a .content {
   flex: 1 1 auto;
@@ -11293,10 +11318,28 @@ h2.title {
   }
 }
 
+.chooseblock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em 0;
+}
+
+.keywordsearch_block {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  display: flex;
+  margin: 0 0 1em;
+}
+.keywordsearch_block input {
+  margin: 0.3em 0.3em 0.3em 0;
+}
+
 .select_block {
+  flex: 0 0 auto;
   margin: 0 0 1em;
   padding: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -11310,7 +11353,9 @@ h2.title {
   flex: 1 1 auto;
   display: flex;
   align-items: center;
-  margin-right: 1em;
+  margin-right: 0.5em;
+  justify-content: center;
+  padding-left: 0.3em;
 }
 .select_block label {
   font-size: 0;
@@ -11457,12 +11502,13 @@ h2.title {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
   position: relative;
+  flex: 1 1 auto;
 }
 .constriction_block .constriction_list ul li a {
   display: block;
   padding: 0.3em 3em 0.3em 1.5em;
   border: 1px solid #ccc;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #333;
   font-size: 0.938em;
   position: relative;
@@ -11473,14 +11519,13 @@ h2.title {
 }
 @media screen and (max-width: 767px) {
   .constriction_block .constriction_list ul li a {
-    border-radius: 5px;
     padding: 0.3em 3em 0.3em 1em;
   }
 }
 .constriction_block .constriction_list ul li .close {
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 1.2em;
   right: 0.8em;
   margin-top: -9px;
 }

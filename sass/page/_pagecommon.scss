@@ -10,10 +10,26 @@
 }
 
 //
+.chooseblock {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em 0;
+}
+.keywordsearch_block {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  display: flex;
+  margin: 0 0 1em;
+  input {
+    margin: 0.3em 0.3em 0.3em 0;
+  }
+}
 .select_block {
+  flex: 0 0 auto;
   margin: 0 0 1em;
   padding: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   // max-width: 200px;
@@ -25,7 +41,9 @@
     flex: 1 1 auto;
     display: flex;
     align-items: center;
-    margin-right: 1em;
+    margin-right: 0.5em;
+    justify-content: center;
+    padding-left: 0.3em;
   }
   label {
     font-size: 0;
@@ -61,6 +79,7 @@
     min-width: 5em;
     background: $color-hr;
     border: 1px solid $color-hr;
+
     &:hover {
       background: $color-dark;
       border: 1px solid $color-dark;
@@ -164,28 +183,28 @@
         margin-right: 0.5em;
         margin-bottom: 0.5em;
         position: relative;
-
+        flex: 1 1 auto;
         a {
           display: block;
           padding: 0.3em 3em 0.3em 1.5em;
           border: 1px solid #ccc;
-          border-radius: 50px;
+          border-radius: 5px;
           color: #333;
           font-size: 0.938em;
           position: relative;
           z-index: 1;
+          // word-break: keep-all;
           &:hover {
             color: $aHover;
           }
           @include screen('mobile') {
-            border-radius: 5px;
             padding: 0.3em 3em 0.3em 1em;
           }
         }
         .close {
           position: absolute;
           z-index: 2;
-          top: 50%;
+          top: 1.2em;
           right: 0.8em;
           margin-top: -9px;
           a {

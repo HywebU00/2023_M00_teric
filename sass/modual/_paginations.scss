@@ -1,4 +1,5 @@
 .pagination {
+  flex: 1 1 auto;
   margin: 1em auto;
   padding: 0;
   display: block;
@@ -23,7 +24,7 @@
       height: 40px;
       margin: 2px;
       list-style: none;
-      flex: 0 0 40px;
+      flex: 0 0 auto;
       box-sizing: border-box;
       // @include screen('mobile') {
       //   height: auto;
@@ -134,74 +135,7 @@
       }
     }
   }
-  // .total {
-  //   padding: 0;
-  //   vertical-align: middle;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   @include screen('xs_mobile') {
-  //     flex-wrap: wrap;
-  //     width: 100%;
-  //     padding: 0;
-  //     .btn-submit,
-  //     .jump_page,
-  //     .page_shows {
-  //       width: auto;
-  //       margin-bottom: 0.5em;
-  //     }
-  //   }
-  //   .jump_page {
-  //     label {
-  //       display: inline;
-  //       margin: 0;
-  //     }
-  //   }
-  //   .page_shows {
-  //     label {
-  //       display: inline;
-  //       margin: 0;
-  //     }
-  //   }
-  //   select {
-  //     margin: 0px 0.1em;
-  //     padding: 0.4em 2.5em 0.4em 1.2em;
-  //     position: relative;
-  //     background-image: url('../images/icon/icon_select_arrow2.png');
-  //     background-size: 26px 16px;
-  //     border-radius: 50px;
-  //     @media screen and (max-width: 400px) {
-  //       margin: 0px;
-  //     }
-  //   }
-  //   .btn {
-  //     min-width: auto;
-  //     padding: 0.4em 0.6em !important;
-  //   }
-  //   input {
-  //     margin: 0;
-  //   }
-  //   input[type='text'] {
-  //     border-radius: 50px;
-  //     width: 3.5em;
-  //     text-align: center;
-  //     margin: 0 0.3em;
-  //     padding: 0.4em;
-  //   }
-  //   .btn-submit {
-  //     background: rgb(234, 231, 231);
-  //     background: linear-gradient(0deg, rgba(234, 231, 231, 1) 0%, rgba(250, 247, 247, 1) 100%);
-  //     border: rgb(234, 231, 231) solid 1px;
-  //     color: $btn-word;
-  //     @media screen and (max-width: 500px) {
-  //       width: 95%;
-  //     }
-  //     &:hover {
-  //       background: #ccc;
-  //       border: 1px solid #ccc;
-  //     }
-  //   }
-  // }
+
   .total {
     padding: 0em;
     display: inline-block;

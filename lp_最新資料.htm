@@ -184,49 +184,54 @@
               <ul>
                 <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
                 <!-- <li class="print"><a href="#">友善列印</a></li>
-                                <li class="forward"><a href="#">轉寄友人</a></li> -->
+                <li class="forward"><a href="#">轉寄友人</a></li> -->
               </ul>
             </div>
           </div>
           <!-- LP Start -->
           <section class="lp">
-
             <div class="innerpage_content">
-              <!-- 選項 start-->
-              <div class="select_block">
-                <div class="interval_group">
-                  <label for="selectSample">請選擇帶入的查詢欄位：</label>
-                  <select id="selectSample" name="">
-                    <option value="">公告日期 升冪</option>
-                    <option value="">公告日期 降冪</option>
-                    <option value="">資料類型</option>
-                    <option value="">作者</option>
-                    <option value="">書名</option>
-                    <option value="">出版者</option>
-                  </select>
-                  <input type="button" value="確定" class="btn btn-submit" />
-                </div>
-                <div class="interval_group">
+              <!-- 選擇區塊start -->
+              <div class="chooseblock">
+                <!-- 關鍵字搜尋start -->
+                <div class="keywordsearch_block">
                   <input type="text" value="" placeholder="關鍵字搜尋" />
                   <input type="button" value="查詢" class="btn btn-submit" />
                 </div>
+                <!-- 關鍵字搜尋end -->
+                <!-- 選項 start-->
+                <div class="select_block">
+                  <div class="interval_group">
+                    <label for="selectSample">請選擇帶入的查詢欄位：</label>
+                    <select id="selectSample" name="">
+                      <option value="">公告日期 升冪</option>
+                      <option value="">公告日期 降冪</option>
+                      <option value="">資料類型</option>
+                      <option value="">作者</option>
+                      <option value="">書名</option>
+                      <option value="">出版者</option>
+                    </select>
+                    <input type="button" value="確定" class="btn btn-submit" />
+                  </div>
+                </div>
+                <!-- 選項 end-->
+                <div class="pagination">
+                  <div class="total">共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
+                  <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆</div>
+                  <ul class="page">
+                    <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                    <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="xs_hidden"><a href="#">2</a></li>
+                    <li class="xs_hidden"><a href="#">3</a></li>
+                    <li class="xs_hidden"><a href="#">4</a></li>
+                    <li class="xs_hidden"><a href="#">5</a></li>
+                    <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                    <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                  </ul>
+                </div>
               </div>
-              <!-- 選項 end-->
-              <div class="pagination">
-                <div class="total">共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
-                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆</div>
-                <ul class="page">
-                  <li class="first"><a href="#" title="第一頁">第一頁</a></li>
-                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                  <li class="active"><a href="#">1</a></li>
-                  <li class="xs_hidden"><a href="#">2</a></li>
-                  <li class="xs_hidden"><a href="#">3</a></li>
-                  <li class="xs_hidden"><a href="#">4</a></li>
-                  <li class="xs_hidden"><a href="#">5</a></li>
-                  <li class="next"><a href="#" title="下一頁">下一頁</a></li>
-                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
-                </ul>
-              </div>
+              <!-- 選擇區塊end -->
               <!-- 文字列表 -->
               <!-- 有出版日期時，class請加list_havedate -->
               <div class="list list_havedate">
@@ -241,9 +246,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -256,9 +261,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_odt.svg" alt="odt檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -271,9 +276,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_odt.svg" alt="odt檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -286,9 +291,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -301,9 +306,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -316,9 +321,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -331,9 +336,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -346,9 +351,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -361,9 +366,9 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                   <li>
@@ -376,28 +381,32 @@
                     </div>
                     <ul>
                       <li>
-                        線上全文：<span><img src="images/basic/icon_pdf.png" alt="pdf檔" /></span>
+                        線上全文：<span><a href="#"><img src="images/icon_pdf.svg" alt="pdf檔" /></a></span>
                       </li>
-                      <li>資料類型：<span>教育訊息</span></li>
+                      <li>資料類型：<img src="images/datatype03.svg" alt="教育訊息"></li>
                     </ul>
                   </li>
                 </ul>
               </div>
-              <div class="pagination">
-                <div class="total">共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
-                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆</div>
-                <ul class="page">
-                  <li class="first"><a href="#" title="第一頁">第一頁</a></li>
-                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                  <li class="active"><a href="#">1</a></li>
-                  <li class="xs_hidden"><a href="#">2</a></li>
-                  <li class="xs_hidden"><a href="#">3</a></li>
-                  <li class="xs_hidden"><a href="#">4</a></li>
-                  <li class="xs_hidden"><a href="#">5</a></li>
-                  <li class="next"><a href="#" title="下一頁">下一頁</a></li>
-                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
-                </ul>
+              <!-- 選擇區塊start -->
+              <div class="chooseblock">
+                <div class="pagination">
+                  <div class="total">共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
+                  <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆</div>
+                  <ul class="page">
+                    <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                    <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="xs_hidden"><a href="#">2</a></li>
+                    <li class="xs_hidden"><a href="#">3</a></li>
+                    <li class="xs_hidden"><a href="#">4</a></li>
+                    <li class="xs_hidden"><a href="#">5</a></li>
+                    <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                    <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                  </ul>
+                </div>
               </div>
+              <!-- 選擇區塊end-->
             </div>
           </section>
           <!-- LP End -->

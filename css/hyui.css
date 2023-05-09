@@ -3044,9 +3044,14 @@ em[tooltip]:hover, em[tooltip]:focus {
 }
 .category ul li {
   margin: 0 0.5em 0.5em 0;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   font-size: 1.125em;
   font-weight: bolder;
+}
+@media screen and (max-width: 575px) {
+  .category ul li {
+    flex: 1 1 auto;
+  }
 }
 .category a {
   padding: 0.4em 2em;

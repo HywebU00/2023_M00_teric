@@ -8,9 +8,12 @@
     flex-wrap: wrap;
     li {
       margin: 0 0.5em 0.5em 0;
-      flex: 1 1 auto;
+      flex: 0 0 auto;
       font-size: 1.125em;
       font-weight: bolder;
+      @include screen('xs_mobile') {
+        flex: 1 1 auto;
+      }
     }
   }
   a {

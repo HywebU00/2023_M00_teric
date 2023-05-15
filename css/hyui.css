@@ -7619,19 +7619,41 @@ table.table_sprite tr:nth-child(even) {
   font-size: 0.813em;
   color: #666;
 }
-.member_tabs .tabContent .list_page {
-  margin-bottom: 1em;
+.member_tabs .tabContent .material_group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.member_tabs .tabContent .material_group .list_page {
+  flex: 0 0 auto;
   color: #262626;
   font-weight: bolder;
 }
-.member_tabs .tabContent .list_page em {
+.member_tabs .tabContent .material_group .list_page em {
   font-style: normal;
   color: #2f72ab;
   padding: 0 0.3em;
   font-family: "Amiko", sans-serif;
 }
+.member_tabs .tabContent .material_group .keywordblock {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.member_tabs .tabContent .material_group .keywordblock label,
+.member_tabs .tabContent .material_group .keywordblock input,
+.member_tabs .tabContent .material_group .keywordblock button {
+  flex: 0 0 auto;
+}
+.member_tabs .tabContent .material_group .keywordblock input {
+  flex-basis: 200px;
+}
 .member_tabs .tabContent .table_list {
   margin-bottom: 2em;
+}
+.member_tabs .tabContent .table_list td.aCenter {
+  white-space: nowrap;
 }
 
 .classification_tabs .tabContent {

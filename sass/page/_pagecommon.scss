@@ -260,48 +260,113 @@
     .form_grp {
       border: none;
     }
+    @include screen('tablet') {
+      .form_title {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+      .form_content {
+        max-width: 100%;
+        flex: 1 1 auto;
+        flex-basis: 100%;
+      }
+    }
+
     .form_inline {
-      input,
-      select,
-      button {
-        margin-left: 0;
-      }
-      input[type='text'] {
-        flex: 1 1 auto;
-        flex-basis: calc(100% - 100px - 13% - 150px - 40px);
-      }
-      select {
-        flex: 1 1 auto;
-        flex-basis: 13%;
-      }
-      .tactics_btn {
-        flex: 1 1 auto;
-        flex-basis: 140px;
-        margin-right: 0.3em;
-      }
-      .addition {
-        font-size: 0;
-        background-image: url('../images/icon/icon_add2.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 14px;
-        width: 40px;
-        height: 40px;
-        flex: 0 0 auto;
-        flex-basis: 40px;
-      }
-      @media screen and (max-width: 900px) {
-        input[type='text'] {
-          flex: 1 1 auto;
-          flex-basis: calc(100% - 200px - 13%);
-        }
+      .search_group {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        input,
         select {
-          flex: 1 1 auto;
-          flex-basis: 13%;
+          margin-left: 0;
+          margin-right: 0;
+          width: 100%;
         }
-        .tactics_btn {
+
+        .search_left {
+          flex: 0 0 auto;
+          flex-basis: 100px;
+          // outline: 1px solid red;
+          padding: 0 3px 0 0;
+          &.nocontent {
+            label,
+            select {
+              display: none;
+            }
+          }
+          &.nothis {
+            display: none;
+          }
+        }
+        .search_middle {
           flex: 1 1 auto;
-          flex-basis: calc(100% - 150px);
+          // outline: 1px solid red;
+          padding: 0 3px 0 0;
+        }
+        .search_right {
+          flex: 0 0 auto;
+          flex-basis: 160px;
+          // outline: 1px solid red;
+        }
+        .search_btn_content {
+          flex: 0 0 auto;
+          flex-basis: 135px;
+          display: flex;
+          align-items: center;
+          // outline: 1px solid red;
+          button {
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 0;
+            margin-left: 3px;
+          }
+          .tactics_btn {
+            flex: 0 0 auto;
+            flex-basis: 80px;
+          }
+          .addition {
+            font-size: 0;
+            background-image: url('../images/icon/icon_add2.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 14px;
+            width: 40px;
+            height: 40px;
+            flex: 0 0 auto;
+            flex-basis: 46px;
+            // margin-right: 6px;
+          }
+          .minus {
+            font-size: 0;
+            background-image: url('../images/icon/icon_minus2.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 14px;
+            width: 40px;
+            height: 40px;
+            flex: 0 0 auto;
+            flex-basis: 46px;
+            // margin-right: 6px;
+          }
+        }
+        @media (max-width: 600px) {
+          flex-wrap: wrap;
+          padding-bottom: 0.5em;
+          margin-bottom: 0.5em;
+          border-bottom: 1px solid #ccc;
+          .search_right {
+            flex: 0 0 auto;
+            flex-basis: calc(100% - 135px);
+          }
+        }
+        @media (max-width: 380px) {
+          .search_left {
+            flex-basis: 100%;
+          }
+          .search_middle {
+            flex-basis: 100%;
+          }
         }
       }
     }

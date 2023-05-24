@@ -204,18 +204,34 @@
                     <div class="form_grp">
                       <div class="form_title">在搜尋的結果範圍內查詢：</div>
                       <div class="form_content form_inline">
-                        <input name="username" type="text" value="請填寫查詢關鍵詞" placeholder="請填寫查詢關鍵詞" title="請填寫查詢關鍵詞" />
-                        <label for="selectSample" class="label_hide">分類</label>
-                        <select id="selectSample" name="">
-                          <option value="">題名</option>
-                          <option value="">設計</option>
-                          <option value="">古典與傳統音樂</option>
-                          <option value="">流行音樂</option>
-                          <option value="">戲劇</option>
-                          <option value="">舞蹈</option>
-                        </select>
-                        <button type="button" class="btn btn-black tactics_btn">加入查詢策略</button>
-                        <button type="button" class="btn btn-black addition">增加</button>
+                        <!-- 1 -->
+                        <div class="search_group">
+                          <div class="search_left nothis">
+                            <label for="selectSample" class="label_hide">選擇</label>
+                            <select id="selectSample" name="">
+                              <option value="">AND</option>
+                              <option value="">OR</option>
+                            </select>
+                          </div>
+                          <div class="search_middle">
+                            <input name="username" type="text" value="請輸入關鍵字" placeholder="請輸入關鍵字" title="請輸入關鍵字" />
+                          </div>
+                          <div class="search_right"><label for="selectSample" class="label_hide">分類</label>
+                            <select id="selectSample" name="">
+                              <option value="">題名</option>
+                              <option value="">設計</option>
+                              <option value="">古典與傳統音樂</option>
+                              <option value="">流行音樂</option>
+                              <option value="">戲劇</option>
+                              <option value="">舞蹈</option>
+                            </select>
+                          </div>
+                          <div class="search_btn_content">
+                            <button type="button" class="btn btn-black addition">增加</button>
+                            <!-- <button type="button" class="btn btn-black minus">減少</button> -->
+                            <button type="button" class="btn btn-black tactics_btn">查詢</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

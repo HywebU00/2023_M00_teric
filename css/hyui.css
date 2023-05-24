@@ -11595,25 +11595,65 @@ h2.title {
 .search_data .within_search .form_grp {
   border: none;
 }
-.search_data .within_search .form_inline input,
-.search_data .within_search .form_inline select,
-.search_data .within_search .form_inline button {
+@media screen and (max-width: 991px) {
+  .search_data .within_search .form_title {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .search_data .within_search .form_content {
+    max-width: 100%;
+    flex: 1 1 auto;
+    flex-basis: 100%;
+  }
+}
+.search_data .within_search .form_inline .search_group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.search_data .within_search .form_inline .search_group input,
+.search_data .within_search .form_inline .search_group select {
   margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
-.search_data .within_search .form_inline input[type=text] {
+.search_data .within_search .form_inline .search_group .search_left {
+  flex: 0 0 auto;
+  flex-basis: 100px;
+  padding: 0 3px 0 0;
+}
+.search_data .within_search .form_inline .search_group .search_left.nocontent label,
+.search_data .within_search .form_inline .search_group .search_left.nocontent select {
+  display: none;
+}
+.search_data .within_search .form_inline .search_group .search_left.nothis {
+  display: none;
+}
+.search_data .within_search .form_inline .search_group .search_middle {
   flex: 1 1 auto;
-  flex-basis: calc(100% - 100px - 13% - 150px - 40px);
+  padding: 0 3px 0 0;
 }
-.search_data .within_search .form_inline select {
-  flex: 1 1 auto;
-  flex-basis: 13%;
+.search_data .within_search .form_inline .search_group .search_right {
+  flex: 0 0 auto;
+  flex-basis: 160px;
 }
-.search_data .within_search .form_inline .tactics_btn {
-  flex: 1 1 auto;
-  flex-basis: 140px;
-  margin-right: 0.3em;
+.search_data .within_search .form_inline .search_group .search_btn_content {
+  flex: 0 0 auto;
+  flex-basis: 135px;
+  display: flex;
+  align-items: center;
 }
-.search_data .within_search .form_inline .addition {
+.search_data .within_search .form_inline .search_group .search_btn_content button {
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 3px;
+}
+.search_data .within_search .form_inline .search_group .search_btn_content .tactics_btn {
+  flex: 0 0 auto;
+  flex-basis: 80px;
+}
+.search_data .within_search .form_inline .search_group .search_btn_content .addition {
   font-size: 0;
   background-image: url("../images/icon/icon_add2.svg");
   background-repeat: no-repeat;
@@ -11622,20 +11662,37 @@ h2.title {
   width: 40px;
   height: 40px;
   flex: 0 0 auto;
-  flex-basis: 40px;
+  flex-basis: 46px;
 }
-@media screen and (max-width: 900px) {
-  .search_data .within_search .form_inline input[type=text] {
-    flex: 1 1 auto;
-    flex-basis: calc(100% - 200px - 13%);
+.search_data .within_search .form_inline .search_group .search_btn_content .minus {
+  font-size: 0;
+  background-image: url("../images/icon/icon_minus2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  flex-basis: 46px;
+}
+@media (max-width: 600px) {
+  .search_data .within_search .form_inline .search_group {
+    flex-wrap: wrap;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
   }
-  .search_data .within_search .form_inline select {
-    flex: 1 1 auto;
-    flex-basis: 13%;
+  .search_data .within_search .form_inline .search_group .search_right {
+    flex: 0 0 auto;
+    flex-basis: calc(100% - 135px);
   }
-  .search_data .within_search .form_inline .tactics_btn {
-    flex: 1 1 auto;
-    flex-basis: calc(100% - 150px);
+}
+@media (max-width: 380px) {
+  .search_data .within_search .form_inline .search_group .search_left {
+    flex-basis: 100%;
+  }
+  .search_data .within_search .form_inline .search_group .search_middle {
+    flex-basis: 100%;
   }
 }
 

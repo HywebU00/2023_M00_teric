@@ -7218,6 +7218,7 @@ table.table_sprite tr:nth-child(even) {
 .lp .list ol > li > a .num {
   width: 3.5em;
   text-align: center;
+  position: relative;
   position: absolute;
   top: 0;
   left: 0;
@@ -11833,23 +11834,27 @@ h2.title {
 .classification_block .classification_groupright {
   flex: 1 1 auto;
 }
-.classification_block .classification_groupright .classification_data {
+
+.classification_data {
   margin-left: 1.5em;
 }
 @media screen and (max-width: 991px) {
-  .classification_block .classification_groupright .classification_data {
+  .classification_data {
     margin-left: 1em;
   }
 }
-.classification_block .classification_groupright .classification_data input[type=checkbox] {
+.classification_data.noleftbg {
+  margin-left: 0em;
+}
+.classification_data input[type=checkbox] {
   border-radius: 3px;
   width: 22px;
   height: 22px;
   vertical-align: middle;
-  margin: 0 0.5em 0 0;
+  margin: -4px 0.5em 0 0;
   border: 1px solid #cfcfcf;
 }
-.classification_block .classification_groupright .classification_data .classification_heading {
+.classification_data .classification_heading {
   padding: 1em;
   text-align: center;
   position: relative;
@@ -11859,109 +11864,140 @@ h2.title {
   color: #262626;
   border-bottom: 1px solid #262626;
 }
-.classification_block .classification_groupright .classification_data .classification_heading span {
+.classification_data .classification_heading span {
   position: absolute;
   top: 1em;
   left: 0.8em;
 }
 @media screen and (max-width: 480px) {
-  .classification_block .classification_groupright .classification_data .classification_heading {
+  .classification_data .classification_heading {
     text-align: right;
   }
+  .classification_data .classification_heading span {
+    left: 0.3em;
+  }
 }
-.classification_block .classification_groupright .classification_data .classification_list_block {
+.classification_data .classification_list_block {
   display: flex;
   padding: 1.5em 1em 0.5em;
   border-bottom: 1px solid #ccc;
 }
 @media screen and (max-width: 480px) {
-  .classification_block .classification_groupright .classification_data .classification_list_block {
+  .classification_data .classification_list_block {
     flex-wrap: wrap;
+    padding: 1.5em 0.5em 0.5em;
   }
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .num {
+.classification_data .classification_list_block .num {
   flex: 0 0 auto;
-  flex-basis: 66px;
+  flex-basis: 100px;
   font-weight: bolder;
 }
 @media screen and (max-width: 480px) {
-  .classification_block .classification_groupright .classification_data .classification_list_block .num {
+  .classification_data .classification_list_block .num {
     margin-bottom: 1em;
   }
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data {
+.classification_data .classification_list_block .classification_list_data {
   flex: 1 1 auto;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .title {
+.classification_data .classification_list_block .classification_list_data .title {
   font-weight: bolder;
   font-size: 1.125em;
   margin-bottom: 0.5em;
+  display: flex;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .title a {
+@media screen and (max-width: 991px) {
+  .classification_data .classification_list_block .classification_list_data .title {
+    flex-wrap: wrap;
+  }
+}
+.classification_data .classification_list_block .classification_list_data .title a {
+  flex: 1 1 auto;
   color: #262626;
+  display: block;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .title a:hover {
+.classification_data .classification_list_block .classification_list_data .title a:hover {
   color: #2f72ab;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_introduction {
+@media screen and (max-width: 991px) {
+  .classification_data .classification_list_block .classification_list_data .title a {
+    margin-bottom: 10px;
+  }
+}
+.classification_data .classification_list_block .classification_list_data .title .date {
+  flex: 0 0 auto;
+  flex-basis: 250px;
+  font-weight: normal;
+  text-align: right;
+  color: #666;
+  font-size: 0.938em;
+}
+@media screen and (max-width: 991px) {
+  .classification_data .classification_list_block .classification_list_data .title .date {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+.classification_data .classification_list_block .classification_list_data .data_introduction {
   margin: 0 0 1em;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_introduction ul {
+.classification_data .classification_list_block .classification_list_data .data_introduction ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_introduction ul li {
+.classification_data .classification_list_block .classification_list_data .data_introduction ul li {
   color: #666;
   margin: 0 0 0.4em;
   display: block;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content {
+.classification_data .classification_list_block .classification_list_data .data_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul {
   margin: 0 0 0.5em;
   padding: 0;
   list-style-type: none;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul li {
   display: inline-block;
   font-weight: bold;
   font-size: 1em;
   margin-right: 3em;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li img {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul li img {
   width: 36px;
   vertical-align: middle;
   margin: 0 2px;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span {
   color: #666;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a {
   display: inline-block;
   padding: 3px;
   border-radius: 3px;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a:hover {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a img {
+.classification_data .classification_list_block .classification_list_data .data_content .data_type ul li span a img {
   width: 30px;
   vertical-align: middle;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li {
   margin: 0;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a {
   display: block;
   padding: 0.2em;
   border-radius: 50%;
@@ -11973,28 +12009,28 @@ h2.title {
   align-items: center;
   font-size: 0;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.export {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.export {
   background-image: url("../images/share_export.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.forward {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.forward {
   background-image: url("../images/share_forward.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.collect {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.collect {
   background-image: url("../images/share_collect.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.collect.active {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a.collect.active {
   background-image: url("../images/share_collect_active.png");
 }
-.classification_block .classification_groupright .classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a:hover {
+.classification_data .classification_list_block .classification_list_data .data_content .data_share ul li a:hover {
   background-color: #eee;
 }
 

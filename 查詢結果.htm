@@ -931,9 +931,9 @@
                       <div for="fake-legend" class="form_title">輸出範圍：</div>
                       <div class="form_content" id="fake-legend">
                         <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />所有打勾</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />本頁全部</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />本次檢索結果</label>
+                          <label> <input type="radio" name="sampleRadio5" value="" />所有打勾</label>
+                          <label> <input type="radio" name="sampleRadio5" value="" />本頁全部</label>
+                          <label> <input type="radio" name="sampleRadio5" value="" />本次檢索結果</label>
                         </div>
                       </div>
                     </div>
@@ -941,10 +941,30 @@
                       <div for="fake-legend" class="form_title">輸出方式：</div>
                       <div class="form_content" id="fake-legend">
                         <div class="radio_grp form_inline">
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" checked="" />下載存檔：</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />email個人信箱</label>
-                          <label for="sampleRadio"> <input type="radio" id="sampleRadio" name="sampleRadio5" value="" />資料預約調閱/館際合作</label>
+                          <label for="sampleRadio1"> <input type="radio" id="sampleRadio1" name="sampleRadio5" value="" checked="" />下載存檔</label>
+                          <label for="sampleRadio2"> <input type="radio" id="sampleRadio2" name="sampleRadio5" value="" />email個人信箱</label>
+                          <label for="sampleRadio3"> <input type="radio" id="sampleRadio3" name="sampleRadio5" value="" />資料預約調閱/館際合作</label>
                         </div>
+                        <!-- email個人信箱選項start-->
+                        <div class="emailform">
+                          <div class="form_grp">
+                            <label for="" class="form_title">郵件主旨</label>
+                            <div class="form_content">
+                              <input name="" type="text" value="" id="" />
+                            </div>
+                          </div>
+                          <div class="form_grp">
+                            <label for="" class="form_title">電子郵件</label>
+                            <div class="form_content">
+                              <input name="" type="text" value="" id="" />
+                            </div>
+                          </div>
+                          <div class="btn_grp form_inline">
+                            <button class="btn btn-submit">確定送出</button>
+                            <button class="btn btn-reset">取消</button>
+                          </div>
+                        </div>
+                        <!-- email個人信箱選項end-->
                         <div class="radio_grp form_inline">
                           <label for="selectSample">書目資料輸出格式</label><select id="selectSample" name="">
                             <option value="">請選擇</option>

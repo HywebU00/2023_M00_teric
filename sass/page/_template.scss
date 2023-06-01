@@ -169,15 +169,16 @@ body {
         line-height: 1.25em;
         font-size: 1.625em;
         padding-left: 1em;
-      }
-      &:before {
-        content: '';
-        width: 5px;
-        height: 26px;
-        background-color: #333;
-        position: absolute;
-        left: 0;
-        top: 3px;
+        position: relative;
+        &:before {
+          content: '';
+          width: 5px;
+          height: 26px;
+          background-color: #333;
+          position: absolute;
+          left: 0;
+          top: 3px;
+        }
       }
     }
   }

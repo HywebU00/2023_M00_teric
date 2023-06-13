@@ -100,16 +100,20 @@ a.more {
       padding: 3em 0 7.8em;
     }
   }
-  .search_group {
+  .search_groupall {
     width: 65%;
     margin: 0 auto;
     position: relative;
-    @include screen('tablet') {
+    @media (max-width: 1200px) {
       width: 75%;
     }
-    @include screen('mobile') {
-      width: 80%;
+    @include screen('tablet') {
+      width: 70%;
     }
+    @include screen('mobile') {
+      width: 85%;
+    }
+
     &:before {
       content: '';
       width: 364px;
@@ -125,6 +129,9 @@ a.more {
     &.Advanced_group {
       @include screen('mobile') {
         width: 90%;
+      }
+      @include screen('xs_mobile') {
+        width: 95%;
       }
       &:before {
         content: '';
@@ -374,6 +381,111 @@ a.more {
           select {
             @media screen and (max-width: 767px) {
               width: 100%;
+            }
+          }
+        }
+      }
+      .withinblock {
+        margin-bottom: 0.5em;
+        .form_content {
+          flex-wrap: wrap;
+          flex-basis: 100%;
+          max-width: 100%;
+          .search_group {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            input,
+            select {
+              margin-left: 0;
+              margin-right: 0;
+              width: 100%;
+            }
+
+            .search_left {
+              flex: 0 0 auto;
+              flex-basis: 100px;
+              // outline: 1px solid red;
+              padding: 0 3px 0 0;
+              &.nocontent {
+                label,
+                select {
+                  display: none;
+                }
+              }
+              &.nothis {
+                display: none;
+              }
+            }
+            .search_middle {
+              flex: 1 1 auto;
+              // outline: 1px solid red;
+              padding: 0 3px 0 0;
+            }
+            .search_right {
+              flex: 0 0 auto;
+              flex-basis: 160px;
+              // outline: 1px solid red;
+            }
+            .search_btn_content {
+              flex: 0 0 auto;
+              flex-basis: 135px;
+              display: flex;
+              align-items: center;
+              // outline: 1px solid red;
+              button {
+                padding-left: 0;
+                padding-right: 0;
+                margin-right: 0;
+                margin-left: 3px;
+              }
+              .tactics_btn {
+                flex: 0 0 auto;
+                flex-basis: 80px;
+              }
+              .addition {
+                font-size: 0;
+                background-image: url('../images/icon/icon_add2.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 14px;
+                width: 40px;
+                height: 40px;
+                flex: 0 0 auto;
+                flex-basis: 46px;
+                // margin-right: 6px;
+              }
+              .minus {
+                font-size: 0;
+                background-image: url('../images/icon/icon_minus2.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 14px;
+                width: 40px;
+                height: 40px;
+                flex: 0 0 auto;
+                flex-basis: 46px;
+                // margin-right: 6px;
+              }
+            }
+            @media (max-width: 767px) {
+              flex-wrap: wrap;
+              padding-bottom: 0.5em;
+              margin-bottom: 0.5em;
+              border-bottom: 1px solid #ccc;
+              .search_right {
+                flex: 0 0 auto;
+                flex-basis: calc(100% - 135px);
+              }
+            }
+            @media (max-width: 380px) {
+              .search_left {
+                flex-basis: 100%;
+              }
+              .search_middle {
+                flex-basis: 100%;
+              }
             }
           }
         }

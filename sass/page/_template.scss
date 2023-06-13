@@ -63,9 +63,14 @@ body {
       > .container {
         @include gutter(0); //gutter 代表左右要留白
         display: block;
-        background-image: none;
-
+        background-image: url('../images/wrapper_mpbg2.jpg');
+        background-repeat: no-repeat;
+        background-position: center -147px;
+        background-color: #174d65;
         padding: 0 4em;
+        @include screen('tablet') {
+          background-position: center -183.8px;
+        }
         @include screen('mobile') {
           padding: 5em 2em 0;
         }

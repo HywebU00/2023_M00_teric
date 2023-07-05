@@ -1425,7 +1425,9 @@ input[type='radio'] {
   background-color: #f7f6ee;
   border: 2px solid $color-gray;
 }
-
+input[type='checkbox'] {
+  border-radius: 3px;
+}
 input[type='radio'] {
   border-radius: 50%;
 }

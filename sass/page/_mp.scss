@@ -108,7 +108,7 @@ a.more {
       width: 75%;
     }
     @include screen('tablet') {
-      width: 70%;
+      width: 85%;
     }
     @include screen('mobile') {
       width: 85%;
@@ -195,9 +195,6 @@ a.more {
         .form_content {
           max-width: 100%;
           flex-basis: 100%;
-          .radio_grp {
-            margin-left: 1em;
-          }
         }
       }
       .searchsimple {
@@ -225,10 +222,19 @@ a.more {
           box-shadow: none;
           width: auto;
           &[type='checkbox'] {
-            width: 1.3em;
-            height: 1.3em;
+            width: 1.2em;
+            height: 1.2em;
             border-radius: 2px;
             margin: 0.3em;
+          }
+          &[type='radio'] {
+            width: 1.2em;
+            height: 1.2em;
+            border-radius: 50%;
+            margin: 0.3em;
+          }
+          &[type='radio']:checked {
+            box-shadow: #fff 0 0 0 3px inset, $form-focus 0 0 0 2px;
           }
           &[type='text'] {
             flex: 0 0 auto;
@@ -362,16 +368,28 @@ a.more {
       }
       .form_grp {
         border: none;
+
+        &.longtitle {
+          .form_title {
+            width: 200px;
+          }
+          .form_content {
+            max-width: calc(100% - 200px);
+            flex-basis: calc(100% - 200px);
+          }
+        }
         .form_title {
-          max-width: auto;
+          max-width: inherit;
           flex: 0 0 auto;
-          min-width: 100px;
+
+          width: 100px;
           padding-right: 1em;
         }
         .form_content {
           flex: 1 1 auto;
-          max-width: auto;
-          flex-basis: auto;
+          max-width: calc(100% - 100px);
+          flex-basis: calc(100% - 100px);
+
           @media screen and (max-width: 767px) {
             max-width: 100%;
             flex-basis: 100%;
@@ -381,6 +399,20 @@ a.more {
           select {
             @media screen and (max-width: 767px) {
               width: 100%;
+            }
+          }
+          &.yearsgroup {
+            label {
+              display: flex;
+              select {
+                width: auto;
+              }
+              @media screen and (max-width: 767px) {
+                width: 100%;
+                select {
+                  width: 100%;
+                }
+              }
             }
           }
         }
@@ -548,14 +580,21 @@ a.more {
         max-width: 100% !important;
         .form_grp {
           flex: 0 0 auto;
-          flex-basis: 50%;
+          flex-basis: 35%;
+          // outline: 1px solid red;
           &:nth-of-type(2) {
-            flex-basis: 50%;
+            flex-basis: 65%;
           }
           @media screen and (max-width: 992px) {
             flex-basis: 100%;
             &:nth-of-type(2) {
               flex-basis: 100%;
+            }
+          }
+          .form_content {
+            label {
+              margin: 0;
+              // outline: 1px solid red;
             }
           }
         }

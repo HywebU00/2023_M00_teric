@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>臺灣教育研究資訊網</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- slick css-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <!-- 燈箱facybox -->
+  <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" />
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/hyui.css" />
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <!-- navigation Start -->
+        <nav class="navigation" role="navigation" aria-label="上方導覽列">
+          <!-- 新增div navlist -->
+          <div class="navlist">
+            <ul>
+              <!-- <li><a href="#">回首頁</a></li> -->
+              <li><a href="#">網站導覽</a></li>
+              <li><a href="#">常見問答</a></li>
+            </ul>
+          </div>
+          <!-- font_size -->
+          <div class="font_size" aria-label="文字大小">
+            <span>文字大小：</span>
+            <!-- 英文用<span>font-size：</span> -->
+            <ul>
+              <li><a href="#" role="button" class="small">小</a></li>
+              <li><a href="#" role="button" class="medium">中</a></li>
+              <li><a href="#" role="button" class="large">大</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- navigation End -->
+        <h1>
+          <a href="index.htm"><img src="images/logo.png" alt="臺灣教育研究資訊網" /></a>
+        </h1>
+
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="Header的導航列">
+          <ul>
+            <li>
+              <a href="#">瀏覽服務</a>
+              <ul>
+                <li><a href="#">本院出版品</a></li>
+                <li><a href="#">專案研究報告</a></li>
+                <li><a href="#">期刊論文</a></li>
+                <li><a href="#">研討會論文</a></li>
+                <li><a href="#">圖書全文</a></li>
+                <li><a href="#">國際教育訊息</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">查詢服務</a>
+              <ul>
+                <li><a href="#">簡易查詢</a></li>
+                <li>
+                  <a href="#">進階查詢</a>
+                  <ul>
+                    <li><a href="#">共通查詢</a></li>
+                    <li><a href="#">本院出版品</a></li>
+                    <li><a href="#">專案研究報告</a></li>
+                    <li><a href="#">期刊論文</a></li>
+                    <li><a href="#">研討會論文</a></li>
+                    <li><a href="#">圖書全文</a></li>
+                    <li><a href="#">國際教育訊息</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">最新資料</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li>
+              <a href="#">會員專區</a>
+              <ul>
+                <li><a href="#">修改個人資料</a></li>
+                <li><a href="#">瀏覽偏好設定</a></li>
+                <li><a href="#">歷史查詢</a></li>
+                <li><a href="#">新知訂閱</a></li>
+                <li><a href="#">我的最愛
+                <li><a href="#">主題書目專題選粹</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+        <!-- 會員登入 start -->
+        <div class="member_login_btn">
+          <button type="button" class="btn">登入 / 註冊</button>
+        </div>
+        <!-- login 燈箱start -->
+        <div class="login_lightbox">
+          <div class="overlay"></div>
+          <div class="lightbox_content">
+            <div class="close"><a href="#">關閉</a></div>
+            <div class="title">會員登入<span>Member Login</span></div>
+            <div class="flex-form">
+              <div class="form_grp">
+                <label for="username" class="form_title">帳號<span>Account</span></label>
+                <div class="form_content">
+                  <input type="text" id="username" placeholder="請輸入帳號" value="" class="account" />
+                </div>
+              </div>
+              <div class="form_grp">
+                <label for="password" class="form_title">密碼<span>Password</span></label>
+                <div class="form_content">
+                  <div class="labelEffect password_toggle">
+                    <input name="password" type="password" placeholder="請輸入密碼" value="1234" class="password" title="請輸入密碼" id="" />
+                    <button type="button" class="btn btn-icon" value="觀看密碼" aria-label="觀看密碼"><i class="i_hide"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="verify_box"><img src="images/verify_box.png" alt="" /></div>
+              <div class="btn_grp form_inline">
+                <button class="btn loginbtn" value="登入 Login">登入 Login</button>
+              </div>
+              <div class="orword"><span>or log in with</span></div>
+              <div class="community">
+                <ul>
+                  <li>
+                    <a href="#"><img src="images/community_icon01.png" alt="Facebook" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/community_icon02.png" alt="google" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/community_icon03.png" alt="line" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="forgotkword"><a href="#">忘記密碼 Forgot password?</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- login 燈箱end -->
+        <!-- 會員登入 end -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="center" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <nav aria-label="現在位置" class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li aria-current="page">國際教育訊息資料分析視覺化界面</li>
+            </ul>
+          </nav>
+          <!-- h2節點 -->
+          <h2 class="title">國際教育訊息資料分析視覺化界面</h2>
+          <!-- function_panel -->
+          <div class="function_panel">
+            <div class="function">
+              <ul>
+                <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- ＡP Start -->
+          <section class="ap">
+
+            <!-- 國際教育訊息資料分析視覺化界面 start -->
+            <div class="message_analysis_block">
+              <div class="analysis_group">
+                <form action="">
+                  <h3>第一層階層選擇</h3>
+                  <div class="flex-form">
+                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                      <label class="form_title"><input type="radio" name="sampleRadio" value="" />年份</label>
+                      <div class="form_content form_inline yearsgroup"><label for=""><span>起</span>
+                          <select id="selectSample" name="">
+                            <option value="">請選擇</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                          </select></label>
+                        <label for=""><span>訖</span>
+                          <select id="selectSample" name="">
+                            <option value="">請選擇</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                      <label for="fake-legend" class="form_title" aria-required="true"><input type="radio" name="sampleRadio" value="" />國別：</label>
+                      <div class="form_content" id="fake-legend">
+                        <div class="check_grp form_inline">
+                          <div class="continent_group"><span>亞洲</span>
+                            <label><input type="checkbox" name="" value="" checked="" />日本</label>
+                            <label><input type="checkbox" name="" value="" />韓國</label>
+                            <label><input type="checkbox" name="" value="" />越南</label>
+                            <label><input type="checkbox" name="" value="" />香港</label>
+                            <label><input type="checkbox" name="" value="" />泰國</label>
+                            <label><input type="checkbox" name="" value="" />馬來西亞</label>
+                            <label><input type="checkbox" name="" value="" />印度</label>
+                            <label><input type="checkbox" name="" value="" />印尼</label>
+                            <label><input type="checkbox" name="" value="" />新加坡</label>
+                            <label><input type="checkbox" name="" value="" />沙烏地阿拉伯</label>
+                            <label><input type="checkbox" name="" value="" />菲律賓</label>
+                          </div>
+                          <div class="continent_group"><span>北美洲</span>
+                            <label><input type="checkbox" name="" value="" />加拿大</label>
+                            <label><input type="checkbox" name="" value="" />美國</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                      <label for="fake-legend" class="form_title" aria-required="true"><input type="radio" name="sampleRadio" value="" />主題：</label>
+                      <div class="form_content" id="fake-legend">
+                        <div class="check_grp form_inline">
+                          <label><input type="checkbox" name="" value="" checked="" />科學教育</label>
+                          <label><input type="checkbox" name="" value="" />教育政策</label>
+                          <label><input type="checkbox" name="" value="" />教育行政</label>
+                          <label><input type="checkbox" name="" value="" />教育改革</label>
+                          <label><input type="checkbox" name="" value="" />教育研究</label>
+                          <label><input type="checkbox" name="" value="" />馬來西亞</label>
+                          <label><input type="checkbox" name="" value="" />教育法案</label>
+                          <label><input type="checkbox" name="" value="" />教育經費</label>
+                          <label><input type="checkbox" name="" value="" />資訊教育</label>
+                          <label><input type="checkbox" name="" value="" />科技教育</label>
+                          <label><input type="checkbox" name="" value="" />語文教育</label>
+                          <label><input type="checkbox" name="" value="" />藝術教育</label>
+                          <label><input type="checkbox" name="" value="" />校園安全</label>
+                          <label><input type="checkbox" name="" value="" />學生事務與輔導</label>
+                          <label><input type="checkbox" name="" value="" />學校體育與衛生教育</label>
+                          <label><input type="checkbox" name="" value="" />生命教育</label>
+                          <label><input type="checkbox" name="" value="" />性別平等教育</label>
+                          <label><input type="checkbox" name="" value="" />多元文化教育</label>
+                          <label><input type="checkbox" name="" value="" />環境教育</label>
+                          <label><input type="checkbox" name="" value="" />鄉土教育</label>
+                          <label><input type="checkbox" name="" value="" />雙性人議題</label>
+                          <label><input type="checkbox" name="" value="" />媒體素養</label>
+                          <label><input type="checkbox" name="" value="" />人權教育</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                  </div>
+                  <h3>第二層階層選擇</h3>
+                  <div class="flex-form">
+                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                      <label class="form_title"><input type="radio" name="sampleRadio" value="" />年份</label>
+                      <div class="form_content form_inline yearsgroup"><label for=""><span>起</span>
+                          <select id="selectSample" name="">
+                            <option value="">請選擇</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                          </select></label>
+                        <label for=""><span>訖</span>
+                          <select id="selectSample" name="">
+                            <option value="">請選擇</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                      <label for="fake-legend" class="form_title" aria-required="true"><input type="radio" name="sampleRadio" value="" />國別：</label>
+                      <div class="form_content" id="fake-legend">
+                        <div class="check_grp form_inline">
+                          <div class="continent_group"><span>亞洲</span>
+                            <label><input type="checkbox" name="" value="" checked="" />日本</label>
+                            <label><input type="checkbox" name="" value="" />韓國</label>
+                            <label><input type="checkbox" name="" value="" />越南</label>
+                            <label><input type="checkbox" name="" value="" />香港</label>
+                            <label><input type="checkbox" name="" value="" />泰國</label>
+                            <label><input type="checkbox" name="" value="" />馬來西亞</label>
+                            <label><input type="checkbox" name="" value="" />印度</label>
+                            <label><input type="checkbox" name="" value="" />印尼</label>
+                            <label><input type="checkbox" name="" value="" />新加坡</label>
+                            <label><input type="checkbox" name="" value="" />沙烏地阿拉伯</label>
+                            <label><input type="checkbox" name="" value="" />菲律賓</label>
+                          </div>
+                          <div class="continent_group"><span>北美洲</span>
+                            <label><input type="checkbox" name="" value="" />加拿大</label>
+                            <label><input type="checkbox" name="" value="" />美國</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                      <label for="fake-legend" class="form_title" aria-required="true"><input type="radio" name="sampleRadio" value="" />主題：</label>
+                      <div class="form_content" id="fake-legend">
+                        <div class="check_grp form_inline">
+                          <label><input type="checkbox" name="" value="" checked="" />科學教育</label>
+                          <label><input type="checkbox" name="" value="" />教育政策</label>
+                          <label><input type="checkbox" name="" value="" />教育行政</label>
+                          <label><input type="checkbox" name="" value="" />教育改革</label>
+                          <label><input type="checkbox" name="" value="" />教育研究</label>
+                          <label><input type="checkbox" name="" value="" />馬來西亞</label>
+                          <label><input type="checkbox" name="" value="" />教育法案</label>
+                          <label><input type="checkbox" name="" value="" />教育經費</label>
+                          <label><input type="checkbox" name="" value="" />資訊教育</label>
+                          <label><input type="checkbox" name="" value="" />科技教育</label>
+                          <label><input type="checkbox" name="" value="" />語文教育</label>
+                          <label><input type="checkbox" name="" value="" />藝術教育</label>
+                          <label><input type="checkbox" name="" value="" />校園安全</label>
+                          <label><input type="checkbox" name="" value="" />學生事務與輔導</label>
+                          <label><input type="checkbox" name="" value="" />學校體育與衛生教育</label>
+                          <label><input type="checkbox" name="" value="" />生命教育</label>
+                          <label><input type="checkbox" name="" value="" />性別平等教育</label>
+                          <label><input type="checkbox" name="" value="" />多元文化教育</label>
+                          <label><input type="checkbox" name="" value="" />環境教育</label>
+                          <label><input type="checkbox" name="" value="" />鄉土教育</label>
+                          <label><input type="checkbox" name="" value="" />雙性人議題</label>
+                          <label><input type="checkbox" name="" value="" />媒體素養</label>
+                          <label><input type="checkbox" name="" value="" />人權教育</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                  </div>
+                  <div class="keywordsblock"><span>關鍵字至少出現：</span><input type="text" name="" id="">次</div>
+                  <div class="btn_grp ">
+                    <button class="btn btn-submit">查詢</button>
+                  </div>
+                </form>
+              </div>
+
+              <script src="https://code.highcharts.com/highcharts.js"></script>
+              <script src="https://code.highcharts.com/highcharts-more.js"></script>
+              <script src="https://code.highcharts.com/modules/exporting.js"></script>
+              <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+              <figure class="highcharts-figure">
+                <div id="container"></div>
+                <p class="highcharts-description">
+                  This chart shows how packed bubble charts can be grouped by series,
+                  creating a hierarchy.
+                </p>
+              </figure>
+            </div>
+            <!-- 查詢結果輸出 start -->
+          </section>
+          <!-- AP End -->
+        </div>
+      </div>
+    </div>
+    <!-- fatfooter Start -->
+    <section class="fatfooter hidden">
+      <div class="container">
+        <!-- <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button> -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#">瀏覽服務</a>
+              <ul>
+                <li><a href="#">本院出版品</a></li>
+                <li><a href="#">專案研究報告</a></li>
+                <li><a href="#">期刊論文</a></li>
+                <li><a href="#">研討會論文</a></li>
+                <li><a href="#">圖書全文</a></li>
+                <li><a href="#">國際教育訊息</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">查詢服務</a>
+              <ul>
+                <li><a href="#">簡易查詢</a></li>
+                <li>
+                  <a href="#">進階查詢</a>
+                  <ul>
+                    <li><a href="#">共通查詢</a></li>
+                    <li><a href="#">本院出版品</a></li>
+                    <li><a href="#">專案研究報告</a></li>
+                    <li><a href="#">期刊論文</a></li>
+                    <li><a href="#">研討會論文</a></li>
+                    <li><a href="#">圖書全文</a></li>
+                    <li><a href="#">國際教育訊息</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">最新資料</a></li>
+            <li><a href="#">最新消息</a></li>
+            <li>
+              <a href="#">會員專區</a>
+              <ul>
+                <li><a href="#">修改個人資料</a></li>
+                <li><a href="#">瀏覽偏好設定</a></li>
+                <li><a href="#">歷史查詢</a></li>
+                <li><a href="#">新知訂閱</a></li>
+                <li><a href="#">我的最愛
+                <li><a href="#">主題書目專題選粹</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_logo">
+          <div class="logo_img"><img src="images/footer_logo.png" alt="國家教育研究院logo" /></div>
+          <span class="update">更新日期：<em>111/09/01</em></span>
+          <span class="counter">累計瀏覽人次：<em>46,476,653</em></span>
+        </div>
+        <div class="footer_info">
+          <ul class="footer_link">
+            <li><a href="javascript:;">個資法及隱私權聲明</a></li>
+            <li><a href="javascript:;">資訊安全政策</a></li>
+            <li><a href="javascript:;">網站資料開放宣告</a></li>
+            <li><a href="javascript:;">聯絡信箱</a></li>
+          </ul>
+          <p>
+            地址：106011 臺北市大安區和平東路一段179號<br />
+            電話：02-7740-7877 傳真：02-7740-7886
+          </p>
+          <p class="Copyright">國家教育研究院 版權所有</p>
+          <div class="footer_icon">
+            <a target="_blank" href="javascript:;">
+              <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+            </a>
+            <!-- <a target="_blank" href="javascript:;">
+                                <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
+                            </a> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">TOP</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- 外掛 plugin js -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- slick -->
+  <script src="vendor/slick/slick-lightbox.js "></script>
+  <!-- slick lightbox -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- lazyload -->
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <!-- picturefill -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- scrolltable -->
+  <!-- fancy -->
+  <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+  <!-- hyUI -->
+  <script src="js/hyui.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+</body>
+
+</html>

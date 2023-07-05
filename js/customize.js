@@ -265,6 +265,273 @@ $(function () {
       });
   });
 
-  //
+  //氣泡圖
+  Highcharts.chart('container', {
+    chart: {
+      type: 'packedbubble',
+      height: '100%',
+    },
+    title: {
+      text: '國際教育訊息2020年關鍵字氣泡圖',
+      align: 'left',
+    },
+    tooltip: {
+      useHTML: true,
+      pointFormat: '<b>{point.name}:</b> {point.value}',
+    },
+    plotOptions: {
+      packedbubble: {
+        minSize: '20%',
+        maxSize: '100%',
+        zMin: 0,
+        zMax: 1000,
+        layoutAlgorithm: {
+          gravitationalConstant: 0.05,
+          splitSeries: true,
+          seriesInteraction: false,
+          dragBetweenSeries: true,
+          parentNodeLimit: true,
+        },
+        dataLabels: {
+          enabled: true,
+          format: '{point.name}',
+          filter: {
+            property: 'y',
+            operator: '>',
+            value: 20,
+          },
+          style: {
+            color: 'black',
+            textOutline: 'none',
+            fontWeight: 'normal',
+          },
+        },
+      },
+    },
+    series: [
+      {
+        name: '美國',
+        data: [
+          {
+            name: '人權教育',
+            value: 76,
+          },
+          {
+            name: '紀律不佳學生',
+            value: 20,
+          },
+          {
+            name: '政策中心',
+            value: 97,
+          },
+          {
+            name: '性別平等教育',
+            value: 11,
+          },
+          {
+            name: '參與',
+            value: 15,
+          },
+          {
+            name: '學生',
+            value: 24,
+          },
+          {
+            name: '運動員',
+            value: 24,
+          },
+          {
+            name: '性教育課程',
+            value: 29,
+          },
+          {
+            name: '青少年懷孕率',
+            value: 32,
+          },
+          {
+            name: '家庭教育',
+            value: 178,
+          },
+          {
+            name: '學校體育與衛生教育',
+            value: 41,
+          },
+          {
+            name: '公共衛生',
+            value: 35,
+          },
+          {
+            name: '系統思考方式',
+            value: 33,
+          },
+          {
+            name: '社區公共衛生',
+            value: 171,
+          },
+          {
+            name: '應急措施',
+            value: 69,
+          },
+          {
+            name: '大學',
+            value: 67,
+          },
+          {
+            name: '猴痘',
+            value: 59,
+          },
+          {
+            name: '預防',
+            value: 54,
+          },
+          {
+            name: '語文教育',
+            value: 151,
+          },
+          {
+            name: '加州議員',
+            value: 48,
+          },
+          {
+            name: '撥款資助',
+            value: 44,
+          },
+          {
+            name: '雙語教師',
+            value: 44,
+          },
+          {
+            name: '南金士頓',
+            value: 43,
+          },
+          {
+            name: '重新恢復',
+            value: 40,
+          },
+          {
+            name: '教學政策',
+            value: 40,
+          },
+          {
+            name: '資訊教育',
+            value: 34,
+          },
+          {
+            name: '美國調查報告',
+            value: 34,
+          },
+          {
+            name: '監控軟體',
+            value: 20,
+          },
+          {
+            name: '學生',
+            value: 19,
+          },
+          {
+            name: '行動設備',
+            value: 16,
+          },
+          {
+            name: '紀律管理',
+            value: 12,
+          },
+          {
+            name: '教育經費',
+            value: 10,
+          },
+          {
+            name: '削減公校預算案',
+            value: 9,
+          },
+          {
+            name: '紐約市府',
+            value: 7,
+          },
+          {
+            name: '上訴',
+            value: 7,
+          },
+          {
+            name: '教育預算',
+            value: 7,
+          },
+        ],
+      },
+      {
+        name: '韓國',
+        data: [
+          {
+            name: '性別平等教育',
+            value: 8,
+          },
+          {
+            name: '性別差距',
+            value: 9,
+          },
+          {
+            name: '排行榜',
+            value: 13,
+          },
+          {
+            name: '性別差距指數',
+            value: 14,
+          },
+          {
+            name: '青少年',
+            value: 14,
+          },
+          {
+            name: '兩性',
+            value: 17,
+          },
+          {
+            name: '平等的權益',
+            value: 24,
+          },
+          {
+            name: '女性家族部',
+            value: 25,
+          },
+          {
+            name: '教育部',
+            value: 50,
+          },
+          {
+            name: '青春期青少年',
+            value: 7,
+          },
+          {
+            name: '數位性剝削',
+            value: 60,
+          },
+          {
+            name: '學生事務與輔導',
+            value: 8,
+          },
+          {
+            name: '元宇宙',
+            value: 9,
+          },
+          {
+            name: '校園暴力',
+            value: 93,
+          },
+          {
+            name: '學生運動員',
+            value: 392,
+          },
+          {
+            name: '遭受霸凌',
+            value: 225,
+          },
+          {
+            name: '實態調查',
+            value: 141,
+          },
+        ],
+      },
+    ],
+  });
   //
 });

@@ -973,10 +973,14 @@
                             <option value="">pptx</option>
                             <option value="">doc</option>
                             <option value="">docx</option>
-                          </select><button class="btn btn-submit">確定</button>
+                          </select><button class="btn btn-submit" data-fancybox data-src="#modal">確定</button>
+                          <!-- 燈箱start -->
+                          <div style="display: none;" id="modal">此檔案格式為CSV。</div>
+                          <!-- 燈箱end -->
                         </div>
                       </div>
                     </div>
+
                     <div class="btn_grp form_inline">
                       <button class="btn btn-green">直接列印</button>
                       <button class="btn btn-green">加入收藏</button>
@@ -1094,6 +1098,8 @@
   <!-- picturefill -->
   <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
   <!-- scrolltable -->
+  <!-- fancy -->
+  <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
   <!-- hyUI -->
   <script src="js/hyui.js"></script>
   <!-- 客製js -->

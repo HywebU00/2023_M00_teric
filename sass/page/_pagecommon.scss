@@ -1116,6 +1116,31 @@
     padding: 10px 0;
     position: relative;
     font-size: 1.125em;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      @media screen and (max-width: 480px) {
+        flex-wrap: wrap;
+      }
+
+      li {
+        flex: 0 0 none;
+        @media screen and (max-width: 480px) {
+          flex-basis: 100%;
+          margin-bottom: 10px;
+        }
+        a {
+          display: block;
+          padding: 0 15px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
 }
 

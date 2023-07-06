@@ -159,7 +159,13 @@
                   </li>
                 </ul>
               </div>
-              <div class="forgotkword"><a href="#">忘記密碼 Forgot password?</a></div>
+              <div class="forgotkword">
+                <ul>
+                  <li><a href="#">忘記密碼</a></li>
+                  <li><a href="#">註冊</a></li>
+                  <li><a href="#">會員說明</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -207,7 +213,279 @@
                 <li><a href="#">個人資料維護</a></li>
               </ul>
             </div>
+
             <!-- 文字列表 -->
+            <div class="innerpage_content">
+              <!-- 表單start -->
+              <form action="">
+                <div class="flex-form">
+                  <!-- input -->
+                  <div class="form_grp">
+                    <!-- 使用aria-required屬性指出必填的表單欄位 -->
+                    <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">必填</abbr>input：</label>
+                    <div class="form_content">
+                      <input type="text" id="fake-legend" placeholder="請輸入文字" />
+                      <div class="notice">一般提醒訊息</div>
+                      <div class="notice_info">一般提醒訊息</div>
+                      <div class="notice_success">確認、成功、完成</div>
+                      <div class="notice_warning">警告</div>
+                      <div class="notice_warning">
+                        這似乎不是一個正常的Email格式
+                        <a href="#" class="close"><img src="images/basic/icon_close.svg" alt="關閉" /></a>
+                      </div>
+                      <div class="notice_error">錯誤</div>
+                    </div>
+                  </div>
+                  <!-- select -->
+                  <div class="form_grp">
+                    <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">必填</abbr>select：</label>
+                    <div class="form_content">
+                      <select name="" id="fake-legend">
+                        <option value="">台北市</option>
+                        <option value="">新北市</option>
+                        <option value="">桃園市</option>
+                        <option value="">新竹市</option>
+                        <option value="">...</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- radio -->
+                  <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                    <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">必填</abbr>radio：</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="radio_grp form_inline">
+                        <label><input type="radio" name="sampleRadio" value="" checked="" />新北市</label>
+                        <label><input type="radio" name="sampleRadio" value="" />臺北市</label>
+                        <label><input type="radio" name="sampleRadio" value="" />臺中市</label>
+                        <label><input type="radio" name="sampleRadio" value="" />臺南市</label>
+                        <label><input type="radio" name="sampleRadio" value="" />高雄市</label>
+                        <label><input type="radio" name="sampleRadio" value="" />宜蘭縣</label>
+                        <label><input type="radio" name="sampleRadio" value="" />新竹縣</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- checkbox -->
+                  <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                    <label for="fake-legend" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">必填</abbr>checkbox：</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="check_grp form_inline">
+                        <label><input type="checkbox" name="" value="" checked="" />全部</label>
+                        <label><input type="checkbox" name="" value="" />展覽</label>
+                        <label><input type="checkbox" name="" value="" />表演與節慶</label>
+                        <label><input type="checkbox" name="" value="" />演講／講座／研討會</label>
+                        <label><input type="checkbox" name="" value="" />綜合</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form_grp">
+                    <label for="address" class="form_title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">必填</abbr>textarea：</label>
+                    <div class="form_content">
+                      <textarea name="" id="address" cols="30" rows="10"></textarea>
+                    </div>
+                  </div>
+                  <!-- 按鈕 -->
+                  <div class="btn_grp form_inline">
+                    <button class="btn btn-reset">清除</button>
+                    <button class="btn btn-submit">送出</button>
+                  </div>
+                </div>
+              </form>
+              <!-- 表單end -->
+              <!-- 分頁 -->
+              <div class="pagination">
+                <div class="total">共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
+                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆</div>
+                <ul class="page">
+                  <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li class="xs_hidden"><a href="#">2</a></li>
+                  <li class="xs_hidden"><a href="#">3</a></li>
+                  <li class="xs_hidden"><a href="#">4</a></li>
+                  <li class="xs_hidden"><a href="#">12345</a></li>
+                  <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                </ul>
+              </div>
+              <!-- 表格 -->
+              <div class="table_list">
+                <table>
+                  <!-- <caption> 表格標題</caption>-->
+                  <thead>
+                    <tr>
+                      <th>題名</th>
+                      <th>作者</th>
+                      <th>資料類型</th>
+                      <th>收藏日期</th>
+                      <th>筆記</th>
+                      <th>刪除</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">課程研究與教育改革實踐——紀念陳伯璋教授論文集</a></td>
+                      <td class="aCenter">鍾鴻銘</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/09/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">教育有竹妤洞察控制假訊息戰(1)-俄烏戰爭中俄羅斯假訊息戰3種方式</a></td>
+                      <td class="aCenter">林雅婷</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/12/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">課程研究與教育改革實踐——紀念陳伯璋教授論文集</a></td>
+                      <td class="aCenter">鍾鴻銘</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/09/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">教育有竹妤洞察控制假訊息戰(1)-俄烏戰爭中俄羅斯假訊息戰3種方式</a></td>
+                      <td class="aCenter">林雅婷</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/12/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">課程研究與教育改革實踐——紀念陳伯璋教授論文集</a></td>
+                      <td class="aCenter">鍾鴻銘</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/09/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">教育有竹妤洞察控制假訊息戰(1)-俄烏戰爭中俄羅斯假訊息戰3種方式</a></td>
+                      <td class="aCenter">林雅婷</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/12/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">課程研究與教育改革實踐——紀念陳伯璋教授論文集</a></td>
+                      <td class="aCenter">鍾鴻銘</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/09/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">教育有竹妤洞察控制假訊息戰(1)-俄烏戰爭中俄羅斯假訊息戰3種方式</a></td>
+                      <td class="aCenter">林雅婷</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/12/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">課程研究與教育改革實踐——紀念陳伯璋教授論文集</a></td>
+                      <td class="aCenter">鍾鴻銘</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/09/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">教育有竹妤洞察控制假訊息戰(1)-俄烏戰爭中俄羅斯假訊息戰3種方式</a></td>
+                      <td class="aCenter">林雅婷</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/12/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">課程研究與教育改革實踐——紀念陳伯璋教授論文集</a></td>
+                      <td class="aCenter">鍾鴻銘</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/09/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="#">教育有竹妤洞察控制假訊息戰(1)-俄烏戰爭中俄羅斯假訊息戰3種方式</a></td>
+                      <td class="aCenter">林雅婷</td>
+                      <td class="aCenter">教育訊息</td>
+                      <td class="date">2022/12/01</td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                      </td>
+                      <td class="aCenter">
+                        <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination">
+                <div class="total">共<span>308</span>筆資料，第<span>1/18</span>頁，</div>
+                <div class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a> 筆</div>
+                <ul class="page">
+                  <li class="first"><a href="#" title="第一頁">第一頁</a></li>
+                  <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li class="xs_hidden"><a href="#">2</a></li>
+                  <li class="xs_hidden"><a href="#">3</a></li>
+                  <li class="xs_hidden"><a href="#">4</a></li>
+                  <li class="xs_hidden"><a href="#">12345</a></li>
+                  <li class="next"><a href="#" title="下一頁">下一頁</a></li>
+                  <li class="last"><a href="#" title="最後一頁">最後一頁</a></li>
+                </ul>
+              </div>
+            </div>
             <!--  tab頁籤  -->
             <div class="tabSet member_tabs_block">
               <section class="tabs member_tabs">

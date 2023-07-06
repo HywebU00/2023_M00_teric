@@ -6602,6 +6602,7 @@ textarea {
   transition: all 0.3s ease-out;
   height: 5em;
   overflow-y: scroll;
+  border-radius: 5px;
 }
 @media screen and (max-width: 575px) {
   textarea {
@@ -12623,6 +12624,34 @@ h2.title {
   padding: 10px 0;
   position: relative;
   font-size: 1.125em;
+}
+.login_lightbox .forgotkword ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .login_lightbox .forgotkword ul {
+    flex-wrap: wrap;
+  }
+}
+.login_lightbox .forgotkword ul li {
+  flex: 0 0 none;
+}
+@media screen and (max-width: 480px) {
+  .login_lightbox .forgotkword ul li {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+}
+.login_lightbox .forgotkword ul li a {
+  display: block;
+  padding: 0 15px;
+}
+.login_lightbox .forgotkword ul li a:hover {
+  text-decoration: underline;
 }
 
 .emailform {

@@ -11536,12 +11536,17 @@ h2.title {
 
 .select_block {
   flex: 0 0 auto;
-  margin: 0 0 1em;
+  margin: 0 auto 1em;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .select_block {
+    flex-basis: 100%;
+  }
 }
 @media screen and (max-width: 400px) {
   .select_block {
@@ -11556,6 +11561,20 @@ h2.title {
   margin-right: 0.5em;
   justify-content: center;
   padding-left: 0.3em;
+}
+@media screen and (max-width: 500px) {
+  .select_block .interval_group {
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .select_block .interval_group select {
+    margin-bottom: 0.5em;
+    flex-basis: 100%;
+  }
+  .select_block .interval_group .btn-submit {
+    min-width: 100%;
+  }
 }
 .select_block label {
   font-size: 0;
@@ -12391,15 +12410,10 @@ h2.title {
   min-width: 10em;
 }
 
-.highcharts-figure {
-  padding-top: 3em;
-  border-top: 3px solid #ddd;
-}
-
 .highcharts-figure,
 .highcharts-data-table table {
   min-width: 320px;
-  max-width: 100%;
+  max-width: 800px;
   margin: 1em auto;
 }
 

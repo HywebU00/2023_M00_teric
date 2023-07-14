@@ -12351,7 +12351,7 @@ h2.title {
   padding-top: 0.65em;
 }
 .message_analysis_block .form_grp .check_grp label {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
   .message_analysis_block .form_grp .form_inline select {
@@ -12375,6 +12375,7 @@ h2.title {
 .message_analysis_block .form_grp .continent_group {
   margin-bottom: 20px;
   padding-left: 80px;
+  flex: 1 1 100%;
 }
 .message_analysis_block .form_grp .continent_group:last-child {
   margin-bottom: 0;
@@ -12388,6 +12389,11 @@ h2.title {
 }
 .message_analysis_block .btn_grp .btn {
   min-width: 10em;
+}
+
+.highcharts-figure {
+  padding-top: 3em;
+  border-top: 3px solid #ddd;
 }
 
 .highcharts-figure,
@@ -12431,6 +12437,30 @@ h2.title {
 
 .highcharts-data-table tr:hover {
   background: #f1f7ff;
+}
+
+.keycountries ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.keycountries ul li {
+  margin: 0 5px;
+  border-radius: 50px;
+  padding: 0.8em 1em;
+  font-size: 1.125em;
+  background-color: #00468d;
+  color: #fff;
+}
+.keycountries ul li em {
+  font-style: normal;
+  padding: 5px 8px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-left: 0.5em;
 }
 
 .innerpage.small_size {

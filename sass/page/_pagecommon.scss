@@ -824,7 +824,7 @@
     .check_grp {
       padding-top: 0.65em;
       label {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
       }
     }
     .form_inline {
@@ -852,6 +852,7 @@
     .continent_group {
       margin-bottom: 20px;
       padding-left: 80px;
+      flex: 1 1 100%;
       &:last-child {
         margin-bottom: 0;
       }
@@ -871,6 +872,10 @@
   }
 }
 //氣泡圖
+.highcharts-figure {
+  padding-top: 3em;
+  border-top: 3px solid #ddd;
+}
 .highcharts-figure,
 .highcharts-data-table table {
   min-width: 320px;
@@ -913,7 +918,31 @@
 .highcharts-data-table tr:hover {
   background: #f1f7ff;
 }
-
+.keycountries {
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0 5px;
+      border-radius: 50px;
+      padding: 0.8em 1em;
+      font-size: 1.125em;
+      background-color: $primaryColor;
+      color: #fff;
+      em {
+        font-style: normal;
+        padding: 5px 8px;
+        color: #333;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
 //
 // font大小字
 .innerpage {

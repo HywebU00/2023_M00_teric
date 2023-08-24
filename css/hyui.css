@@ -9072,6 +9072,11 @@ div.function ul li.icon_forward a:before {
   text-align: right;
   font-size: 1em;
 }
+@media (max-width: 992px) {
+  .pagination {
+    text-align: center;
+  }
+}
 .pagination .form_inline {
   justify-content: center;
 }
@@ -9086,6 +9091,11 @@ div.function ul li.icon_forward a:before {
   justify-content: flex-end;
   text-align: center;
   flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .pagination .page {
+    justify-content: center;
+  }
 }
 .pagination .page li {
   min-width: 40px;

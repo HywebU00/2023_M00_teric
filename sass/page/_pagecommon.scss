@@ -7,6 +7,19 @@
   @include screen(xs_mobile) {
     padding: 2em 1.5em;
   }
+  .chooseblock {
+    &:first-of-type {
+      // outline: 1px solid red;
+      .pagination {
+        text-align: right;
+        // outline: 1px solid red;
+        .page {
+          justify-content: flex-end;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 //
@@ -239,6 +252,7 @@
     }
   }
 }
+
 //會員區
 .member_pic {
   font-size: 1.125em;

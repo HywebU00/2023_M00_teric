@@ -3,7 +3,7 @@
   margin: 1em auto;
   padding: 0;
   display: block;
-  text-align: center;
+  text-align: right;
   font-size: 1em;
   @extend %clearfix;
   .form_inline {
@@ -17,7 +17,8 @@
     margin: 10px auto;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    text-align: center;
     flex-wrap: wrap;
     li {
       min-width: 40px;

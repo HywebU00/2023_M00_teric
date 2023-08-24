@@ -9069,7 +9069,7 @@ div.function ul li.icon_forward a:before {
   margin: 1em auto;
   padding: 0;
   display: block;
-  text-align: center;
+  text-align: right;
   font-size: 1em;
 }
 .pagination .form_inline {
@@ -9083,7 +9083,8 @@ div.function ul li.icon_forward a:before {
   margin: 10px auto;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  text-align: center;
   flex-wrap: wrap;
 }
 .pagination .page li {
@@ -11527,11 +11528,11 @@ h2.title {
     padding: 2em 1.5em;
   }
 }
-.innerpage_content .chooseblock:first-of-type .pagination {
-  text-align: right;
+.innerpage_content .chooseblock:last-of-type .pagination {
+  text-align: center;
 }
-.innerpage_content .chooseblock:first-of-type .pagination .page {
-  justify-content: flex-end;
+.innerpage_content .chooseblock:last-of-type .pagination .page {
+  justify-content: center;
   text-align: center;
 }
 

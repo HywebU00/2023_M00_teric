@@ -8,13 +8,13 @@
     padding: 2em 1.5em;
   }
   .chooseblock {
-    &:first-of-type {
+    &:last-of-type {
       // outline: 1px solid red;
       .pagination {
-        text-align: right;
+        text-align: center;
         // outline: 1px solid red;
         .page {
-          justify-content: flex-end;
+          justify-content: center;
           text-align: center;
         }
       }

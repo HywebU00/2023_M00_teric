@@ -9069,12 +9069,22 @@ div.function ul li.icon_forward a:before {
   margin: 1em auto;
   padding: 0;
   display: block;
-  text-align: right;
+  text-align: center;
   font-size: 1em;
 }
+.pagination.keepright {
+  text-align: right;
+}
+.pagination.keepright .page {
+  text-align: center;
+  justify-content: flex-end;
+}
 @media (max-width: 992px) {
-  .pagination {
+  .pagination.keepright {
     text-align: center;
+  }
+  .pagination.keepright .page {
+    justify-content: center;
   }
 }
 .pagination .form_inline {
@@ -9088,14 +9098,9 @@ div.function ul li.icon_forward a:before {
   margin: 10px auto;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-}
-@media (max-width: 992px) {
-  .pagination .page {
-    justify-content: center;
-  }
 }
 .pagination .page li {
   min-width: 40px;
@@ -11537,13 +11542,6 @@ h2.title {
   .innerpage_content {
     padding: 2em 1.5em;
   }
-}
-.innerpage_content .chooseblock:last-of-type .pagination {
-  text-align: center;
-}
-.innerpage_content .chooseblock:last-of-type .pagination .page {
-  justify-content: center;
-  text-align: center;
 }
 
 .chooseblock {

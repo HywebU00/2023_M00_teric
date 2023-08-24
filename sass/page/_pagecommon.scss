@@ -7,19 +7,6 @@
   @include screen(xs_mobile) {
     padding: 2em 1.5em;
   }
-  .chooseblock {
-    &:last-of-type {
-      // outline: 1px solid red;
-      .pagination {
-        text-align: center;
-        // outline: 1px solid red;
-        .page {
-          justify-content: center;
-          text-align: center;
-        }
-      }
-    }
-  }
 }
 
 //

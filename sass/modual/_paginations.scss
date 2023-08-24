@@ -3,11 +3,23 @@
   margin: 1em auto;
   padding: 0;
   display: block;
-  text-align: right;
+  text-align: center;
   font-size: 1em;
-  @media (max-width: 992px) {
-    text-align: center;
+  &.keepright {
+    text-align: right;
+
+    .page {
+      text-align: center;
+      justify-content: flex-end;
+    }
+    @media (max-width: 992px) {
+      text-align: center;
+      .page {
+        justify-content: center;
+      }
+    }
   }
+
   @extend %clearfix;
   .form_inline {
     justify-content: center;
@@ -20,12 +32,10 @@
     margin: 10px auto;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    @media (max-width: 992px) {
-      justify-content: center;
-    }
+
     li {
       min-width: 40px;
       height: 40px;

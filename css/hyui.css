@@ -9075,15 +9075,14 @@ div.function ul li.icon_forward a:before {
 .pagination.keepright {
   text-align: right;
 }
-.pagination.keepright .page {
-  text-align: center;
+.pagination.keepright .pagegroup {
   justify-content: flex-end;
 }
 @media (max-width: 992px) {
   .pagination.keepright {
     text-align: center;
   }
-  .pagination.keepright .page {
+  .pagination.keepright .pagegroup {
     justify-content: center;
   }
 }
@@ -9094,8 +9093,26 @@ div.function ul li.icon_forward a:before {
   color: #067776;
   margin: 0px 0.5em;
 }
+.pagination .pagegroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .pagination .pagegroup {
+    flex-wrap: wrap;
+  }
+  .pagination .pagegroup .page {
+    margin: 10px 0 0 0;
+    flex-wrap: wrap;
+  }
+  .pagination .pagegroup .topage {
+    margin: 10px 0 0 0;
+  }
+}
 .pagination .page {
-  margin: 10px auto;
+  flex: 0 0 auto;
+  margin: 10px 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -9181,6 +9198,17 @@ div.function ul li.icon_forward a:before {
   width: auto;
   min-width: initial;
   flex: 0 0 auto;
+}
+.pagination .topage {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 10px;
+}
+.pagination .topage input[type=text] {
+  width: 80px;
+}
+.pagination .topage button {
+  margin-left: 5px;
 }
 .pagination .total {
   padding: 0em;

@@ -7,14 +7,13 @@
   font-size: 1em;
   &.keepright {
     text-align: right;
-
-    .page {
-      text-align: center;
+    .pagegroup {
       justify-content: flex-end;
     }
+
     @media (max-width: 992px) {
       text-align: center;
-      .page {
+      .pagegroup {
         justify-content: center;
       }
     }
@@ -28,8 +27,24 @@
     color: $secondaryColor;
     margin: 0px 0.5em;
   }
+  .pagegroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include screen('mobile') {
+      flex-wrap: wrap;
+      .page {
+        margin: 10px 0 0 0;
+        flex-wrap: wrap;
+      }
+      .topage {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
   .page {
-    margin: 10px auto;
+    flex: 0 0 auto;
+    margin: 10px 0;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -43,9 +58,7 @@
       list-style: none;
       flex: 0 0 auto;
       box-sizing: border-box;
-      // @include screen('mobile') {
-      //   height: auto;
-      // }
+
       a {
         border-radius: 5px;
         padding: 6px 10px;
@@ -152,7 +165,18 @@
       }
     }
   }
+  .topage {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 10px;
 
+    input[type='text'] {
+      width: 80px;
+    }
+    button {
+      margin-left: 5px;
+    }
+  }
   .total {
     padding: 0em;
     display: inline-block;

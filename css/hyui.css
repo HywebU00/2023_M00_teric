@@ -7739,6 +7739,11 @@ table.table_sprite tr:nth-child(even) {
   flex-basis: 1em;
   max-width: 1em;
 }
+.classification_tabs .tabContent .classification_list li label input[type=radio] {
+  flex: 0 0 auto;
+  flex-basis: 1em;
+  max-width: 1em;
+}
 .classification_tabs .tabContent .classification_list li .quantity {
   flex: 0 0 auto;
   color: #666;

@@ -389,6 +389,11 @@
             flex-basis: 1em;
             max-width: 1em;
           }
+          input[type='radio'] {
+            flex: 0 0 auto;
+            flex-basis: 1em;
+            max-width: 1em;
+          }
         }
         .quantity {
           flex: 0 0 auto;

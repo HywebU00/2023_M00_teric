@@ -385,6 +385,9 @@
 
           input[type='checkbox'] {
             border-radius: 3px;
+            flex: 0 0 auto;
+            flex-basis: 1em;
+            max-width: 1em;
           }
         }
         .quantity {

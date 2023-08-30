@@ -453,11 +453,12 @@ a.more {
             .search_middle {
               flex: 1 1 auto;
               // outline: 1px solid red;
-              padding: 0 3px 0 0;
+              padding: 0 0 0 0;
             }
             .search_right {
               flex: 0 0 auto;
               flex-basis: 160px;
+              padding: 0 3px 0 0;
               // outline: 1px solid red;
             }
             .search_btn_content {

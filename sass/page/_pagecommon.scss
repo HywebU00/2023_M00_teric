@@ -303,7 +303,7 @@
 
         .search_left {
           flex: 0 0 auto;
-          flex-basis: 100px;
+          // flex-basis: 100px;
           // outline: 1px solid red;
           padding: 0 3px 0 0;
           &.nocontent {
@@ -323,7 +323,7 @@
         }
         .search_right {
           flex: 0 0 auto;
-          flex-basis: 160px;
+          // flex-basis: 160px;
           // outline: 1px solid red;
         }
         .search_btn_content {

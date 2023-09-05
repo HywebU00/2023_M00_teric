@@ -11880,7 +11880,6 @@ h2.title {
 }
 .search_data .within_search .form_inline .search_group .search_left {
   flex: 0 0 auto;
-  flex-basis: 100px;
   padding: 0 3px 0 0;
 }
 .search_data .within_search .form_inline .search_group .search_left.nocontent label,
@@ -11896,7 +11895,6 @@ h2.title {
 }
 .search_data .within_search .form_inline .search_group .search_right {
   flex: 0 0 auto;
-  flex-basis: 160px;
 }
 .search_data .within_search .form_inline .search_group .search_btn_content {
   flex: 0 0 auto;

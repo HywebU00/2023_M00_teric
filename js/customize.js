@@ -9,7 +9,7 @@ $(function () {
   // 後分類 h3收合
   var _classificationlist = $('.classification_tabs .tabContent .classification_list h3');
   _classificationlist.click(function () {
-    $(this).next('ul').slideToggle();
+    $(this).next('.classification_content').slideToggle();
     $(this).toggleClass('close');
     // $(this).parent().siblings().children('ul').stop().slideDown();
     // $(this).parent().siblings().children('h3').removeClass('close');

@@ -366,98 +366,100 @@
           color: $secondaryColor;
         }
       }
-      ul {
-        @include li-reset;
-        margin-bottom: 0.8em;
-      }
-      li {
-        margin: 0 0 0.4em 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        &:nth-child(n + 6) {
-          // display: none;
+      .classification_content {
+        ul {
+          @include li-reset;
+          margin-bottom: 0.8em;
         }
-        label {
-          flex: 1 1 auto;
+        li {
+          margin: 0 0 0.4em 0;
+          padding: 0;
           display: flex;
-          color: $color-dark;
-
-          padding-left: 0;
-          padding-right: 0;
-
-          input[type='checkbox'] {
-            border-radius: 3px;
-            flex: 0 0 auto;
-            flex-basis: 1em;
-            max-width: 1em;
-          }
-          input[type='radio'] {
-            flex: 0 0 auto;
-            flex-basis: 1em;
-            max-width: 1em;
-          }
-        }
-        .quantity {
-          flex: 0 0 auto;
-          color: $color-hr;
-          padding: 0 5px;
-          text-align: right;
-        }
-        a {
-          display: flex;
-          padding: 0.3em 0;
-          color: $color-dark;
           justify-content: space-between;
-          span {
-            color: $color-hr;
-            padding: 0 5px;
-            text-align: center;
+          &:nth-child(n + 6) {
+            // display: none;
           }
-          &:hover {
-            color: $aHover;
-          }
-        }
-      }
-      .more {
-        margin: 0 1em 0.5em 0;
+          label {
+            flex: 1 1 auto;
+            display: flex;
+            color: $color-dark;
 
-        a {
-          display: block;
-          color: $secondaryColor;
-          position: relative;
-          padding: 0.4em 1.5em 0.4em 0;
-          text-align: left;
-          transition: 0.5s;
-          font-size: 1rem;
-          background-color: transparent;
-          &.close {
-            padding-right: 30px;
-            &:after {
-              transform: rotate(-45deg);
-              top: 16px;
-              right: 10px;
+            padding-left: 0;
+            padding-right: 0;
+
+            input[type='checkbox'] {
+              border-radius: 3px;
+              flex: 0 0 auto;
+              flex-basis: 1em;
+              max-width: 1em;
+            }
+            input[type='radio'] {
+              flex: 0 0 auto;
+              flex-basis: 1em;
+              max-width: 1em;
             }
           }
-          &:before {
-            display: none;
+          .quantity {
+            flex: 0 0 auto;
+            color: $color-hr;
+            padding: 0 5px;
+            text-align: right;
           }
-          &:after {
-            content: '';
-            width: 8px;
-            height: 8px;
-            border: 2px solid $secondaryColor;
-            border-bottom: none;
-            border-left: none;
-            transform: rotate(135deg);
-            position: absolute;
-            right: 0;
-            top: 10px;
-            transition: 0.2s;
-            background-image: none;
+          a {
+            display: flex;
+            padding: 0.3em 0;
+            color: $color-dark;
+            justify-content: space-between;
+            span {
+              color: $color-hr;
+              padding: 0 5px;
+              text-align: center;
+            }
+            &:hover {
+              color: $aHover;
+            }
           }
-          &:hover {
-            text-decoration: none;
+        }
+        .more {
+          margin: 0 1em 0.5em 0;
+
+          a {
+            display: block;
+            color: $secondaryColor;
+            position: relative;
+            padding: 0.4em 1.5em 0.4em 0;
+            text-align: left;
+            transition: 0.5s;
+            font-size: 1rem;
+            background-color: transparent;
+            &.close {
+              padding-right: 30px;
+              &:after {
+                transform: rotate(-45deg);
+                top: 16px;
+                right: 10px;
+              }
+            }
+            &:before {
+              display: none;
+            }
+            &:after {
+              content: '';
+              width: 8px;
+              height: 8px;
+              border: 2px solid $secondaryColor;
+              border-bottom: none;
+              border-left: none;
+              transform: rotate(135deg);
+              position: absolute;
+              right: 0;
+              top: 10px;
+              transition: 0.2s;
+              background-image: none;
+            }
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }

@@ -375,6 +375,9 @@
         padding: 0;
         display: flex;
         justify-content: space-between;
+        &:nth-child(n + 6) {
+          // display: none;
+        }
         label {
           flex: 1 1 auto;
           display: flex;
@@ -416,6 +419,51 @@
           }
         }
       }
+      .more {
+        margin: 0 1em 0.5em 0;
+
+        a {
+          display: block;
+          color: $secondaryColor;
+          position: relative;
+          padding: 0.4em 1.5em 0.4em 0;
+          text-align: left;
+          transition: 0.5s;
+          font-size: 1rem;
+          background-color: transparent;
+          &.close {
+            padding-right: 30px;
+            &:after {
+              transform: rotate(-45deg);
+              top: 16px;
+              right: 10px;
+            }
+          }
+          &:before {
+            display: none;
+          }
+          &:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border: 2px solid $secondaryColor;
+            border-bottom: none;
+            border-left: none;
+            transform: rotate(135deg);
+            position: absolute;
+            right: 0;
+            top: 10px;
+            transition: 0.2s;
+            background-image: none;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .classification_btn {
+      text-align: center;
     }
   }
 }

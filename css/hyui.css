@@ -7764,6 +7764,50 @@ table.table_sprite tr:nth-child(even) {
 .classification_tabs .tabContent .classification_list li a:hover {
   color: #2f72ab;
 }
+.classification_tabs .tabContent .classification_list .more {
+  margin: 0 1em 0.5em 0;
+}
+.classification_tabs .tabContent .classification_list .more a {
+  display: block;
+  color: #067776;
+  position: relative;
+  padding: 0.4em 1.5em 0.4em 0;
+  text-align: left;
+  transition: 0.5s;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.classification_tabs .tabContent .classification_list .more a.close {
+  padding-right: 30px;
+}
+.classification_tabs .tabContent .classification_list .more a.close:after {
+  transform: rotate(-45deg);
+  top: 16px;
+  right: 10px;
+}
+.classification_tabs .tabContent .classification_list .more a:before {
+  display: none;
+}
+.classification_tabs .tabContent .classification_list .more a:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #067776;
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transition: 0.2s;
+  background-image: none;
+}
+.classification_tabs .tabContent .classification_list .more a:hover {
+  text-decoration: none;
+}
+.classification_tabs .tabContent .classification_btn {
+  text-align: center;
+}
 
 .cp_data_tabs .tabContent {
   position: absolute;
@@ -11773,6 +11817,9 @@ h2.title {
     margin-bottom: 0.5em;
   }
 }
+.constriction_block .constriction_list {
+  flex: 1 1 auto;
+}
 .constriction_block .constriction_list ul {
   margin: 0;
   padding: 0;
@@ -11822,6 +11869,15 @@ h2.title {
   height: 18px;
   border: none;
   cursor: pointer;
+}
+.constriction_block .searchbtn {
+  flex: 0 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .constriction_block .searchbtn {
+    flex: 1 1 auto;
+  }
 }
 
 .member_pic {

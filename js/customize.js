@@ -19,6 +19,31 @@ $(function () {
     $('.classification_groupleft').stop().toggleClass('open');
     $(this).stop().toggleClass('open');
   });
+
+  // 後分類
+  var _sortlist = $('.classification_groupleft .classification_list ');
+  var i = 5; //不隱藏的個數
+
+  _sortlist.each(function () {
+    var _slideItem = $(this).find('li').slice(i);
+    var _more = $(this).find('.more>a');
+    var moreText = _more.text();
+    var altText = '顯示收合';
+    _sortlist.find('li:nth-child(n + 6)').css('display', 'none');
+    _more.click(function () {
+      if (_slideItem.is(':hidden')) {
+        _slideItem.slideDown();
+        _more.text(altText);
+        _more.addClass('close');
+        _sortlist.find('li:nth-child(n + 6)').css('display', 'flex');
+        $(this).parents().siblings('.classification_list').find('li:nth-child(n + 6)').css('display', 'none');
+      } else {
+        _slideItem.slideUp();
+        _more.text(moreText);
+        _more.removeClass('close');
+      }
+    });
+  });
   //  詳目資訊整個 左右收合
   $('.cp_data_btn>a').click(function () {
     $('.cp_data_left').stop().toggleClass('open');

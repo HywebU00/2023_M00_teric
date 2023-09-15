@@ -491,6 +491,50 @@ $(function () {
     });
   }
 
+  // function tabSet2() {
+  //   $('.classification_tabs').each(function () {
+  //     var _tab = $(this),
+  //       _tabItem = _tab.find('.tabItem'),
+  //       _tabContent = _tab.find('.tabContent'),
+  //       tabwidth = _tab.width(),
+  //       tabItemHeight = _tabItem.outerHeight(),
+  //       tabContentHeight = _tab.find('.active').next().innerHeight(),
+  //       tabGutter = parseInt('3px'), // 可設定 Gutter 寬度
+  //       tabItemLength = _tabItem.length,
+  //       tabItemWidth,
+  //       marginLeft;
+  //     _tab.find('.active').next('.tabContent').show();
+
+  //     _tabContent.css('top', tabItemHeight);
+  //     _tab.height(tabContentHeight + tabItemHeight);
+
+  //     tabItemWidth = tabwidth / tabItemLength - tabGutter;
+  //     marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
+
+  //     _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
+  //     _tabItem.first().css('margin-left', 0);
+  //     _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+
+  //     _tabItem.focus(tabs); //改button後，前面改_tabItem
+  //     _tabItem.click(tabs); //改button後，前面改_tabItem
+  //     function tabs(e) {
+  //       var _tabItemNow = $(this), //改button後，原來$(this).parent(),改$(this)
+  //         tvp = _tab.offset().top,
+  //         tabIndex = _tabItemNow.index() / 2,
+  //         scollDistance = tvp + tabItemHeight * tabIndex - tab_headerHeight;
+  //       _tabItem.removeClass('active');
+  //       _tabItemNow.addClass('active');
+
+  //       // _tabItem.not('.active').next().slideUp();
+  //       // _tabItemNow.next().slideDown();
+  //       _tabItem.not('.active').next().removeClass('active').css('display', 'none');
+  //       _tabItemNow.next().addClass('active').css('display', 'block');
+  //       // $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
+
+  //       e.preventDefault();
+  //     }
+  //   });
+  // }
   function tabSet2() {
     $('.classification_tabs').each(function () {
       var _tab = $(this),
@@ -499,22 +543,26 @@ $(function () {
         tabwidth = _tab.width(),
         tabItemHeight = _tabItem.outerHeight(),
         tabContentHeight = _tab.find('.active').next().innerHeight(),
-        tabGutter = parseInt('3px'), // 可設定 Gutter 寬度
+        tabGutter = parseInt('0px'), // 可設定 Gutter 寬度
         tabItemLength = _tabItem.length,
         tabItemWidth,
         marginLeft;
       _tab.find('.active').next('.tabContent').show();
-
-      _tabContent.css('top', tabItemHeight);
-      _tab.height(tabContentHeight + tabItemHeight);
-
-      tabItemWidth = tabwidth / tabItemLength - tabGutter;
-      marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
-
-      _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
-      _tabItem.first().css('margin-left', 0);
-      _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
-
+      if (ww >= wwSmall) {
+        _tabContent.css('top', tabItemHeight);
+        _tab.height(tabContentHeight + tabItemHeight);
+        tabItemWidth = tabwidth / tabItemLength - tabGutter;
+        marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
+        _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
+        _tabItem.first().css('margin-left', 0);
+        _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+      } else {
+        _tab.css('height', 'auto');
+        tabItemWidth = tabwidth / tabItemLength - tabGutter;
+        _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
+        _tabItem.first().css('margin-left', 0);
+        _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+      }
       _tabItem.focus(tabs); //改button後，前面改_tabItem
       _tabItem.click(tabs); //改button後，前面改_tabItem
       function tabs(e) {
@@ -524,18 +572,20 @@ $(function () {
           scollDistance = tvp + tabItemHeight * tabIndex - tab_headerHeight;
         _tabItem.removeClass('active');
         _tabItemNow.addClass('active');
-
-        // _tabItem.not('.active').next().slideUp();
-        // _tabItemNow.next().slideDown();
-        _tabItem.not('.active').next().removeClass('active').css('display', 'none');
-        _tabItemNow.next().addClass('active').css('display', 'block');
-        // $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
-
+        if (ww <= wwSmall) {
+          _tabItem.not('.active').next().slideUp();
+          _tabItemNow.next().slideDown();
+          $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
+        } else {
+          _tabItem.not('.active').next().hide();
+          _tabItemNow.next().show();
+          tabContentHeight = _tabItemNow.next().innerHeight();
+          _tab.height(tabContentHeight + tabItemHeight);
+        }
         e.preventDefault();
       }
     });
   }
-
   function tabSet3() {
     $('.cp_data_tabs').each(function () {
       var _tab = $(this),

@@ -184,6 +184,7 @@
     border: none;
     box-sizing: border-box;
     position: relative;
+    // outline: 1px solid red;
     &:hover,
     &:focus {
       color: $secondaryColor;
@@ -374,18 +375,20 @@
         li {
           margin: 0 0 0.4em 0;
           padding: 0;
-          display: flex;
-          justify-content: space-between;
+          position: relative;
+          // display: flex;
+          // justify-content: space-between;
+
           &:nth-child(n + 6) {
-            // display: none;
+            display: none;
           }
           label {
-            flex: 1 1 auto;
+            // flex: 1 1 auto;
             display: flex;
             color: $color-dark;
-
             padding-left: 0;
             padding-right: 0;
+            margin-right: 40px;
 
             input[type='checkbox'] {
               border-radius: 3px;
@@ -400,7 +403,10 @@
             }
           }
           .quantity {
-            flex: 0 0 auto;
+            // flex: 0 0 auto;
+            position: absolute;
+            right: 0;
+            top: 0;
             color: $color-hr;
             padding: 0 5px;
             text-align: right;
@@ -464,8 +470,15 @@
         }
       }
     }
+  }
+}
+.classification_groupleft {
+  .tabSet {
     .classification_btn {
       text-align: center;
+      button {
+        margin: 0.1em !important;
+      }
     }
   }
 }

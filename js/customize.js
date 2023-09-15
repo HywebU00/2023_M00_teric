@@ -29,14 +29,11 @@ $(function () {
     var _more = $(this).find('.more>a');
     var moreText = _more.text();
     var altText = '顯示收合';
-    _sortlist.find('li:nth-child(n + 6)').css('display', 'none');
     _more.click(function () {
       if (_slideItem.is(':hidden')) {
         _slideItem.slideDown();
         _more.text(altText);
         _more.addClass('close');
-        _sortlist.find('li:nth-child(n + 6)').css('display', 'flex');
-        $(this).parents().siblings('.classification_list').find('li:nth-child(n + 6)').css('display', 'none');
       } else {
         _slideItem.slideUp();
         _more.text(moreText);

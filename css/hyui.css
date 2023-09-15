@@ -7586,7 +7586,7 @@ table.table_sprite tr:nth-child(even) {
 
 .member_tabs .tabContent {
   background-color: #fff;
-  position: absolute;
+  position: relative !important;
   top: auto;
   left: 0;
   right: 0;

@@ -246,7 +246,8 @@
 .member_tabs {
   .tabContent {
     background-color: #fff;
-    position: absolute;
+    // position: absolute;
+    position: relative !important;
     top: auto;
     left: 0;
     right: 0;

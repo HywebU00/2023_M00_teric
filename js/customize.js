@@ -288,140 +288,141 @@ $(function () {
   });
 
   //氣泡圖
-  Highcharts.chart('container', {
-    chart: {
-      type: 'packedbubble',
-      height: '100%',
-    },
-    title: {
-      text: '國際教育訊息2022年氣泡圖',
-      align: 'left',
-    },
-    tooltip: {
-      useHTML: true,
-      pointFormat: '<b>{point.name}:</b> {point.value}',
-    },
-    plotOptions: {
-      packedbubble: {
-        minSize: '20%',
-        maxSize: '100%',
-        zMin: 0,
-        zMax: 1000,
-        layoutAlgorithm: {
-          gravitationalConstant: 0.05,
-          splitSeries: true,
-          seriesInteraction: false,
-          dragBetweenSeries: true,
-          parentNodeLimit: true,
-        },
-        dataLabels: {
-          enabled: true,
-          format: '{point.name}',
-          filter: {
-            property: 'y',
-            operator: '>',
-            value: 20,
+  if (typeof Highcharts !== 'undefined') {
+    Highcharts.chart('container', {
+      chart: {
+        type: 'packedbubble',
+        height: '100%',
+      },
+      title: {
+        text: '國際教育訊息2022年氣泡圖',
+        align: 'left',
+      },
+      tooltip: {
+        useHTML: true,
+        pointFormat: '<b>{point.name}:</b> {point.value}',
+      },
+      plotOptions: {
+        packedbubble: {
+          minSize: '20%',
+          maxSize: '100%',
+          zMin: 0,
+          zMax: 1000,
+          layoutAlgorithm: {
+            gravitationalConstant: 0.05,
+            splitSeries: true,
+            seriesInteraction: false,
+            dragBetweenSeries: true,
+            parentNodeLimit: true,
           },
-          style: {
-            color: 'black',
-            textOutline: 'none',
-            fontWeight: 'normal',
+          dataLabels: {
+            enabled: true,
+            format: '{point.name}',
+            filter: {
+              property: 'y',
+              operator: '>',
+              value: 20,
+            },
+            style: {
+              color: 'black',
+              textOutline: 'none',
+              fontWeight: 'normal',
+            },
           },
         },
       },
-    },
-    series: [
-      {
-        name: '科技教育',
-        data: [
-          {
-            name: '日本',
-            value: 76,
-          },
-          {
-            name: '韓國',
-            value: 20,
-          },
-          {
-            name: '越南',
-            value: 97,
-          },
-          {
-            name: '香港',
-            value: 11,
-          },
-          {
-            name: '泰國',
-            value: 15,
-          },
-          {
-            name: '馬來西亞',
-            value: 24,
-          },
-          {
-            name: '印度',
-            value: 24,
-          },
-          {
-            name: '沙烏地阿拉伯',
-            value: 29,
-          },
-          {
-            name: '俄羅斯',
-            value: 32,
-          },
-          {
-            name: '法國',
-            value: 178,
-          },
-          {
-            name: '加拿大',
-            value: 41,
-          },
-          {
-            name: '美國',
-            value: 35,
-          },
-          {
-            name: '奧地利',
-            value: 33,
-          },
-          {
-            name: '德國',
-            value: 171,
-          },
-          {
-            name: '比利時',
-            value: 69,
-          },
-          {
-            name: '瑞典',
-            value: 67,
-          },
-          {
-            name: '波蘭',
-            value: 59,
-          },
-          {
-            name: '巴拉圭',
-            value: 54,
-          },
-          {
-            name: '哥斯大黎加',
-            value: 151,
-          },
-          {
-            name: '澳洲',
-            value: 48,
-          },
-          {
-            name: '紐西蘭',
-            value: 44,
-          },
-        ],
-      },
-    ],
-  });
-
+      series: [
+        {
+          name: '科技教育',
+          data: [
+            {
+              name: '日本',
+              value: 76,
+            },
+            {
+              name: '韓國',
+              value: 20,
+            },
+            {
+              name: '越南',
+              value: 97,
+            },
+            {
+              name: '香港',
+              value: 11,
+            },
+            {
+              name: '泰國',
+              value: 15,
+            },
+            {
+              name: '馬來西亞',
+              value: 24,
+            },
+            {
+              name: '印度',
+              value: 24,
+            },
+            {
+              name: '沙烏地阿拉伯',
+              value: 29,
+            },
+            {
+              name: '俄羅斯',
+              value: 32,
+            },
+            {
+              name: '法國',
+              value: 178,
+            },
+            {
+              name: '加拿大',
+              value: 41,
+            },
+            {
+              name: '美國',
+              value: 35,
+            },
+            {
+              name: '奧地利',
+              value: 33,
+            },
+            {
+              name: '德國',
+              value: 171,
+            },
+            {
+              name: '比利時',
+              value: 69,
+            },
+            {
+              name: '瑞典',
+              value: 67,
+            },
+            {
+              name: '波蘭',
+              value: 59,
+            },
+            {
+              name: '巴拉圭',
+              value: 54,
+            },
+            {
+              name: '哥斯大黎加',
+              value: 151,
+            },
+            {
+              name: '澳洲',
+              value: 48,
+            },
+            {
+              name: '紐西蘭',
+              value: 44,
+            },
+          ],
+        },
+      ],
+    });
+  }
   //
 });

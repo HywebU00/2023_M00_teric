@@ -449,22 +449,19 @@ $(function () {
         tabGutter = parseInt('0'), // 可設定 Gutter 寬度
         tabItemLength = _tabItem.length,
         tabItemWidth,
-        marginLeft;
+        itemLeft;
       _tab.find('.active').next('.tabContent').show();
       if (ww >= wwSmall) {
-        // _tabContent.css('top', tabItemHeight);
-        // _tab.height(tabContentHeight + tabItemHeight);
-
         tabItemWidth = tabwidth / tabItemLength - tabGutter;
         marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
 
-        _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
-        _tabItem.first().css('margin-left', 0);
-        _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+        _tabItem.each(function (index) {
+          $(this).css({ width: tabItemWidth, position: 'absolute', top: 0, left: tabItemWidth * index });
+        });
+
+        _tabItem.first().css({ position: 'relative', left: 0 });
       } else {
-        _tab.css('height', 'auto');
-        _tabItem.width(tabwidth);
-        _tabItem.css('margin-left', 0).last().css('position', 'relative');
+        _tabItem.css({ width: '100%', left: 'auto', position: 'relative' });
       }
       _tabItem.focus(tabs); //改button後，前面改_tabItem
       _tabItem.click(tabs); //改button後，前面改_tabItem

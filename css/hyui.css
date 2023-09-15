@@ -12836,6 +12836,30 @@ h2.title {
   margin: 1em 0;
 }
 
+.related_links_group {
+  margin: 0.5em 0;
+}
+.related_links_group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.related_links_group ul li {
+  margin-left: 5px;
+}
+.related_links_group ul li a {
+  display: block;
+  padding: 0.5em 1.25em;
+  background-color: #067776;
+  color: #fff;
+  border-radius: 50px;
+}
+.related_links_group ul li a:hover {
+  background-color: #044646;
+}
+
 @media print {
   .main,
   .content, body {

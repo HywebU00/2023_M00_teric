@@ -1202,3 +1202,27 @@
   border-radius: 8px;
   margin: 1em 0;
 }
+
+.related_links_group {
+  margin: 0.5em 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-left: 5px;
+      a {
+        display: block;
+        padding: 0.5em 1.25em;
+        background-color: $secondaryColor;
+        color: #fff;
+        border-radius: 50px;
+        &:hover {
+          background-color: darken($color: $secondaryColor, $amount: 10);
+        }
+      }
+    }
+  }
+}

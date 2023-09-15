@@ -548,21 +548,21 @@ $(function () {
         tabItemWidth,
         marginLeft;
       _tab.find('.active').next('.tabContent').show();
-      if (ww >= wwSmall) {
-        _tabContent.css('top', tabItemHeight);
-        _tab.height(tabContentHeight + tabItemHeight);
-        tabItemWidth = tabwidth / tabItemLength - tabGutter;
-        marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
-        _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
-        _tabItem.first().css('margin-left', 0);
-        _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
-      } else {
-        _tab.css('height', 'auto');
-        tabItemWidth = tabwidth / tabItemLength - tabGutter;
-        _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
-        _tabItem.first().css('margin-left', 0);
-        _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
-      }
+      // if (ww >= wwSmall) {
+      // _tabContent.css('top', tabItemHeight);
+      // _tab.height(tabContentHeight + tabItemHeight);
+      tabItemWidth = tabwidth / tabItemLength - tabGutter;
+      marginLeft = (tabwidth - tabItemWidth * tabItemLength) / (tabItemLength - 1);
+      _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
+      _tabItem.first().css('margin-left', 0);
+      _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+      // } else {
+      //   _tab.css('height', 'auto');
+      //   tabItemWidth = tabwidth / tabItemLength - tabGutter;
+      //   _tabItem.outerWidth(tabItemWidth).css('margin-left', marginLeft);
+      //   _tabItem.first().css('margin-left', 0);
+      //   _tabItem.last().css({ position: 'absolute', top: 0, right: 0 }).outerWidth(tabItemWidth);
+      // }
       _tabItem.focus(tabs); //改button後，前面改_tabItem
       _tabItem.click(tabs); //改button後，前面改_tabItem
       function tabs(e) {
@@ -580,7 +580,7 @@ $(function () {
           _tabItem.not('.active').next().hide();
           _tabItemNow.next().show();
           tabContentHeight = _tabItemNow.next().innerHeight();
-          _tab.height(tabContentHeight + tabItemHeight);
+          // _tab.height(tabContentHeight + tabItemHeight);
         }
         e.preventDefault();
       }

@@ -7504,6 +7504,10 @@ table.table_sprite tr:nth-child(even) {
   border-radius: 0 10px 0 0;
 }
 
+.classification_tabs .tabContent {
+  position: relative !important;
+  padding: 30px 0 0 !important;
+}
 .classification_tabs > .tabItem {
   float: left;
   margin: 0;

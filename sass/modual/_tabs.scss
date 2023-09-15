@@ -154,6 +154,10 @@
 
 // 後分類
 .classification_tabs {
+  .tabContent {
+    position: relative !important;
+    padding: 30px 0 0 !important;
+  }
   & > .tabItem {
     &.active {
       color: $secondaryColor;

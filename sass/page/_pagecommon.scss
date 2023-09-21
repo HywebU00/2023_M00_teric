@@ -331,6 +331,7 @@
         }
         .search_right {
           flex: 0 0 auto;
+          padding: 0 3px 0 0;
           // flex-basis: 160px;
           // outline: 1px solid red;
         }
@@ -382,7 +383,7 @@
           border-bottom: 1px solid #ccc;
           .search_right {
             flex: 0 0 auto;
-            flex-basis: calc(100% - 135px);
+            // flex-basis: calc(100% - 135px);
           }
         }
         @media (max-width: 380px) {
@@ -390,6 +391,9 @@
             flex-basis: 100%;
           }
           .search_middle {
+            flex-basis: 100%;
+          }
+          .search_right {
             flex-basis: 100%;
           }
         }

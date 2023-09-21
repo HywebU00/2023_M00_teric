@@ -11984,6 +11984,7 @@ h2.title {
 }
 .search_data .within_search .form_inline .search_group .search_right {
   flex: 0 0 auto;
+  padding: 0 3px 0 0;
 }
 .search_data .within_search .form_inline .search_group .search_btn_content {
   flex: 0 0 auto;
@@ -12032,7 +12033,6 @@ h2.title {
   }
   .search_data .within_search .form_inline .search_group .search_right {
     flex: 0 0 auto;
-    flex-basis: calc(100% - 135px);
   }
 }
 @media (max-width: 380px) {
@@ -12040,6 +12040,9 @@ h2.title {
     flex-basis: 100%;
   }
   .search_data .within_search .form_inline .search_group .search_middle {
+    flex-basis: 100%;
+  }
+  .search_data .within_search .form_inline .search_group .search_right {
     flex-basis: 100%;
   }
 }

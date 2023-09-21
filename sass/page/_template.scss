@@ -17,6 +17,12 @@ body {
     margin: 0;
     padding: 0;
   }
+  &.fixed {
+    height: 100%;
+    overflow: hidden !important;
+    width: 100%;
+    position: fixed;
+  }
 }
 
 // 最外圍預設為100%

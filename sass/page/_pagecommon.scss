@@ -180,7 +180,7 @@
     font-size: 1.125em;
     color: #333;
     flex: 0 0 auto;
-    padding: 0.3em;
+    padding: 0.7em 0.3em;
     @include screen('mobile') {
       flex: 1 1 auto;
       flex-basis: 100%;
@@ -202,7 +202,7 @@
         flex: 1 1 auto;
         a {
           display: block;
-          padding: 0.3em 3em 0.3em 1.5em;
+          padding: 0.7em 3em 0.7em 1.5em;
           border: 1px solid #ccc;
           border-radius: 5px;
           color: #333;
@@ -214,13 +214,13 @@
             color: $aHover;
           }
           @include screen('mobile') {
-            padding: 0.3em 3em 0.3em 1em;
+            padding: 0.7em 3em 0.7em 1.5em;
           }
         }
         .close {
           position: absolute;
           z-index: 2;
-          top: 1.2em;
+          top: 1.5em;
           right: 0.8em;
           margin-top: -9px;
           a {
@@ -1012,7 +1012,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40vw;
-    height: 60vh;
+    height: 80vh;
     background-color: #fff;
     border-radius: 1.5em;
     padding: 50px 40px 30px;
@@ -1023,7 +1023,7 @@
       height: 70vh;
     }
     @include screen('tablet') {
-      width: 60vw;
+      width: 80vw;
     }
     @include screen('mobile') {
       width: 90vw;

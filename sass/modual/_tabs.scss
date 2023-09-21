@@ -115,10 +115,10 @@
     box-sizing: border-box;
     color: $color-dark;
     font-size: 1.25em;
-    margin-top: 12px;
+    margin-top: 0;
     height: 210px;
     border: none;
-    border-radius: 0;
+    border-radius: 10px 10px 0 0;
     span {
       &.number {
         font-size: 3.5em;
@@ -143,12 +143,12 @@
         border-color: #bbb;
       }
     }
-    &:first-of-type {
-      border-radius: 10px 0 0 0;
-    }
-    &:last-of-type {
-      border-radius: 0 10px 0 0;
-    }
+    // &:first-of-type {
+    //   border-radius: 10px 0 0 0;
+    // }
+    // &:last-of-type {
+    //   border-radius: 0 10px 0 0;
+    // }
   }
 }
 
@@ -318,6 +318,19 @@
       td {
         &.aCenter {
           white-space: nowrap;
+        }
+      }
+    }
+    .category {
+      li {
+        border-bottom: none;
+        margin: 0 0.5em 0.5em 0;
+        a {
+          &.active {
+            color: #fff;
+            background-color: #666;
+            border: 1px solid #666;
+          }
         }
       }
     }

@@ -7459,10 +7459,10 @@ table.table_sprite tr:nth-child(even) {
   box-sizing: border-box;
   color: #262626;
   font-size: 1.25em;
-  margin-top: 12px;
+  margin-top: 0;
   height: 210px;
   border: none;
-  border-radius: 0;
+  border-radius: 10px 10px 0 0;
 }
 .member_tabs > .tabItem.active {
   background-color: #fff;
@@ -7496,12 +7496,6 @@ table.table_sprite tr:nth-child(even) {
   .member_tabs > .tabItem.active {
     border-color: #bbb;
   }
-}
-.member_tabs > .tabItem:first-of-type {
-  border-radius: 10px 0 0 0;
-}
-.member_tabs > .tabItem:last-of-type {
-  border-radius: 0 10px 0 0;
 }
 
 .classification_tabs .tabContent {
@@ -7668,6 +7662,15 @@ table.table_sprite tr:nth-child(even) {
 }
 .member_tabs .tabContent .table_list td.aCenter {
   white-space: nowrap;
+}
+.member_tabs .tabContent .category li {
+  border-bottom: none;
+  margin: 0 0.5em 0.5em 0;
+}
+.member_tabs .tabContent .category li a.active {
+  color: #fff;
+  background-color: #666;
+  border: 1px solid #666;
 }
 
 .classification_tabs .tabContent {
@@ -9435,6 +9438,12 @@ body.noscroll {
   overflow-y: hidden !important;
   margin: 0;
   padding: 0;
+}
+body.fixed {
+  height: 100%;
+  overflow: hidden !important;
+  width: 100%;
+  position: fixed;
 }
 
 .wrapper {
@@ -11820,7 +11829,7 @@ h2.title {
   font-size: 1.125em;
   color: #333;
   flex: 0 0 auto;
-  padding: 0.3em;
+  padding: 0.7em 0.3em;
 }
 @media screen and (max-width: 767px) {
   .constriction_block .title {
@@ -11847,7 +11856,7 @@ h2.title {
 }
 .constriction_block .constriction_list ul li a {
   display: block;
-  padding: 0.3em 3em 0.3em 1.5em;
+  padding: 0.7em 3em 0.7em 1.5em;
   border: 1px solid #ccc;
   border-radius: 5px;
   color: #333;
@@ -11860,13 +11869,13 @@ h2.title {
 }
 @media screen and (max-width: 767px) {
   .constriction_block .constriction_list ul li a {
-    padding: 0.3em 3em 0.3em 1em;
+    padding: 0.7em 3em 0.7em 1.5em;
   }
 }
 .constriction_block .constriction_list ul li .close {
   position: absolute;
   z-index: 2;
-  top: 1.2em;
+  top: 1.5em;
   right: 0.8em;
   margin-top: -9px;
 }
@@ -12644,7 +12653,7 @@ h2.title {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40vw;
-  height: 60vh;
+  height: 80vh;
   background-color: #fff;
   border-radius: 1.5em;
   padding: 50px 40px 30px;
@@ -12659,7 +12668,7 @@ h2.title {
 }
 @media screen and (max-width: 991px) {
   .login_lightbox .lightbox_content {
-    width: 60vw;
+    width: 80vw;
   }
 }
 @media screen and (max-width: 767px) {

@@ -7667,6 +7667,13 @@ table.table_sprite tr:nth-child(even) {
   border-bottom: none;
   margin: 0 0.5em 0.5em 0;
 }
+.member_tabs .tabContent .category li a:hover, .member_tabs .tabContent .category li a:focus {
+  color: #fff;
+  background-color: #666;
+  border: #666;
+  border: 1px solid #666;
+  box-shadow: none;
+}
 .member_tabs .tabContent .category li a.active {
   color: #fff;
   background-color: #666;

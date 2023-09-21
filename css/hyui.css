@@ -7679,6 +7679,9 @@ table.table_sprite tr:nth-child(even) {
   background-color: #666;
   border: 1px solid #666;
 }
+.member_tabs .tabContent .pagination li {
+  border-bottom: none;
+}
 
 .classification_tabs .tabContent {
   position: absolute;

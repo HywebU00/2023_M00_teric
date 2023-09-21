@@ -342,6 +342,11 @@
         }
       }
     }
+    .pagination {
+      li {
+        border-bottom: none;
+      }
+    }
   }
 }
 

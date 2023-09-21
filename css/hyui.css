@@ -9182,6 +9182,7 @@ div.function ul li.icon_forward a:before {
   .pagination .pagegroup .page {
     margin: 10px 0 0 0;
     flex-wrap: wrap;
+    flex-basis: 100%;
   }
   .pagination .pagegroup .topage {
     margin: 10px 0 0 0;
@@ -9277,6 +9278,7 @@ div.function ul li.icon_forward a:before {
   flex: 0 0 auto;
 }
 .pagination .topage {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   margin: 10px 0 10px 10px;

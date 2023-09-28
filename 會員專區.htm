@@ -574,7 +574,7 @@
                           <td class="aCenter">教育訊息</td>
                           <td class="date">2022/09/01</td>
                           <td class="aCenter">
-                            <a href="javascript:;" class="notesbtn"><img src="images/list_icon01.png" alt="筆記" /></a>
+                            <a href="javascript:;" class="notesbtn" data-fancybox data-src="#modal"><img src="images/list_icon01.png" alt="筆記" /></a>
                           </td>
                           <td class="aCenter">
                             <a href="javascript:;"><img src="images/list_delete.png" alt="刪除" /></a>
@@ -917,7 +917,7 @@
               </section>
             </div>
             <!-- 筆記燈箱 start-->
-            <div class="generally_lightbox">
+            <div class="generally_lightbox" style="display: none;">
               <div class="overlay"></div>
               <div class="lightbox_content">
                 <div class="close"><a href="#">關閉</a></div>
@@ -945,6 +945,34 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <!-- 筆記燈箱 end-->
+            <!-- 筆記燈箱 start-->
+            <div class="generally_lightbox2" style="display: none;" id="modal">
+              <div class="title">筆記內容</div>
+              <p>筆記內容為必填</p>
+              <div class="flex-form form-column">
+                <!-- input -->
+                <div class="form_grp">
+                  <label for="fake-legend" class="form_title" aria-required="true">編號：</label>
+                  <div class="form_content">
+                    <input type="text" id="fake-legend" placeholder="請輸入文字" />
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="form_grp">
+                  <label for="address" class="form_title">筆記內容：</label>
+                  <div class="form_content">
+                    <textarea name="" id="address" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+                <div class="btn_grp">
+
+                  <input name="" type="submit" value="確定" class="btn btn-submit" />
+                  <input name="" type="reset" value="取消" class="btn btn-reset" />
+                </div>
+              </div>
+
             </div>
             <!-- 筆記燈箱 end-->
           </section>
@@ -1056,6 +1084,8 @@
   <!-- picturefill -->
   <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
   <!-- scrolltable -->
+  <!-- fancy -->
+  <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
   <!-- hyUI -->
   <script src="js/hyui.js"></script>
   <!-- 客製js -->

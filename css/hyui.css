@@ -12961,6 +12961,33 @@ h2.title {
   padding: 0.5em 2em;
 }
 
+.generally_lightbox2 .title {
+  margin: 0 0 30px;
+  padding: 0 0 0.5em;
+  font-size: 1.5em;
+  color: #00468d;
+  text-align: left;
+  font-weight: bolder;
+  border-bottom: 1px solid #00468d;
+}
+.generally_lightbox2 p {
+  font-size: 1.125rem;
+}
+.generally_lightbox2 .flex-form {
+  height: 80%;
+  overflow: hidden;
+}
+.generally_lightbox2 .form_grp {
+  border-bottom: none;
+}
+.generally_lightbox2 .form_grp .form_title {
+  font-size: 1.125rem;
+}
+.generally_lightbox2 .btn_grp .btn {
+  flex: 0 0 auto;
+  padding: 0.5em 2em;
+}
+
 .emailform {
   width: 100%;
   padding: 10px 20px;

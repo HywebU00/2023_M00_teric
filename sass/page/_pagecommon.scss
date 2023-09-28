@@ -1303,6 +1303,39 @@
     }
   }
 }
+// 一般燈箱
+.generally_lightbox2 {
+  .title {
+    margin: 0 0 30px;
+    padding: 0 0 0.5em;
+    font-size: 1.5em;
+    color: $primaryColor;
+    text-align: left;
+    font-weight: bolder;
+    border-bottom: 1px solid $primaryColor;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+  // login
+  .flex-form {
+    height: 80%;
+    overflow: hidden;
+  }
+  .form_grp {
+    border-bottom: none;
+    .form_title {
+      font-size: 1.125rem;
+    }
+  }
+
+  .btn_grp {
+    .btn {
+      flex: 0 0 auto;
+      padding: 0.5em 2em;
+    }
+  }
+}
 .emailform {
   width: 100%;
   padding: 10px 20px;

@@ -141,6 +141,15 @@
                   </div>
                 </div>
               </div>
+              <!-- <div class="form_grp">
+                <label for="" class="form_title">驗證碼</label>
+                <div class="form_content form_inline">
+                  <img src="images/basic/captcha.gif" alt="" class="captcha" />
+                  <input name="" type="text" value="" class="captchatext" />
+                  <button class="btn captchabtn"><i class="i_reflash"></i>重新整理</button>
+                  <button class="btn captchabtn"><i class="i_play"></i>語音播放</button>
+                </div>
+              </div> -->
               <div class="verify_box"><img src="images/verify_box.png" alt="" /></div>
               <div class="btn_grp form_inline">
                 <button class="btn loginbtn" value="登入 Login">登入 Login</button>
@@ -565,7 +574,7 @@
                           <td class="aCenter">教育訊息</td>
                           <td class="date">2022/09/01</td>
                           <td class="aCenter">
-                            <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                            <a href="#" class="notesbtn"><img src="images/list_icon01.png" alt="筆記" /></a>
                           </td>
                           <td class="aCenter">
                             <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
@@ -577,7 +586,7 @@
                           <td class="aCenter">教育訊息</td>
                           <td class="date">2022/12/01</td>
                           <td class="aCenter">
-                            <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                            <a href="#"><img src="images/list_icon02.png" alt="筆記" /></a>
                           </td>
                           <td class="aCenter">
                             <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
@@ -589,7 +598,7 @@
                           <td class="aCenter">教育訊息</td>
                           <td class="date">2022/09/01</td>
                           <td class="aCenter">
-                            <a href="#"><img src="images/list_icon01.png" alt="筆記" /></a>
+                            <a href="#"><img src="images/list_icon02.png" alt="筆記" /></a>
                           </td>
                           <td class="aCenter">
                             <a href="#"><img src="images/list_delete.png" alt="刪除" /></a>
@@ -706,6 +715,7 @@
                       </tbody>
                     </table>
                   </div>
+
                 </div>
                 <button type="button" class="tabItem"><span>主題訂閱</span><span class="number">7</span></button>
                 <div class="tabContent">
@@ -906,6 +916,37 @@
                 </div>
               </section>
             </div>
+            <!-- 筆記燈箱 start-->
+            <div class="generally_lightbox">
+              <div class="overlay"></div>
+              <div class="lightbox_content">
+                <div class="close"><a href="#">關閉</a></div>
+                <div class="title">筆記內容</div>
+                <p>筆記內容為必填</p>
+                <div class="flex-form form-column">
+                  <!-- input -->
+                  <div class="form_grp">
+                    <label for="fake-legend" class="form_title" aria-required="true">編號：</label>
+                    <div class="form_content">
+                      <input type="text" id="fake-legend" placeholder="請輸入文字" />
+                    </div>
+                  </div>
+                  <!-- textarea -->
+                  <div class="form_grp">
+                    <label for="address" class="form_title">筆記內容：</label>
+                    <div class="form_content">
+                      <textarea name="" id="address" cols="30" rows="10"></textarea>
+                    </div>
+                  </div>
+                  <div class="btn_grp">
+
+                    <input name="" type="submit" value="確定" class="btn btn-submit" />
+                    <input name="" type="reset" value="取消" class="btn btn-reset" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 筆記燈箱 end-->
           </section>
           <!-- AP End -->
           <!-- Pagination -->

@@ -12671,7 +12671,7 @@ h2.title {
   height: 80vh;
   background-color: #fff;
   border-radius: 1.5em;
-  padding: 50px 40px 30px;
+  padding: 50px 15px 30px 30px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -12765,9 +12765,16 @@ h2.title {
 .login_lightbox .form_grp .form_content .labelEffect .btn-icon {
   right: 1.3em;
 }
+.login_lightbox .form_grp .form_content .captchatext {
+  width: 120px;
+}
 .login_lightbox .verify_box {
   margin: 10px 0 0;
   text-align: center;
+  display: none;
+}
+.login_lightbox .btn_grp {
+  margin-top: 1em;
 }
 .login_lightbox .btn_grp .loginbtn {
   background: rgb(5, 109, 204);
@@ -12849,6 +12856,109 @@ h2.title {
 }
 .login_lightbox .forgotkword ul li a:hover {
   text-decoration: underline;
+}
+
+.generally_lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.generally_lightbox .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.generally_lightbox .lightbox_content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 1.5em;
+  padding: 50px 40px 30px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+@media (max-width: 1200px) {
+  .generally_lightbox .lightbox_content {
+    width: 50vw;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  .generally_lightbox .lightbox_content {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .generally_lightbox .lightbox_content {
+    width: 90vw;
+    height: 90vh;
+    padding: 50px 20px 30px;
+  }
+}
+.generally_lightbox .lightbox_content:after {
+  content: "";
+  width: 100%;
+  height: 343px;
+  background-image: url("../images/lightbox_bottombg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.generally_lightbox .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.generally_lightbox .close a {
+  font-size: 0;
+  background-image: url("../images/icon_close_black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.generally_lightbox .title {
+  margin: 0 0 30px;
+  padding: 0 0 0.5em;
+  font-size: 1.5em;
+  color: #00468d;
+  text-align: left;
+  font-weight: bolder;
+  border-bottom: 1px solid #00468d;
+}
+.generally_lightbox p {
+  font-size: 1.125rem;
+}
+.generally_lightbox .flex-form {
+  height: 80%;
+  overflow: hidden;
+}
+.generally_lightbox .form_grp {
+  border-bottom: none;
+}
+.generally_lightbox .form_grp .form_title {
+  font-size: 1.125rem;
+}
+.generally_lightbox .btn_grp .btn {
+  flex: 0 0 auto;
+  padding: 0.5em 2em;
 }
 
 .emailform {

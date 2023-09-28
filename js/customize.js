@@ -84,6 +84,20 @@ $(function () {
     $('.login_lightbox').fadeOut();
     $('body').removeClass('fixed');
   });
+  // 筆記燈箱
+  $('.generally_lightbox').hide();
+  $('.notesbtn').click(function () {
+    $('.generally_lightbox').fadeIn();
+    $('body').addClass('fixed');
+  });
+  $('.generally_lightbox .close a').click(function () {
+    $('.generally_lightbox').fadeOut();
+    $('body').removeClass('fixed');
+  });
+  $('.generally_lightbox .overlay').click(function () {
+    $('.generally_lightbox').fadeOut();
+    $('body').removeClass('fixed');
+  });
   // 首頁輪播
   $('.mpSlider').slick({
     mobileFirst: true,

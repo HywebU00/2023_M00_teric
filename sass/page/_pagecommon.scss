@@ -1202,107 +1202,7 @@
     }
   }
 }
-// 一般燈箱
-.generally_lightbox {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 100;
-  .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .lightbox_content {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 70vh;
-    background-color: #fff;
-    border-radius: 1.5em;
-    padding: 50px 40px 30px;
-    box-sizing: border-box;
-    overflow-y: scroll;
-    @media (max-width: 1200px) {
-      width: 50vw;
-      height: 80vh;
-    }
-    @include screen('tablet') {
-      width: 80vw;
-    }
-    @include screen('mobile') {
-      width: 90vw;
-      height: 90vh;
-      padding: 50px 20px 30px;
-    }
-    &:after {
-      content: '';
-      width: 100%;
-      height: 343px;
-      background-image: url('../images/lightbox_bottombg.png');
-      background-repeat: no-repeat;
-      background-position: left bottom;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: -1;
-    }
-  }
-  .close {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 40px;
-    height: 40px;
-    a {
-      font-size: 0;
-      background-image: url('../images/icon_close_black.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 28px;
-      width: 40px;
-      height: 40px;
-      display: block;
-    }
-  }
-  .title {
-    margin: 0 0 30px;
-    padding: 0 0 0.5em;
-    font-size: 1.5em;
-    color: $primaryColor;
-    text-align: left;
-    font-weight: bolder;
-    border-bottom: 1px solid $primaryColor;
-  }
-  p {
-    font-size: 1.125rem;
-  }
-  // login
-  .flex-form {
-    height: 80%;
-    overflow: hidden;
-  }
-  .form_grp {
-    border-bottom: none;
-    .form_title {
-      font-size: 1.125rem;
-    }
-  }
 
-  .btn_grp {
-    .btn {
-      flex: 0 0 auto;
-      padding: 0.5em 2em;
-    }
-  }
-}
 // 一般燈箱
 .generally_lightbox2 {
   .title {
@@ -1336,6 +1236,7 @@
     }
   }
 }
+//
 .emailform {
   width: 100%;
   padding: 10px 20px;

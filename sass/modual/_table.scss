@@ -51,6 +51,9 @@ table {
     &.aRight {
       text-align: right;
     }
+    &.date {
+      white-space: nowrap;
+    }
   }
   th {
     background-color: #ddd;

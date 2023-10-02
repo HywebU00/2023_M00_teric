@@ -6885,6 +6885,9 @@ table td.date {
 table td.aRight {
   text-align: right;
 }
+table td.date {
+  white-space: nowrap;
+}
 table th {
   background-color: #ddd;
   color: #333;
@@ -7659,9 +7662,6 @@ table.table_sprite tr:nth-child(even) {
 }
 .member_tabs .tabContent .table_list {
   margin-bottom: 2em;
-}
-.member_tabs .tabContent .table_list td.aCenter {
-  white-space: nowrap;
 }
 .member_tabs .tabContent .category li {
   border-bottom: none;

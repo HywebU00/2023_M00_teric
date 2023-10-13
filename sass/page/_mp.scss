@@ -382,13 +382,13 @@ a.more {
           max-width: inherit;
           flex: 0 0 auto;
 
-          width: 100px;
+          width: 120px;
           padding-right: 1em;
         }
         .form_content {
           flex: 1 1 auto;
-          max-width: calc(100% - 100px);
-          flex-basis: calc(100% - 100px);
+          max-width: calc(100% - 120px);
+          flex-basis: calc(100% - 120px);
 
           @media screen and (max-width: 767px) {
             max-width: 100%;

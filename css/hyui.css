@@ -10099,13 +10099,13 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
 .Search_block .search_groupall .Advanced_search_content .form_grp .form_title {
   max-width: inherit;
   flex: 0 0 auto;
-  width: 100px;
+  width: 120px;
   padding-right: 1em;
 }
 .Search_block .search_groupall .Advanced_search_content .form_grp .form_content {
   flex: 1 1 auto;
-  max-width: calc(100% - 100px);
-  flex-basis: calc(100% - 100px);
+  max-width: calc(100% - 120px);
+  flex-basis: calc(100% - 120px);
 }
 @media screen and (max-width: 767px) {
   .Search_block .search_groupall .Advanced_search_content .form_grp .form_content {

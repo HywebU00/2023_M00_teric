@@ -11734,7 +11734,7 @@ h2.title {
 .select_block select {
   background-color: #067776;
   border-radius: 50px;
-  padding-right: 1em;
+  padding: 0 2em 0 1em;
   margin: 0 0.3em 0 0;
   min-width: 9em;
   display: block;

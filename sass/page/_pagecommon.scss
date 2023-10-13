@@ -81,6 +81,8 @@
     height: 3em;
     flex: 0 0 auto;
     flex-basis: 150px;
+    display: flex;
+    justify-content: center;
   }
   input[type='text'] {
     height: 3em;
